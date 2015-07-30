@@ -2,7 +2,7 @@
 layout: post
 ---
 
-<file php>
+{% highlight php %}
 class Foo {
         public $id;
 
@@ -32,19 +32,18 @@ foreach($callbacks as $callback) {
         $callback();
 }
 
-</file>
+{% endhighlight %}
 
 
-title: "Output"
-<file>
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-</file>
+# Output
+
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9

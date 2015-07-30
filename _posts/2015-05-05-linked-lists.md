@@ -10,9 +10,9 @@ I have found this [[https://youtu.be/YQs6IC-vgmo|talk by Bjarne Stroustrup]] abo
 
 ===== Is it measurable? =====
 
-Yes, it is. I wrote a simple program to compare the behavior of insertion to the ''std::vector<int>'' and ''std::list<int>''.
+Yes, it is. I wrote a simple program to compare the behavior of insertion to the `std::vector<int>` and `std::list<int>`.
 
-<file cpp linked_list.cpp>
+{% highlight cpp %}
 /*
  * Compile with:
  * g++ -std=c++11 -O3 -o linked_list linked_list.cpp
@@ -104,7 +104,7 @@ int main(int argc, char *argv[]) {
         return 0;
 }
 
-</file>
+{% endhighlight %}
 
 The results of the mentioned program are bellow.
 

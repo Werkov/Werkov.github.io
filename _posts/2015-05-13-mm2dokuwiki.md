@@ -6,7 +6,7 @@ layout: post
 
 FreeMind mindmaps are trees and are stored simply as XML document. Furthermore, FreeMind's GUI allows export any map with XSLT transformation applied (or you can do it manually on particular file).
 
-<file xml mm2dokuwiki.xsl>
+{% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
 <stylesheet xmlns="http://www.w3.org/1999/XSL/Transform" version="1.0">
 	<output method="text" indent="no"/>
@@ -39,8 +39,8 @@ FreeMind mindmaps are trees and are stored simply as XML document. Furthermore, 
 		</if>
 	</template>
 </stylesheet>
-</file>
+{% endhighlight %}
 
 Usage
     xsltproc --param offset 1 mm2dokuwiki.xsl <some-map>.mm
-''offset'' is an optional parameter that allows reducing offset of nested lists.
+`offset` is an optional parameter that allows reducing offset of nested lists.

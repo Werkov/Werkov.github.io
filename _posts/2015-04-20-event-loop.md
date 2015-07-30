@@ -12,7 +12,7 @@ layout: post
 
 Common code for demonstration of possibilities of (non)blocking (a)synchronous behavior.
 
-<code c>
+{% highlight  c %}
 typedef struct {
     void (*cb)(int data);
     int data;
@@ -46,10 +46,10 @@ int main(int argc, char *argv[]) {
     
     return 0;
 }
-</code>
+{% endhighlight %}
 
 ==== Blocking and synchronous ====
-<code c>
+{% highlight  c %}
 void do() {
     int sum = 0;
     for (int i = 0; i < 10000000; ++i) {
@@ -57,10 +57,10 @@ void do() {
     }
     receiver.data = sum;
 }
-</code>
+{% endhighlight %}
 
 ==== Blocking and asynchronous ====
-<code c>
+{% highlight  c %}
 void setter(int data) {
     receiver.data = data;
 }
@@ -72,17 +72,17 @@ void do() {
     }
     pending.push({&setter, sum});
 }
-</code>
+{% endhighlight %}
 
 ==== Nonblocking and synchronous ====
-<code c>
+{% highlight  c %}
 void do() {
     receiver.data = 3;
 }
-</code>
+{% endhighlight %}
 
 ==== Nonblocking and asynchronous ====
-<code c>
+{% highlight  c %}
 void setter(int data) {
     receiver.data = data;
 }
@@ -91,7 +91,7 @@ void do() {
     int sum = 3;
     pending.push({&setter, sum});
 }
-</code>
+{% endhighlight %}
 
 ===== Insights =====
   * Blocking means current <del>thread</del>execution container cannot progress with the routine's code (considering the routine itself). Effectively it may be a long computing subroutine call or being unscheduled(e.g. blocking I/O).
@@ -100,7 +100,7 @@ void do() {
       * blocking, synchronous -> non-blocking, synchronous
         * e.g. use other thread for calculation, assign a [[http://en.wikipedia.org/wiki/Futures_and_promises|future]] to receiver
     * **other execution containers help you to get rid of blocking-ness**
-    * note that with preemptive scheduling you must synchronize access to shared data (''receiver'', ''queue'')
+    * note that with preemptive scheduling you must synchronize access to shared data (`receiver`, `queue`)
 
 ===== Asynchronous APIs =====
 
@@ -108,7 +108,7 @@ I think there are following asynchronous APIs:
 
 ==== Callbacks ====
 
-<code c>
+{% highlight  c %}
 void handler(void *result) {
     receiver.data = result;
 }
@@ -119,19 +119,19 @@ void handler(void *result) {
  * called back upon completion
  */
 do(&handler);
-</code>
+{% endhighlight %}
 
 ==== Blocking wait calls ====
-<code c>
+{% highlight  c %}
 /* Issue the request and obtain a handle to the request */
 req = do();
 
 /* Blocking call until operation finishes */
 receiver.data = waitfor(req);
-</code>
+{% endhighlight %}
 
 ==== Polling ====
-<code c>
+{% highlight  c %}
 /* Issue the request */
 do();
 
@@ -144,14 +144,14 @@ while (get_result() != NONE) {
 
 /* XXX */
 receiver.data = get_result();
-</code>
+{% endhighlight %}
 
-On the line marked with ''XXX'', we assume uninterrupted flow in order to consequently work with a valid result. This may be achieved by non-preemptive scheduling or using condition variables.
+On the line marked with `XXX`, we assume uninterrupted flow in order to consequently work with a valid result. This may be achieved by non-preemptive scheduling or using condition variables.
 
 ==== Message passing ====
 This approach requires some encapsulation of communication entities. FIXME it's just a different view on previous approaches.
 
-<code c>
+{% highlight  c %}
 /* This sends a message to the executive entity */
 do();
 
@@ -163,7 +163,7 @@ void on_message(void *msg) {
      */
     receiver.data = msg->payload;
 }
-</code>
+{% endhighlight %}
 
 ===== Events =====
   * Events form an intermediate link between caller and callee/sender and receiver.
@@ -171,15 +171,15 @@ void on_message(void *msg) {
       * Qt's direct and queue connections (also sent and posted events).
     * It may also allow runtime (dis)connection of senders/receivers.
   * Generally we want to avoid blocking in receivers/callees as it blocks whole program or event loop (in async scenario).
-    * Partial remedy is calling ''processEvents'' (or similar) from within the blocking call.
+    * Partial remedy is calling `processEvents` (or similar) from within the blocking call.
 
 ==== Events without loop (synchronous events) ====
 
-Calling ''raise_event'' is synchronous and depending on the actual listeners, it may also be blocking.
+Calling `raise_event` is synchronous and depending on the actual listeners, it may also be blocking.
 
 Note that if a raised event raises another instance of itself it may lead to stack overflow.
 
-<code c>
+{% highlight  c %}
 #include <stdio.h>
 #include <stdlib.h>
  
@@ -273,17 +273,17 @@ int main() {
  
         return 0;
 }
-</code>
+{% endhighlight %}
 
 ==== Events with loop (asynchronous events) ====
 
-Calling ''raise_event'' is asynchronous and typically non-blocking (for blocking call, one would perform the computation inside ''raise_event'' and store result to the queue, which would be later assigned during ''process_event'' call).
+Calling `raise_event` is asynchronous and typically non-blocking (for blocking call, one would perform the computation inside `raise_event` and store result to the queue, which would be later assigned during `process_event` call).
 
 This approach brings another level of versatility since each execution container can have it's own queue (access to which needs to be correctly synchronized).
 
 Shown only modification to the code above (the rest is same).
 
-<code c>
+{% highlight  c %}
 event_queue_t event_queue;
 
 /* Defer the actual execution by storing event arguments to a queue. */
@@ -318,7 +318,7 @@ int main() {
  
         return 0;
 }
-</code>
+{% endhighlight %}
 
 Or as Philip Roberts says it in his [[https://www.youtube.com/watch?v=8aGhZQkoFbQ|JsConf]] talk:
 
