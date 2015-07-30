@@ -2,6 +2,7 @@
 title: Allegedly a blog
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://koutny.org" # the base hostname & protocol for your site
+gitweb: "https://github.com/Werkov/Werkov.github.io/commits/master/"
 
 # Build settings
 markdown: kramdown
