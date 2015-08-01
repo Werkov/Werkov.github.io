@@ -1,8 +1,9 @@
 ---
 layout: post
+title: On Goto statement
+tags: programming
 ---
 
-====== GOTO musings ======
 
 This mostly applies for C programming where I came across following pattern.
 
@@ -36,9 +37,10 @@ int some_function(...) {
 }
 {% endhighlight %}
 
-Resources may be anything (memory, lock, file). I find it highly uncomfortable to write these exceptional aborts and prone to resource leaks.
+Resources may be anything (memory, lock, file). I find it highly uncomfortable
+to write these exceptional aborts and prone to resource leaks.
 
-This can be done much more nicely using goto
+This can be done much more nicely using `goto`
 {% highlight  c %}
     // first declare all resource (they may be acquired later)
     some_resource_t res_1;
@@ -72,13 +74,20 @@ finish:
 
 This is obviously much more readable and safe.
 
-===== Are there any advantages of the first version? =====
-  * You release only what is actually acquired (in the case that even release of unallocated resource has some costs (e.g. `free(NULL)`)).
-  * You have very strong reluctance to `goto`. This may apply if your code already uses some `goto`s.
+## Are there any advantages of the first version? 
+  * You release only what is actually acquired (in the case that even release
+    of unallocated resource has some costs (e.g. `free(NULL)`)).
+  * You have very strong reluctance to `goto`. This may apply if your code
+    already uses some `goto`s.
 
 
-===== Other solutions =====
+## Other solutions 
 
-  * GNU extensions of C language provide option of [[https://gcc.gnu.org/onlinedocs/gcc/Common-Variable-Attributes.html#index-g_t_0040code_007bcleanup_007d-variable-attribute-3333|variable attribute `cleanup`]] that allows you to associate a function that's called when released should be performed.
-  * Use [[https://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization|C++ or other languages]].
+  * GNU extensions of C language provide option of
+    [variable attribute
+    `cleanup`](https://gcc.gnu.org/onlinedocs/gcc/Common-Variable-Attributes.html#index-g_t_0040code_007bcleanup_007d-variable-attribute-3333)
+    that allows you to associate a function that's called when released should
+    be performed.
+  * Use
+    [C++ or other languages](https://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization).
 

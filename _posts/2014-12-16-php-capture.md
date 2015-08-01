@@ -1,8 +1,10 @@
 ---
 layout: post
+title: Captured variables in PHP anonymous functions
+tags: php
 ---
 
-{% highlight php %}
+{% highlight php startinline=true %}
 class Foo {
         public $id;
 
@@ -22,6 +24,7 @@ for ($i = 0; $i < $N; ++$i) {
 /* Prepare callbacks (with capture)  */
 $callbacks = array();
 foreach($a as $key => $object) {
+	// though $object is same variable, refers to different objects
         $callbacks[$key] = function() use($object) {
                 echo $object->id . "\n";
         };
@@ -47,3 +50,6 @@ foreach($callbacks as $callback) {
     7
     8
     9
+
+The moral is: it captures the object by reference, not the actual variable.
+

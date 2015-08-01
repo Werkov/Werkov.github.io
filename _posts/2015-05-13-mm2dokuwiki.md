@@ -1,10 +1,13 @@
 ---
 layout: post
+title: FreeMind mindmaps to Dokuwiki
+tags: xslt freemind
 ---
 
-====== FreeMind mindmaps to Dokuwiki ======
 
-FreeMind mindmaps are trees and are stored simply as XML document. Furthermore, FreeMind's GUI allows export any map with XSLT transformation applied (or you can do it manually on particular file).
+FreeMind mindmaps are trees and are stored simply as XML document. Furthermore,
+FreeMind's GUI allows export any map with XSLT transformation applied (or you
+can do it manually on particular file).
 
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
@@ -41,6 +44,8 @@ FreeMind mindmaps are trees and are stored simply as XML document. Furthermore, 
 </stylesheet>
 {% endhighlight %}
 
-Usage
+### Usage
+
     xsltproc --param offset 1 mm2dokuwiki.xsl <some-map>.mm
-`offset` is an optional parameter that allows reducing offset of nested lists.
+
+* `offset` is an optional parameter that allows reducing offset of nested lists.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spot the error
-tags: bughunt
+tags: bughunt c++
 ---
 
 This is very hideous bug (took me at least quarter an hour (including the

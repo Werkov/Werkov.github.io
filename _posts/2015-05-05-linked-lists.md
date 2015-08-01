@@ -1,5 +1,7 @@
 ---
 layout: post
+title: Linked list considered useless
+tags: experiment c++ programming
 ---
 
 ====== Linked list considered useless ======

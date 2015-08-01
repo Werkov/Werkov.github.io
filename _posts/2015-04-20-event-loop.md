@@ -1,16 +1,18 @@
 ---
 layout: post
+title: What is event loop?
+tags: programming
 ---
 
-====== What is event loop? ======
 
-===== Nonblocking and asynchronous =====
+## Define: nonblocking vs asynchronous 
   * blocking -- does the call occupy the stack
   * synchronous -- how messages are delivered
     * does the call deliver the message
     * alternatively does the call achieve the effect
 
-Common code for demonstration of possibilities of (non)blocking (a)synchronous behavior.
+Common code for demonstration of possibilities of (non)blocking (a)synchronous
+behavior, `do()` is the studied call.
 
 {% highlight  c %}
 typedef struct {
@@ -48,7 +50,7 @@ int main(int argc, char *argv[]) {
 }
 {% endhighlight %}
 
-==== Blocking and synchronous ====
+### Blocking and synchronous
 {% highlight  c %}
 void do() {
     int sum = 0;
@@ -59,7 +61,7 @@ void do() {
 }
 {% endhighlight %}
 
-==== Blocking and asynchronous ====
+### Blocking and asynchronous 
 {% highlight  c %}
 void setter(int data) {
     receiver.data = data;
@@ -74,14 +76,14 @@ void do() {
 }
 {% endhighlight %}
 
-==== Nonblocking and synchronous ====
+### Nonblocking and synchronous 
 {% highlight  c %}
 void do() {
     receiver.data = 3;
 }
 {% endhighlight %}
 
-==== Nonblocking and asynchronous ====
+### Nonblocking and asynchronous 
 {% highlight  c %}
 void setter(int data) {
     receiver.data = data;
@@ -93,20 +95,33 @@ void do() {
 }
 {% endhighlight %}
 
-===== Insights =====
-  * Blocking means current <del>thread</del>execution container cannot progress with the routine's code (considering the routine itself). Effectively it may be a long computing subroutine call or being unscheduled(e.g. blocking I/O).
-  * <del>Multithreading</del> Mutliple execution containers are quite orthogonal concept to blocking.
-    * You may use other execution containers to achieve non-blocking behavior even with time consuming subroutines.
+## Insights 
+  * Blocking means current <del>thread</del>execution container cannot progress
+    with the routine's code (considering the routine itself). Effectively it
+    may be a long computing subroutine call or being unscheduled(e.g. blocking
+    I/O).
+  * <del>Multithreading</del> Mutliple execution containers are quite
+    orthogonal concept to blocking.
+    * You may use other execution containers to achieve non-blocking behavior
+      even with time consuming subroutines.
       * blocking, synchronous -> non-blocking, synchronous
-        * e.g. use other thread for calculation, assign a [[http://en.wikipedia.org/wiki/Futures_and_promises|future]] to receiver
-    * **other execution containers help you to get rid of blocking-ness**
-    * note that with preemptive scheduling you must synchronize access to shared data (`receiver`, `queue`)
+	* e.g. use other thread for calculation, assign a
+	  [future](http://en.wikipedia.org/wiki/Futures_and_promises) to
+	  receiver
+    * **Other execution containers help you to get rid of blocking-ness.**
+    * Note that with preemptive scheduling you must synchronize access to
+      shared data (`receiver`, `queue`).
 
-===== Asynchronous APIs =====
+## Asynchronous APIs 
 
 I think there are following asynchronous APIs:
 
-==== Callbacks ====
+  * callbacks,
+  * blocking wait calls,
+  * polling
+  * and message passing?.
+
+### Callbacks 
 
 {% highlight  c %}
 void handler(void *result) {
@@ -121,7 +136,7 @@ void handler(void *result) {
 do(&handler);
 {% endhighlight %}
 
-==== Blocking wait calls ====
+### Blocking wait calls 
 {% highlight  c %}
 /* Issue the request and obtain a handle to the request */
 req = do();
@@ -130,7 +145,7 @@ req = do();
 receiver.data = waitfor(req);
 {% endhighlight %}
 
-==== Polling ====
+### Polling 
 {% highlight  c %}
 /* Issue the request */
 do();
@@ -148,7 +163,7 @@ receiver.data = get_result();
 
 On the line marked with `XXX`, we assume uninterrupted flow in order to consequently work with a valid result. This may be achieved by non-preemptive scheduling or using condition variables.
 
-==== Message passing ====
+### Message passing 
 This approach requires some encapsulation of communication entities. FIXME it's just a different view on previous approaches.
 
 {% highlight  c %}
@@ -165,7 +180,7 @@ void on_message(void *msg) {
 }
 {% endhighlight %}
 
-===== Events =====
+## Events 
   * Events form an intermediate link between caller and callee/sender and receiver.
     * It allows implementing both synchronous and asynchronous behavior.
       * Qt's direct and queue connections (also sent and posted events).
@@ -173,7 +188,7 @@ void on_message(void *msg) {
   * Generally we want to avoid blocking in receivers/callees as it blocks whole program or event loop (in async scenario).
     * Partial remedy is calling `processEvents` (or similar) from within the blocking call.
 
-==== Events without loop (synchronous events) ====
+### Events without loop (synchronous events) 
 
 Calling `raise_event` is synchronous and depending on the actual listeners, it may also be blocking.
 
@@ -275,7 +290,7 @@ int main() {
 }
 {% endhighlight %}
 
-==== Events with loop (asynchronous events) ====
+### Events with loop (asynchronous events) 
 
 Calling `raise_event` is asynchronous and typically non-blocking (for blocking call, one would perform the computation inside `raise_event` and store result to the queue, which would be later assigned during `process_event` call).
 
@@ -320,12 +335,18 @@ int main() {
 }
 {% endhighlight %}
 
-Or as Philip Roberts says it in his [[https://www.youtube.com/watch?v=8aGhZQkoFbQ|JsConf]] talk:
+Or as Philip Roberts says it in his
+[JsConf](https://www.youtube.com/watch?v=8aGhZQkoFbQ) talk:
 
-> Look at the stack and the task queue. If the stack is empty, take task from the task queue.
+> Look at the stack and the task queue. If the stack is empty, take task from
+> the task queue.
 
-===== References =====
-  * https://wiki.qt.io/Threads_Events_QObjects
-  * http://berb.github.io/diploma-thesis/original/
-  * http://www.kegel.com/c10k.html
-  * http://blog.nindalf.com/how-goroutines-work/
+## References 
+  * <https://wiki.qt.io/Threads_Events_QObjects>
+  * <http://berb.github.io/diploma-thesis/original/>
+  * <http://www.kegel.com/c10k.html>
+  * <http://blog.nindalf.com/how-goroutines-work/>
+
+
+
+
