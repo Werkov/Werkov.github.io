@@ -4,15 +4,22 @@ title: Linked list considered useless
 tags: experiment c++ programming
 ---
 
-====== Linked list considered useless ======
-I have found this [[https://youtu.be/YQs6IC-vgmo|talk by Bjarne Stroustrup]] about inefficiency of linked lists. The arguments he presents are:
+I have found this [talk by Bjarne Stroustrup](https://youtu.be/YQs6IC-vgmo)
+about inefficiency of linked lists. The arguments he presents are:
 
-  * Linked lists has asymptotic insertion time of $O(1)$, however [[http://en.wikipedia.org/wiki/Dynamic_array|dynamic arrays]] $O(n)$. He assumes that you rarely insert into a priori known location and thus you first need to perform $O(n)$ search in the linked list. Asymptotically linked lists are thus equivalent to dynamic arrays and in reality **they are inferior because of higher memory indirection**.
-  * Linked lists are less memory-efficient as they have to store a pair of pointers with each item.
+  * Linked lists has asymptotic insertion time of $O(1)$, however
+    [dynamic arrays](http://en.wikipedia.org/wiki/Dynamic_array) $O(n)$. He
+    assumes that you rarely insert into a priori known location and thus you
+    first need to perform $O(n)$ search in the linked list. Asymptotically
+    linked lists are thus equivalent to dynamic arrays and in reality **they
+    are inferior because of higher memory indirection**.
+  * Linked lists are less memory-efficient as they have to store a pair of
+    pointers with each item.
 
-===== Is it measurable? =====
+## Is it measurable? 
 
-Yes, it is. I wrote a simple program to compare the behavior of insertion to the `std::vector<int>` and `std::list<int>`.
+Yes, it is. I wrote a simple program to compare the behavior of insertion to
+the `std::vector<int>` and `std::list<int>`.
 
 {% highlight cpp %}
 /*
@@ -110,25 +117,39 @@ int main(int argc, char *argv[]) {
 
 The results of the mentioned program are bellow.
 
-{{ :var:generate.png?direct&300 |}}
-Appending to vector and to linked list seems to be comparable as the size of the container increases.
+![Generate](/resources/linked-list-generate.png)
 
-{{ :var:copy.png?direct&300 |}}
+Appending to vector and to linked list seems to be comparable as the size of
+the container increases.
+
+![Copy](/resources/linked-list-copy.png)
+
 Copying the whole structures seems to be ~6 times faster for vector.
 
-{{ :var:insertions.png?direct&300 |}}
-This is the case described by Stroustrup where vectors are faster even though inserted item has to shift all following items. Vector is consistently faster.
+![Insertions](/resources/linked-list-insertions.png)
 
-===== Morale of the story =====
+This is the case described by Stroustrup where vectors are faster even though
+inserted item has to shift all following items. Vector is consistently faster.
 
-[[http://blog.honzabrabec.cz/2014/07/06/the-power-of-algorithm/|Obviously]], I'm [[https://github.com/det/random_insert|not the]] only one who was influenced by this video. I was trying to list some arguments when/why linked lists are preferable.
+## Morale of the story 
 
-==== Linked lists apologia ====
+[Obviously](http://blog.honzabrabec.cz/2014/07/06/the-power-of-algorithm/), I'm
+[not the](https://github.com/det/random_insert) only one who was influenced by
+this video. I was trying to list some arguments when/why linked lists are
+preferable.
 
-  * Academic use when teaching students principles of dynamic data structures and pointers.
-  * Conservative memory footprint. This applies to the case when we are storing large structures where size of pointers is negligible to the size of the structures.
-  * Large structures where copying whole structure would be bothersome (as that's what dynamic arrays had to do from time to time).
-  * Structures that are accessed directly via pointer (e.g. structures of OS kernel), list operations are then desired $O(1)$.
-  * Concurrent structures. Not sure about this but linked lists are more suitable for RCU.
+### Linked lists apologia 
+
+  * Academic use when teaching students principles of dynamic data structures
+    and pointers.
+  * Conservative memory footprint. This applies to the case when we are storing
+    large structures where size of pointers is negligible to the size of the
+    structures.
+  * Large structures where copying whole structure would be bothersome (as
+    that's what dynamic arrays had to do from time to time).
+  * Structures that are accessed directly via pointer (e.g. structures of OS
+    kernel), list operations are then desired $O(1)$.
+  * Concurrent structures. Not sure about this but linked lists are more
+    suitable for RCU.
 
 
