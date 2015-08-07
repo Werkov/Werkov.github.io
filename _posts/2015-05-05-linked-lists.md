@@ -131,7 +131,7 @@ Copying the whole structures seems to be ~6 times faster for vector.
 This is the case described by Stroustrup where vectors are faster even though
 inserted item has to shift all following items. Vector is consistently faster.
 
-## Morale of the story 
+## Moral of the story 
 
 [Obviously](http://blog.honzabrabec.cz/2014/07/06/the-power-of-algorithm/), I'm
 [not the](https://github.com/det/random_insert) only one who was influenced by
