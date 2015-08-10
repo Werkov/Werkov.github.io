@@ -7,60 +7,65 @@ tags: travel
 ## Route planning
 
 The [basic][1] variant suggested by [semi-official website][2] measures
-according to mapy.cz almost 220 km.
+according to Mapy.cz almost 220 km.
 The constraints for the trip were: a) sunrise (~5:30), b) bus departure from
 Dresden at 18:30.
-Though it was theoretically viable, I wanted to enjoy the ride, for instance
-have a sufficient stop for a sufficient [lunch][3].  Thus I decided to take a
-[shortcut through hilly region of *České Středohoří*][4], with it's measured
-175 km it provided enough time reserve for various stops.
+Though it was theoretically viable to undertake the whole track, I wanted to
+enjoy the ride, for instance have a sufficient stop for a sufficient
+[lunch][3].
+Thus I decided to take a [shortcut through the hilly region of *České
+Středohoří*][4], with it's measured 175 km it provided enough time reserve for
+various stops.
 
 ## The journey
 
 I bought two bananas, some sweets, took ~2.75 liters of beverages and packed
-some clothes for consequent stay in Berlin and set out for the trip.
+some clothes for consequent stay in Berlin and early in the morning I set out
+for the trip.
 
 ### 8:59 Mělník (56 km)
 
 Due to organization issues I departed at 6:00 from Troja.
 There was already some light and the air was coldly refreshing.
-Interestingly the light mist above the river was filled with plethora of
-fishermen well about 10 km outreach of Prague.
-I climbed the Vltava valley in Klecánky and saw the direct sun first time that
-day.
-When I passed through Kralupy nad Vltavou, I stopped at a gas station to
+Interestingly, the light mist above the river was filled with plethora of
+fishermen continuing up to 10 km out of Prague.
+I climbed the Vltava valley in Klecánky and saw the sun directly sun first time
+that day.
+When I was passing through Kralupy nad Vltavou, I stopped at a gas station to
 inflate my tyres -- I did not regret, the road surface was much better during
 the rest of the path.
-Even though, I had already been cycling for more than hour, people were
+Even though I had already been cycling for more than an hour, people were only
 travelling to work and shops were still closed.
 With accordance to my schedule, I came to Mělník moments before 9:00 and had a
-short stop on the Labe bank with the view on the Mělník castle and vineyard.
+short stop on the Labe bank with the view of the Mělník castle and a vineyard
+hillside.
 
 ### 11:07 Liběšice (93 km)
 
-The scenery of the Labe river behind Mělník reminded me a maritime costs of
+The scenery of the Labe river behind Mělník reminded me a maritime coasts of
 Mediterranean countries -- flat land, ports and cargo boats as well as personal
 boats.
 On the route, I passed by quite an impressive buildings and chimneys of the
-Mělník (coal) powerplant -- I directly crossed the cooling water gutter.
+Mělník (coal) power plant -- I literally crossed the cooling water gutter.
 In Štetí I crossed the river and began the ascent to České Středohoří.
 The climbs weren't steep neither long (comparable to Vysočina) and fortunately
-were shaded by trees, so it was a welcomed change from the flat riverbank path.
+they were shaded by trees, so it was a welcomed change from the flat riverbank
+ride.
 
 In Liběšice, I made a navigational mistake and began returning to the river's
 course to Litoměřice.
-I noticed this after I climbed around one kilometer after
+I noticed this after I climbed around one kilometer behind
 Liběšice village.
-I had great time reserve in my schedule, so I moved planned lunch in Děčín from
-noon to one o'clock.
+I had great time reserve in my schedule, so I blithely moved planned lunch
+break in Děčín from noon to one o'clock.
 
 ### 12:53 Děčín (127 km)
 
-I cycled thourgh the landscape of the Sudetenland with small villages in the
-hills, in few places even the logged houses.
+I cycled though the landscape of the Sudetenland with small villages in the
+hills, in few places I even saw the logged houses.
 I must admit, the hills affected my mood more than my muscles.
 Due to lower average speed, I began to doubt my 13:00 arrival to Děčín.
-Everything changed when I passed the pointer *Malé Březno 9 km*.
+Everything brightened when I passed the pointer *Malé Březno 9 km*.
 From that place it was almost continuous descent up until the Labe river.
 I do not have real data but I estimate my average speed on that segment was
 well above 30 km/h.
@@ -72,18 +77,27 @@ I knew I'd reach a restaurant in a few kilometers (and before 13:00) but during
 this final kilometers I got my first crisis of the day.
 Most probably, I was dehydrated since my blood pressure was low, breathing
 shallow and I began to cramp.
-I swallowed a (fizzy) multivitamin pill and drank, which helped and I
-successfully reached [a restaurant in Děčín][3].
+I swallowed a (fizzy) multivitamin pill and drank some gulps, which helped me
+and I successfully reached [a restaurant in Děčín][3].
+
+Intermediate values:
+
+  * total distance: 127.0 km,
+  * cycling time: 5:48:54,
+  * average speed: 21.84 km/h,
+  * maximum speed: 64.65 km/h (descent to the Labe river from České Středohoří).
 
 ### 16:44 Pirna (176 km)
 
 I estimated that in the worst case I could leave Děčín at 15:00 and still catch
 the bus at 18:30 in Dresden.
-So when I left the restaurant at 14:00, I felt I had a solid reserve to enjoy
-the ongoing ride.
+So when I was leaving the restaurant at 14:00, I felt I had a solid reserve to
+enjoy the ongoing ride.
+
+The heat and thirst surprised me.
 Before the lunch I drank ~2 liters plus another 0.8 liters for the lunch.
 I think the afternoon temperatures approached 40 °C (in the direct sunlight
-certainly more than that) and I deliberately increased by water consumption to
+certainly more than that) and I deliberately increased my water consumption to
 avoid another crisis.
 
 From Děčín, I cycled on the left side of the Labe, crossed the borders in
@@ -93,10 +107,11 @@ I could see:
 * how low the current water level was due to the drought -- there were few
   meters wide bands of stones on both sides of the river and floating piers
   were heavily inclined to the water,
-* how hight the water levels were in 2002 and 2013 floods -- on the paths I was
-  cycling quite a high above the river, I would still have my head underwater.
+* how high the water levels were during floods in 2002 and 2013 -- on the paths
+  I was cycling quite a high above the river, I would still have my head
+  underwater.
 
-Being amazed by the river neighberhood and not understanding German labels
+Being amazed by the river neighborhood and not understanding German labels
 properly, I missed a ferry in Königsberg and continued on the right bank of the
 river.
 I realized it was not correct when the road began to climb and changed to a
@@ -105,42 +120,44 @@ With help of OpenCycleMaps, I discovered a narrow path right along the right
 side of the Elbe river.
 The surface was poor yet the path was wide enough not be burnt by adjacent
 nettles.
-I relieved when I reached Kurort Rathen with road again.
-Following kilemeters were quite exhausting as it was a really hot afternoon and
-I despite being thirsty warm water from my bottles wasn't very refreshing
+I relieved when I reached Kurort Rathen with paved road again.
+Following kilometers were quite exhausting as it was a really hot afternoon and
+despite being very thirsty warm water from my bottles wasn't very refreshing
 (though dehydration would be worse).
 Earlier (from readings of various maps) I thought Pirna was a suburb of Dresden
 -- well, it is not.
 I stopped there to buy a cold (and sweet) drink and start worrying whether I'd
-catch the bus in the more than 20 kilometers distant Dresden.
+catch the bus in more than 20 kilometers distant Dresden.
 
 ### 18:21 Dresden (202 km)
 
 I assured myself that despite being tired I was able to keep average speed
 above 20 km/h thus making it possible to catch the bus.
 On the other hand, I was aware that every single wrong turn can prolong my
-route and thus effectively slowing me down.
+route and thus effectively slow me down.
 Fortunately, the pointer signs were quite good on the final stage and I didn't
 get lost.
 There were other obstacles though.
-What got on I my nerves first was the cobblestones road when entering the
+What got on I my nerves first was the cobblestoned road while entering the
 Dresden.
-I would expected that the Landshauptstadt would have better surface on major
-cycling path than coarse cobblestones where you could ride 15 km/h maximum.
+I would expected that the Landshauptstadt would have better surface on the
+major cycling path than coarse cobblestones where you could ride 15 km/h
+maximum.
 Thanks to my prior knowledge of Dresden center, I expected the second problem
 -- the overcrowded center and somehow cycled through it up to the main bus
 station.
 
-I was affraid that I was late (since cyclists had to be present 15 minutes in
-advance), however, everything went fine then.
-I took all parts of my bicycle that could fall off and the driver put it on the
-rack on the bus' tail.
+I was afraid that I was late (since cyclists had to be present 15 minutes prior
+the departure), however, everything went fine then.
+I took off all parts of my bicycle that could fall off and the driver put it on
+the rack on the bus' tail.
 
 ### Conclusion
 
 In the bus, I had a little nausea (probably because of all that liquids that I
-drank) and I realized it maybe wasn't the brightest idea to cycle 200 km a day
-when the day is really hot one.
+drank) and couldn't properly finish a sneeze.
+I realized maybe it wasn't the cleverest idea to cycle 200 km a day when the
+day is a really hot one.
 
 The final numbers for the trip were:
 
@@ -152,6 +169,9 @@ The final numbers for the trip were:
   * food consumption: 1 banana, 3 sweet sticks, 1 soup, 1 goulash, few handfuls
     of raisins.
 
+*Update: Few days later, my feet got swollen.
+Not sure whether because of the heat wave or the previous performace, still it
+was the first time such a thing happened to me.*
 
 ## Berlin
 
