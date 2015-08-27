@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First day at work
+tags: musing
 ---
 
 * I fantasized about actually working the first day.
