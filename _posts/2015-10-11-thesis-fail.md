@@ -21,7 +21,7 @@ At least my future self can learn.
   * 2015 Apr--2015 May -- actual implementation, slower than expected
   * 2015 Jun -- studying and passing final exams, initiating thesis text,
     researching deeper and being disappointed by misdirection of my previous
-    research and its effect of design
+    research and its effect on design
   * 2015 Jul -- the month I could finish if I fought, but I failed instead (and
     this text should analyze and rationalize reasons for that)
 

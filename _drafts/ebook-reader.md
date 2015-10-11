@@ -15,6 +15,7 @@ TODO what would I read?
 * monitor what I read and consider it from reader HW perspective
 * beletry is for ebook reader, information books are for paper/PDF?
 * certainly, I read lots of HTML pages (e.g. HackerNews)
+* check whether books from my list are available in ebook format
 
 Various
 * unconditionally on what I would prefer, the mere desire makes me nervous as I
