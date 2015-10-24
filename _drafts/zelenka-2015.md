@@ -1,0 +1,100 @@
+---
+layout: post
+title: Ztraceni v Mnichově (movie)
+tags: culture
+---
+
+**Warning: Stop reading if you haven't seen the movie yet! Really, you should
+not read this before if you want to enjoy all the details of the movie!**
+
+## Plot
+*This is a linearized version of the plot. In the movie it was shown in
+different order to achieve greater effect.*
+
+A group of Czech filmmakers decided to shoot a movie with unclear idea what
+genre and topic it should contain.
+They know, they want to cooperate with French producers, they first idea is to
+shoot a "biography" based on confused memories of an old secretary/chamberlain
+of Eduard Daladier about background of Munich agreement.
+Yet before initiation of the shooting the French actor representing the
+chamberlain falls down with a serious condition,
+thus they substitute the character with a French speaking parrot.
+
+They schedule to shoot for two months, first in the Czech republic, the second
+in France.
+Soon after start, the actor portraying the main character (a journalist
+interviewing the parrot) develops allergy to feather and later is unable to
+continue shooting at all.
+They have to use various workarounds to create illusion the actual actor and
+the parrot are acting together.
+It seems that problems of the main actor could be caused by the Munich topic
+itself, so they start digging in to the topic and present an alternative
+interpretation of the Munich agreement and they'd like to somehow insert it
+into the originally comedy movie.
+
+The shooting is encountering many other troubles, which climaxes when the
+director realizes the French cooperation was just a trick of the producer to
+raise more money for the movie. 
+Unfortunately, he was not successful -- so they are acutely missing money.
+They tell the rest of the team they were deceived by the French party and some
+of the more pissed off member of the team demonstrate their hatred on the
+French parrot and his French teacher/manager.
+Finishing the movie is heavily jeopardized and only few team-members stays.
+
+What is more one of actors has a car accident and so the movie makers can
+communicate to public that they can't finish the movie because of his dead
+(although it was clear they won't finish it anyway).
+And that's the happy end!
+
+## Characters
+
+### In the movie
+  * Jacque the parrot
+  * the journalist
+  * French ambassador/deputy
+
+### In the crew
+  * director
+  * producer
+  * script author
+  * film manager
+  * main actor
+  * genius propman
+  * technicians
+  * other actors
+
+## Topics
+
+  * talking animal as unheeded witness of history
+    * IMO an original idea
+  * illusion in media and movies
+    * fake parrot's excrement
+    * fake parrot, actor doubles, very minimalistic stage set
+    * fake bunker from WW II
+  * fundraising via illusion
+    * aleged cooperation with France in order to get subsidy from EU
+  * ephemeral nature of news
+    * one day parrot, second day a celebrity being arrested
+  * Czech attitude to Munich agreement
+    * betrayed by French government
+  * alternative interpretations of Munich agreement
+    * ingenious diplomatic move of president Beneš
+    * based on a book of Jan Tesař
+  * tension between social classes/nationalities
+    * Czech vs French
+    * film management (director, producer, manager) vs film technicians/actors
+      (parrot's agent demands specific working conditions)
+    * government vs ordinary people (diplomacy, mobilisation)
+  * self-reference,, non-linearity, recursion
+    * Polski film, Trhák
+  * relation of a man and animal
+  * exaggeration of typical movie pathos
+    * original movie plot is summarized at the end of the real movie in few
+      storyboard pictures
+  * pseudo documentary
+    * we don't know who is it shooting actually
+    * sometimes interviews with staff
+  * mystification
+    * the poster says nothing, real director interviews indicates real
+      investigation of the Munich agreement topic
+    * the name of the movie is self-referential
