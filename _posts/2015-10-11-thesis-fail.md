@@ -24,6 +24,7 @@ At least my future self can learn.
     research and its effect on design
   * 2015 Jul -- the month I could finish if I fought, but I failed instead (and
     this text should analyze and rationalize reasons for that)
+  * See [Updates](#updates) section for details.
 
 
 The following text is divided into three parts:
@@ -156,3 +157,24 @@ situation).
   * Laziness.
   * Advice: Give a shit, be pragmatic, get a degree.
 
+## Updates
+
+### 2015-11-17
+
+  * Why I didn't start earlier?
+  * At least time pressure makes me work and I can keep it all in my head.
+  * (I realized, I did some high Stackoveflow score and Project Euler problems
+    in the spring.)
+
+### 2015-12-07
+
+  * I did make it (submitted, not defended yet).
+  * If my thesis were a piece of cloth, let's say a jacket it would look following.
+    You would see it's well designed, though instead of sleeves there would be
+    just post-it note saying "Sleeve here", the pockets would just holes and
+    you could see threads (fibrils :-p) sticking out of everywhere.
+    And the accompanying text would elaborate on the customer who ordered the
+    jacket, then would talk about *coats* that other people wear and in the end
+    there would be written why you created hole instead of pockets, however, it
+    wouldn't say why did you decide to tailor a jacket when the customer was
+    complaining about being cold.
