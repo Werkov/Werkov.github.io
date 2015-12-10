@@ -37,7 +37,7 @@ comparison would be still valid.)
    * Practically, it means limitation both of mental and physical bonds.
   4. Train/nurture your old skills.
    * Other programming languages, problem solving, mathematics, design and
-     architecture of systems (i.e. actively develop).
+     architecture of systems (i.e. actively develop), Coursera.
   5. Review your alternative paths (did become the alternative better after
      some event/time?).
    * Alternative 1: Go study PhD in Prague.
