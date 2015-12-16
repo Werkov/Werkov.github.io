@@ -6,16 +6,16 @@ tags: musing personal
 
 ## Motivation
 
-When I was about to start working fulltime, I knew it'd be great change in my
-life and it'd be useful to dump my thought before this change, so that I'd have
-a reference for comparison with my newly discovered ideas, thought and
+When I was about to start working fulltime, I knew it'd be a great change in my
+life and it'd be useful to dump my thoughts before they change, so that I'd have
+a reference for comparison with my newly discovered ideas, thoughts and
 opinions.
 
-I was in [culture shock][1], fortunately, it was not the first time -- it
+I was in a [culture shock][1], fortunately, it was not the first time -- it
 already happened when I started studying at the university and in some scale
 also when I went from the primary school to the grammar school.
-So I wasn't that shocked in the end, I just wondered how much things can be
-different.
+So I wasn't that shocked in the end, I just wondered how much different things
+can be.
 
 Expecting the changes to come, I summarized my ideas into few points that I
 call The Declaration of Progression. (I write this post few months after the
@@ -50,12 +50,12 @@ comparison would be still valid.)
 ## Further notes on the culture shock
 
   * Maybe having a family and children is the only thing you can do after
-    graduation not get bored.
+    graduation not to get bored.
     * OTOH, it's a shallow achievement compared with science discoveries,
       bootstraping a successfull project (whatever it is), being a dictator
       etc.
-  * Expect to [have less and less free-/open-minded friends][2] (like you) since they settle and
-    you have to adapt as well.
+  * Expect to [have less and less free-/open-minded friends][2] (like you)
+    since they settle and you have to adapt as well.
 
 [2]: http://www.theatlantic.com/health/archive/2015/10/how-friendships-change-over-time-in-adulthood/411466/
 

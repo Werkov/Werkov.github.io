@@ -16,6 +16,9 @@ TODO what would I read?
 * beletry is for ebook reader, information books are for paper/PDF?
 * certainly, I read lots of HTML pages (e.g. HackerNews)
 * check whether books from my list are available in ebook format
+* PDF with Terms and Conditions
+* reading in bed (w/out laptop)
+* papers (PDF with narrow layout)
 
 Various
 * unconditionally on what I would prefer, the mere desire makes me nervous as I

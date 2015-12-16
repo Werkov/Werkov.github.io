@@ -169,12 +169,13 @@ situation).
 ### 2015-12-07
 
   * I did make it (submitted, not defended yet).
-  * If my thesis were a piece of cloth, let's say a jacket it would look following.
+  * If my thesis were a piece of cloth, let's say a jacket, it would look like
+    following.
     You would see it's well designed, though instead of sleeves there would be
-    just post-it note saying "Sleeve here", the pockets would just holes and
-    you could see threads (fibrils :-p) sticking out of everywhere.
+    just a post-it note saying "Sleeve here", the pockets would be just holes
+    and you could see threads (fibrils :-p) sticking out of everywhere.
     And the accompanying text would elaborate on the customer who ordered the
-    jacket, then would talk about *coats* that other people wear and in the end
-    there would be written why you created hole instead of pockets, however, it
-    wouldn't say why did you decide to tailor a jacket when the customer was
-    complaining about being cold.
+    jacket, then would talk about *coats* that other people wear and in the end,
+    there would be written why you created the hole instead of pockets,
+    however, it wouldn't say why did you decide to tailor a jacket when the
+    customer was complaining about being cold.
