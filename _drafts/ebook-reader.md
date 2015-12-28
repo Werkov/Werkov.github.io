@@ -62,6 +62,15 @@ Various
 
 ?? DRM and Amazon market vs any other reader?
 
+## Reality
+
+  * antialiasing of the font
+  * contrast (with backlight on under outer lightning)
+  * no custom styles in the browser (partially substituted with Article mode)
+  * discrete PDF zooming (solved by landscape mode)
+  * good feature of highligting and notes
+  * offline reading off webpages (storing them -- try to save HTML files)
+
 [1]: http://www.root.cz/clanky/recenze-ctecky-kobo-glo-neznamy-ma-co-nabidnout/
 [2]: http://calibre-ebook.com/
 [3]: http://wiki.mobileread.com/wiki/Kindle_Hacks_Information#Hacking_the_Device
