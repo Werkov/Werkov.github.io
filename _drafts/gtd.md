@@ -22,6 +22,9 @@ title: GTD...
   * need Ruby setup on own server or desktop compture
   * doesn't work offline
   * no support for multiple devices, poor synchronization
+  * no propagation of deadlines via dependencies
+  * no mass operations on actions
+  * cumbersome conversion of action into project (i.e. only manually)
 
 ## Ideas
 
