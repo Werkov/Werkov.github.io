@@ -51,7 +51,8 @@ Little note about the hotplug script.
 It is triggered for each in put device (which should be at least a mouse and a
 keyboard), see [what arguments][hot] it gets.
 Fortunately, my variant is idempotent and so I don't handle any args.
-Further, I think despite [this fix][fix], the script is invoked for mouse only
+Further, the script is invoked for mouse only (to be more precise it's
+[implemented][fix] for adding/removing keyboards only, not present)
 and there is a race with keyboard layout configuration by *g-s-d* itself.
 That's why the `sleep 5` is used.
 
