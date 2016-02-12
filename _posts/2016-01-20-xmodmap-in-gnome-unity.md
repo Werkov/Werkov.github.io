@@ -4,8 +4,8 @@ title: Using xmodmap within GNOME (and Unity)
 tags: desktop gnome
 ---
 
-TL;DR `~/.Xmodmap` doesn't work within GNOME/Unity. You have to apply it via
-*hotplug command* of *gnome-settings-daemon*.
+TL;DR `~/.Xmodmap` is obsolete and doesn't work within GNOME/Unity. You have to
+apply it via *hotplug command* of *gnome-settings-daemon*.
 
 ---
 
