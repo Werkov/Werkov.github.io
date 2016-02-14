@@ -35,4 +35,4 @@ shred -u /tmp/user.plainkey
 # Complete :-)
 {% endhighlight %}
 
-[arch]: todo
+[arch]: https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_a_non-root_file_system#Resizing_the_loopback_filesystem

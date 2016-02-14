@@ -179,3 +179,7 @@ situation).
     there would be written why you created the hole instead of pockets,
     however, it wouldn't say why did you decide to tailor a jacket when the
     customer was complaining about being cold.
+
+### 2016-02-01
+  * I thought my weakness is over. Nope, striking again during defense
+    preparation.
