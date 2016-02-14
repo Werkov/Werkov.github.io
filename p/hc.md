@@ -56,10 +56,12 @@ Peaks of selected mountain ranges (this would be a [challenge][1]).
 
 ## Jizerské hory
 
-### Ještěd (1012 m)
+### <del>Ještěd (1012 m)</del>
   * 2005?, by bike
   * 2011, by bike
 
+### Smrk (1124 m)
+  * _missing_
 
 ## Králický Sněžník
 
