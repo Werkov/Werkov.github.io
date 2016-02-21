@@ -16,8 +16,8 @@ me.
 I didn't do the research across desktop environments and graphical servers,
 however, it seems to work on KDE in openSUSE.
 On the other hand, Unity (Ubuntu) and GNOME (openSUSE) doesn't apply settings
-from this file and I had to after each reboot manually execute `xmodmap
-~/.Xmodmap`.
+from this file and I had to execute `xmodmap ~/.Xmodmap` manually after each
+reboot.
 What is worse it did even happen after suspend and wake up, which is annoying.
 
 The cause for this is the *gnome-settings-daemon* and its keyboard plugin that
