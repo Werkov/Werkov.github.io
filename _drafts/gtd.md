@@ -39,3 +39,9 @@ title: GTD...
     thing you want)
   * trusted system
   * annual reviews and plans/goals
+  * SG features
+    * putting task to sleep
+    * waiting for outer action, automatic reminder
+  * GUI
+    * should be easy to control by keyboard and typing (TUI)
+    * similar to mutt's e-mail processing
