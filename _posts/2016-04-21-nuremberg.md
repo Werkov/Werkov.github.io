@@ -7,7 +7,7 @@ tags: travel, Germany
 As part of my job, I spent two weeks working in Nürnberg (Nuremberg in English,
 I prefer local names when possible).
 First, read [article on Wikipedia](https://en.wikipedia.org/wiki/Nuremberg) to
-get an idea how important Nuremberg was historically.
+get an idea how important Nürnberg was historically.
 I had left Prague in winter and when I returned there was spring already -- this
 year I experienced the start of spring in Nürnberg.
 Below are some random, slightly categorized notes.
