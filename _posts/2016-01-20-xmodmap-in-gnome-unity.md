@@ -4,8 +4,9 @@ title: Using xmodmap within GNOME (and Unity)
 tags: desktop gnome
 ---
 
-TL;DR `~/.Xmodmap` is obsolete and doesn't work within GNOME/Unity. You have to
-apply it via *hotplug command* of *gnome-settings-daemon*.
+TL;DR `~/.Xmodmap` is obsolete and doesn't work within GNOME/Unity. <del>You
+have to apply it via *hotplug command* of *gnome-settings-daemon*.</del> Work
+it around with `.desktop` file placed in autostart directory.
 
 ---
 
@@ -56,7 +57,35 @@ Further, the script is invoked for mouse only (to be more precise it's
 and there is a race with keyboard layout configuration by *g-s-d* itself.
 That's why the `sleep 5` is used.
 
+## Update since gnome-settings-daemon 3.19.5
+
+Newer versions of gnome-settings-daemon [don't support hotplug commands][rm]
+anymore (since [c50ceb880][c50], released in 3.19.5).
+
+Simple workaround with systemd user service doesn't work as it can't properly
+connect to X server. (`xmodmap: unable to open display ':0'`).
+
+Ugly yet easy solution is creation of `~/.config/autostart/xmodmap.desktop`
+file wrapping the xmodmap script
+
+{% highlight ini %}
+[Desktop Entry]
+Encoding=UTF-8
+Name=xmodmap modify keyboard layout
+Exec=/etc/hotplug-command.sh 
+Type=Application
+Categories=System;
+StartupNotify=true
+{% endhighlight %}
+
+Such an "application" will be started on GNOME session startup. Alas it fails
+to modify keyboard layout when you switch between users or resume from suspend
+(AFAIK *gnome-settings-daemon* will overwrite your modifications with keyboard
+layout).
+
 [gh]: https://github.com/Werkov/dotfiles/blob/master/.Xmodmap
 [nx]: https://bugzilla.gnome.org/show_bug.cgi?id=674874
 [hot]: https://github.com/GNOME/gnome-settings-daemon/blob/9287ef9ac5b119abdcbbabd920c19f353e577f90/plugins/common/input-device-example.sh
 [fix]: https://bugzilla.gnome.org/show_bug.cgi?id=674221
+[rm]: https://bugzilla.gnome.org/show_bug.cgi?id=759599
+[c50]: https://github.com/GNOME/gnome-settings-daemon/commit/c50ceb880e928506d987747f9e554079ad3d9826
