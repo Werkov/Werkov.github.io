@@ -1,0 +1,58 @@
+- Bezděz
+	- overcrowded
+	- pushing bicycles
+	- wiki
+		- Mělník-Žitava trade way
+		- built by PO II
+		- Germans captured Václav II. there
+		- after 1621 -- abandoned
+		- Albrecht intended to build a monastery
+- swimming in XXX
+- Doksy -- nice square and Macha's way
+- Mimoň
+	- Ralsko volcano
+- Jablonné v Podještědí
+	- many cyclists, inproportionate basilica
+	- not so under Ještěd
+- straight Lužice/Jizery road to Petrovice
+	- Lužické mnts. first colonized in 12th century
+	- ancient findings too but not a civilization/sites
+- sleeping near borders
+	- hiking hut
+	- 1000 miles race TODO
+	- fire not possible
+- Hrádek nad Nisou
+	- map on square and some cycling tourists
+- coal? mine
+	- first time in Poland
+	- very large
+- Bogatynia -- missed
+	- along the river back to the CR
+- cemetery somewhere in the fields
+	- no chapel
+	- many Germans -- pre war deaths
+	- and Czechs born after war
+- Frýdlant
+	- very well groomed town, connected with Albrecht von Waldstein
+	- also the castle
+	- lunch at restaurant, waiting for rain over a bit
+- Nové Město pod Smrkem
+	- great contrast with Frýdlant
+		- similar square but ugly
+		- combination of old family houses and prefab concrete houses
+	- gambling seems a problem of the region, poor population
+	- a big factory, perhaps town was built during socialism era for industry
+- Smrk
+	- pushing again
+	- Franz Fritsch, 1892, janitor
+	- 2009, Rudolf Jedlička, mayor
+	- forest worker car and car-cranes built it on the top
+	- zoo prague
+	- very windy, great view
+	- maybe we've seen something in Krkonoše TODO
+	- beech tree
+- Tanvald
+	- not seem much, only railway station
+	- track leads to Harrachov, i.e. along mountain ranges
+- Pertoltice
+	- common name
