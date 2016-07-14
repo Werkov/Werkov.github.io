@@ -61,7 +61,7 @@ Peaks of selected mountain ranges (this would be a [challenge][1]).
   * 2011, by bike
 
 ### Smrk (1124 m)
-  * _missing_
+  * [2016, by bike]({% post_url 2016-07-06-deutsch-boehmen %})
 
 ## Králický Sněžník
 
