@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nürnberger spring
-tags: travel, Germany
+tags: travel Germany
 ---
 
 As part of my job, I spent two weeks working in Nürnberg (Nuremberg in English,

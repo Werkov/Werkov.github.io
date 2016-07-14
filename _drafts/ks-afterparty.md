@@ -4,9 +4,8 @@ layout: post
 tags: PGP, security
 ---
 
-Consequence of my previous [visit of Bruxelles]({% post_url
-2016-01-31-fosdem.md %}) is actual signing and publishing the signature from
-the key signing party.
+Consequence of my previous [visit of Bruxelles]({% post_url 2016-01-31-fosdem %})
+is actual signing and publishing the signature from the key signing party.
 
 ## Signing
 

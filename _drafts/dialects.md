@@ -1,5 +1,8 @@
 - chtět
-- -ijou, -ej
+- 3rd person, plural
+  - -ijou: Vysočina, Znojmo
+  - -ej: Praha
+  - -íja: Slovácko
 - chcu
 - soft 'i'
 - chvilu
