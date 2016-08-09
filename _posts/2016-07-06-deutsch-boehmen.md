@@ -4,8 +4,8 @@ title: Deutsch Böhmen
 tags: travel Poland
 ---
 
-Few random notes from a calibration trip to the region of north-eastern
-Bohemia.
+Few random notes from a calibration trip to the region of
+north<del>-east</del>ern Bohemia.
 The region is typical with former volcanoes, German history (thus the post
 title) and recreational popularity.
 
