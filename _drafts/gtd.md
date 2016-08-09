@@ -1,6 +1,6 @@
 ---
-layout:post
-title: GTD...
+layout: post
+title: GTD
 ---
 
 ## Core principles
