@@ -1,7 +1,7 @@
 ---
 title: Key signing afterparty
 layout: post
-tags: PGP, security
+tags: PGP security
 ---
 
 Consequence of my previous [visit of Bruxelles]({% post_url 2016-01-31-fosdem %})
