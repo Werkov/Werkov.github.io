@@ -1,0 +1,12 @@
+- very strong headwind
+- exhausted by 60th km (despite having lunch in a pub)
+- main climb started around 80th km
+  - I could ride, but I couldn't catch even with older cyclists
+- Tok couldn't be seen from distance and at top was no outlook, peak was quite flat
+- I expected deserted forests of military area, however, there were more people
+  than I'd met cyclists on previous track between villages
+- harder and slower than expected
+- bunkers at Houpák hill with great view
+- concrete ground in the middle of forests (with some connected ways)
+  - wondering what was the purpose
+- there were warning sings around all paths (Oblast nebyla pyrotechnicky asanována)
