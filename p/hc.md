@@ -19,7 +19,7 @@ Peaks of selected mountain ranges (this would be a [challenge][1]).
 ## Brdy
 
 ### Tok (865 m)
-  * _missing_
+  * [2016, by bike]({% post_url 2016-09-28-tok %})
 
 ## České středohoří
 
