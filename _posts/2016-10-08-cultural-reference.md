@@ -8,17 +8,17 @@ population $p$, penetration $v$ (consider view count of a YouTube video), friend
 
 Define:
 $$
-	P(seen video) = v/p
-	P(your friend) = f/p
+	P(\t{seen video}) = v/p\\
+	P(\t{your friend}) = f/p
 $$
 
 You are interested if you can use a cultural reference among your friends,
 consider this value
 $$
-	P(seen video|your friend)
+	P(\t{seen video}|\t{your friend})
 $$
 
 Assume independence (obviously wrong, however, we have nothing better in the zeroth approach):
 $$
-	P(seen video|your friend) = v/p
+	P(\t{seen video}|\t{your friend}) = v/p
 $$
