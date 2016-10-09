@@ -7,10 +7,9 @@ tags: book PGP legislation
 ## About the book
 
 The book was written by Jiří Peterka who is well known to all students of MFF
-UK (he gives lectures on networking) and also an independent networking
-consultant (from standards and legislation POV).
+UK for his lectures on networking. 
 Its nice that the book is published under permissive license and is available
-also in ebook formats (not PDF).
+also in ebook formats (i.e. not PDF).
 
 ## Content
 
@@ -26,12 +25,12 @@ signature is different from a classical stamp).
 ### 3 Ověřování digitálních podpisů
 
 "Algorithm" how signatures are verified in the PKI (public key infrastructure)
-and certificates lifespan.
+and certificate lifespan.
 
 
 ### 4 Elektronický podpis z pohledu práva
 
-The chapter why I was reading the book.
+The chapter that drew my attention to this book.
 The legislation is somewhat vague but consistent (luckily).
 In short -- to communicate with state/government you need a certificate issued
 by someone whom they trust.
@@ -43,7 +42,7 @@ Skimmed. Manual how to use certificate stores and related utilities.
 ### 6 PDF dokumenty a elektronický podpis
 
 Skimmed. I was shocked by utilities that besides digitally signing a PDF also
-add a visual stamp in the document. What?!
+add a visual stamp into the document. What?!
 
 ### 7 Elektronický podpis v MS Office
 
@@ -86,15 +85,15 @@ Skipped.
   - digital continuity
     - how to oversome limited lifespan of digital signatures
     - periodical re-signing of the documents
-    - trusted entity (TODO notář)
+    - trusted entity (notary)
   - what is identity
     - person can't be identified by certificate itself (it'd be easy to steal
-      the identity, thus the private key)
+      the identity, thus the separate private key)
     - problem is matching certificates and real persons since *name + surname*
       isn't universally unique
       - you can't put birth identifier (*rodné číslo*) into the public
 	certificates in the Czech Republic (OTOH Slovakian certificates
-	contains such a unique identifier)
+	contain such a unique identifier)
   - ISO norms 
     - those paid overengineered standards (e.g. for signing PDFs, XMLs (office
       documents) etc.)
