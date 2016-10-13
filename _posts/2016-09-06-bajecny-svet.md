@@ -4,6 +4,8 @@ title: Báječný svět digitálního podpisu (book)
 tags: book PGP legislation
 ---
 
+Reading period: ~week in Sep 2016.
+
 ## About the book
 
 The book was written by Jiří Peterka who is well known to all students of MFF
