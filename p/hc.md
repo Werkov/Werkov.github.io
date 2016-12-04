@@ -84,7 +84,7 @@ Peaks of selected mountain ranges (this would be a [challenge][1]).
 ## Lužické hory
 
 ### Luž (793 m)
-  * _missing_
+  * Dec 2016, on foot, bundled with Jedlová (774 m)
 
 
 ## Moravskoslezské Beskydy
