@@ -22,3 +22,5 @@ Assume independence (obviously wrong, however, we have nothing better in the zer
 $$
 	P(\t{seen video}|\t{your friend}) = v/p
 $$
+
+Oh, [XKCD already got it quantified](https://xkcd.com/1053/) too.
