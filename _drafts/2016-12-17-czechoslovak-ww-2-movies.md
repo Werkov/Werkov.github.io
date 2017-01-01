@@ -8,7 +8,7 @@ The list of movies related to Czechoslovakia before and after the World War 2.
 *Spoiler alert* Following paragraphs describe plots of the movies, knowledge
 of which may deteriorate your viewer's experience.
 
-## Uloupená hranice (Robbery of borderline TODO)
+## Uloupená hranice ("Robbery of borderline", 1947)
 
 ### Time
 September 1938
@@ -29,7 +29,7 @@ One of the radicalized Germans is son of Czech mother and German father.
   * forrest guard/foreman (Czech)
 
 
-## Němá barikáda (Numb Barricade TODO)
+## Němá barikáda (Silent Barricade, 1949)
 
 ### Time
 May 1945
@@ -53,7 +53,7 @@ Troja bridge where barricades were built and defended against German army.
   * Czech leader and his son
   * veteran of Spanish civil war
 
-## Nástup (Call up TODO)
+## Nástup (The Call up, 1952)
 
 ### Time
 May 1945--Autumn 1945
@@ -92,18 +92,18 @@ to the worker's (council?).
     * Absurdly amazed by the Red Army and communist ideology.
   * evil prey hunter
     * He greeds power and property, is not member of the Party.
-  * Hans Flach (TODO)
+  * Hans Palme
     * German antifascist and communist, concentration camp refugee
-  * post officer Elsa
+  * post officer Elsa Mager
     * Archetype of determined brave German woman (her determination would enough
       even for man).
   * Czech bureaucrat
     * A man in his fifties gave up his comfortable life in the city of Prague
-      in order to use his skill to build the Czech border region (TODO
-      pohraničí). Eventually, he fancies entering the Party.
+      in order to use his skill to (re)build the Czech borderlands.
+      Eventually, he fancies entering the Party.
 
 
-## Ves v pohraničí (Village in border region, TODO)
+## Ves v pohraničí (Border Village, 1948)
 
 ### Time
 
@@ -120,9 +120,9 @@ to settle a village emptied after expulsion of Germans.
 There is too much crops in the fields and too little workforce (many households
 are still empty). So they have to organize themselves and Honza is elected
 their "leader".
-Meanwhile an unidentified dead man is found in local saw yard (TODO) and Czech
-police starts investigation and Honza's son is the main suspect, which weakens
-Honza's leader authority.
+Meanwhile an unidentified dead man is found in the local sawmill, Czech police
+starts investigation and Honza's son is the main suspect, which weakens Honza's
+leader authority.
 Everything is resolved when saw yard manager is identified an SS-Mann through
 his tattoo and he is also found guilty of the murder (which is no surprise to
 audience since the murder was in the introductory scene).
@@ -137,14 +137,15 @@ be the good one (they are not important at all in the movie).
     * Enthusiastic builder who decided to leave his vegetable shop in Prague
       and grasp the opportunity.
   * Honza's wife
-    * She's not very fond (TODO) of her husband's decision, feels uprooted but serves well.
+    * She's not very impressed with her husband's decision, feels uprooted but
+      serves well.
   * Honza's father
     * Old man, not so important for him where he lives; he helps to discover a
-      band of smugglers (associated with saw yard TODO manager).
+      band of smugglers (associated with sawmill manager).
   * Honza's son
     * Future of the land. Not sure if he had a girlfriend or was there just to
       be victimized.
-  * two tramps (TODO)
+  * two hikers/tramps
     * The start working on the fields but soon realize manual work is not for
       them and flee away.
 
