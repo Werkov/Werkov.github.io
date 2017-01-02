@@ -8,3 +8,4 @@ idea: microkernel (memory, scheduler)
 
 JIT compiler (BPF)
 debugger (unwinder)
+FD API to everything (signalfd, timerfd, ...)
