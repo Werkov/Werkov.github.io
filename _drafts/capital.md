@@ -4,24 +4,94 @@ title: Das Kapital
 tags: book economy economics Marx
 ---
 
+Reading period: Feb 2016--Dec 2016
 
-## Brainstorm notes
-- value
-  - utility
-  - exchange
-  - labour
-- child labour
-- accumulated capital needs to grow (inflation) -- investment in labour
-- value vs surplus-value
-- competition yields progress
-- antisemitism
-- frequent quotations
-  - other economists: Stuart Mill, James Mill, Adam Smith, Locke
-    - Political Economy
-  - social reports
-  - statistics
-  - even bible
+Despite the period I spent with this book (often I felt it's preventing me from
+reading a better book), I did not finish it (as per ebook reader estimator, I
+spent net ~40 hours reading it).
 
+The report about this book consists of: summary of presented ideas, notes on
+form and language and then semi-annotated excerpts from the English
+publication.
+
+## Summary
+
+### Three kinds of value 
+  - use value
+    - based on utility for individual holders
+      - induced idea: be it price on market of availability and wants of an individual
+  - the value
+    - based on labour spent producing
+    - he doesn't distinguish labour quality, so it's basically time
+      - assumption of all people (labourers) being equal
+      - and exchangibility of commodities
+    - conserved during circulation
+  - price
+    - based exchange rates
+    - relative to chosen commodity (e.g. gold)
+      - generalized as money
+    - imaginary price
+      - object without value (conscience, hnonr)
+
+### Labour
+  - source of value
+  - makes commodities commensurable (cf money)
+  - labour power -- commodity whose use-value is creation of value
+    - its value is given by food, shelter, reproduction, education etc. of the
+      labourer
+    - key idea: value(labour power) < value(produced by labour power)
+  - various quality of it (discrepancy with definition of value)
+  - attributed only to humans
+    - i.e. machines don't create value (by definition)
+      - is it the operator?
+  - later he implies this feature also on soil
+
+### Money
+  - circulating money proportional to trading rate
+  - sell and purchase separator
+  - credit based money not analyzed
+  - prerequisite for capital
+
+### Capital
+  - appears in form of money after a successful exchange (i.e. both parties
+    profit) and when money is goal (i.e. not spending money but advancing them)
+  - surplus-value
+    - one of of labour power produces more value than is it's value
+    - material + labour power = product
+    - value(material) + value(labour power) < value(product)
+    - rate of surplus-value = surplus-value / value(product)
+  - money retrieved by selling surplus-value
+  - not well argued desire of capitalist to always increase and hoard capital
+    - It would make sense if Marx admitted inflation.
+
+### Productiveness and efficiency
+  - general change of value is equal to change of productivity
+  - the more efficient production, the higher rate of surplus-value
+    - until it is the competitive advantage
+    - exploiting labour power (child labor)
+    - also cooperation
+    - importance of tools and machinery
+
+### Miscellanea
+  - referring to science
+    - chemistry (materialism)
+    - evolution principle
+  - many concepts and phenomena still apply today
+  - not well defined what commodity is
+  - criticizing church (Anglicans)
+
+## Form
+
+  - antisemitism
+  - opposition: moneybags, bourgeois brain
+  - frequent quotations
+    - other economists: Stuart Mill, James Mill, Adam Smith, Locke
+      - Political Economy
+    - social reports
+    - statistics
+    - even bible
+  - no gender neutral pronouns, mostly male
+    - one quotation treats capital as femininum (TODO)
 
 ## Contents
 
@@ -83,10 +153,12 @@ tags: book economy economics Marx
 - IOW, without exchange, labour couldn't be stripped of quality.
 
 > the product must be not only useful, but useful for others,
+
 > [Robinson Crusoe ...] commences, like a true-born Briton, to keep a set of
 > books.
 
-> The tithe to be rendered to the priest is more matter of fact than his blessing.
+> The tithe to be rendered to the priest is more matter of fact than his
+> blessing.
 
 - Church despect.
 
@@ -105,7 +177,7 @@ tags: book economy economics Marx
 > had the mark, or the name of the beast, or the number of his name.”
 > Revelations, 13:17.] (Apocalypse.)
 
-- Even biblical quote (TODO remove?)
+- Even biblical quote 
 
 #### Chapter 2: Exchange
 
@@ -130,7 +202,6 @@ tags: book economy economics Marx
 > is imaginary, like certain quantities in mathematics.
 
 - Does he really mean imaginary numbers? Those are quite orthogonal to reals.
-
 
 > the money in reality represents the quantity or sum of gold ideally expressed
 > beforehand by the sum of the prices of the commodities.
@@ -274,17 +345,19 @@ tags: book economy economics Marx
 > the owner of the means of production and subsistence meets in the market with
 > the free labourer selling his labour-power.
 
-> In contradistinction therefore to the case of other commodities, there enters into the determination of the value of labour-power a historical and moral element.
+> In contradistinction therefore to the case of other commodities, there enters
+> into the determination of the value of labour-power a historical and moral
+> element.
 
 > If his capacity for labour remains unsold, the labourer derives no benefit
 > from it,
-- wait, the labourer can cretate use-values for themselves, cant they?
+- Wait, the labourer can cretate use-values for themselves, can't they?
 
 > Its [labour power] value, like that of every other commodity, is already
 > fixed before it goes into circulation, since a definite quantity of social
 > labour has been spent upon it;
 
-- by that rationale all wages should be equal in the same cultural and social
+- By that rationale all wages should be equal in the same cultural and social
   context
 
 
@@ -306,7 +379,8 @@ tags: book economy economics Marx
 
 > A machine which does not serve the purposes of labour, is useless.
 
-- What a strong statement without any introductory context.
+- What a strong statement without any introductory context (probably in terms
+  capitalists use-value).
 
 > The product, therefore, of individual consumption, is the consumer himself;
 > the result of productive consumption, is a product distinct from the
@@ -330,7 +404,7 @@ tags: book economy economics Marx
 > power being higher-value, its consumption is labour of a higher class, labour
 > that creates in equal times proportionally higher values than unskilled
 > labour does.
-- So no vaverage social labour that would determine value , labour-based value
+- So no average social labour that would determine value, labour-based value
   is ill-defined.
 
 
@@ -478,10 +552,6 @@ in Austria in 1860, for children between 14 and 16,
 
 #### Chapter 12: The Concept of Relative Surplus-Value
 
-==========
-- Your Note on Location 4824 | Added on Monday, January 4, 2016 10:19:22 PM
-
-==========
 
 > Despite the important part which this method plays in actual practice, we are
 > excluded from considering it in this place, by our assumption, that all
@@ -536,7 +606,7 @@ in Austria in 1860, for children between 14 and 16,
 > The effect is the same as if the means of production had cost less. The
 > economy in their application is entirely owing to their being consumed in
 > common by a large number of workmen.
-- See [Refragmentation](http://www.paulgraham.com/re.html).
+- See [Refragmentation](http://www.paulgraham.com/re.html) and economy of scale.
 
 > their assemblage in one place is a necessary condition of their co-operation.
 - not true anymore
@@ -554,8 +624,10 @@ in Austria in 1860, for children between 14 and 16,
 - managers are result and requirement of the scale! what is he getting at with
   these antagonists?
 
-> He is at liberty to set the 100 men to work, without letting them co-operate. He pays them the value of 100 independent labour-powers, but he does not pay for the combined labour-power of the hundred.
-- he has to pay the maagers though
+> He is at liberty to set the 100 men to work, without letting them co-operate.
+> He pays them the value of 100 independent labour-powers, but he does not pay
+> for the combined labour-power of the hundred.
+- he has to pay the managers though
 
 
 > Co-operation ever constitutes the fundamental form of the capitalist mode of
@@ -577,7 +649,9 @@ in Austria in 1860, for children between 14 and 16,
 > quickness, and sureness, of the individual workman in handling his tools.
 - that must have been obsolete even at his times
 
-> Castes and guilds arise from the action of the same natural law, that regulates the differentiation of plants and animals into species and varieties,
+> Castes and guilds arise from the action of the same natural law, that
+> regulates the differentiation of plants and animals into species and
+> varieties,
 - Another reference to Darwin
 
 > It is only the special skill accumulated from generation to generation, and
@@ -599,19 +673,20 @@ in Austria in 1860, for children between 14 and 16,
 > apprenticeship vanishes; for the former, it diminishes, compared with that of
 > artificers, in consequence of the functions being simplified. In both cases
 > the value of labour-power falls.
-- Does the value really fall? with greater exertise...
+- Does the value really fall? With greater expertise...
 
 > A relatively thinly populated country, with well-developed means of
 > communication, has a denser population than a more numerously populated
 > country, with badly-developed means of communication;
 - communication contracts distances 
 
-> A merchant could buy every kind of commodity, but labour as a commodity he could not buy.
+> A merchant could buy every kind of commodity, but labour as a commodity he
+> could not buy.
 
 > Manufactures, accordingly, prosper most where the mind is least consulted,
 > and where the workshop may ... be considered as an engine, the parts of which
 > are men.”
-- this is Marx quoting, he was not the only onewho realized that
+- this is Marx quoting, he was not the only one who realized that
 
 
 
@@ -628,7 +703,7 @@ in Austria in 1860, for children between 14 and 16,
 
 > Machinery, like every other component of constant capital, creates no new
 > value, but yields up its own value to the product that it serves to beget.
-- Why? Is it the definition of value by worktime spent by man?
+- Why? Is it the definition of value by work time spent by man?
 
 > it must be observed that the machinery, while always entering as a whole into
 > the labour-process, enters into the value-begetting process only by bits.
@@ -642,7 +717,7 @@ in Austria in 1860, for children between 14 and 16,
 > where it is a question of force, their mass, the amount of its product will
 > depend on the velocity of its working parts, on the speed, for instance, of
 > the spindles, or on the number of blows given by the hammer in a minute.
-- are there any machines where it doesnt hold?
+- are there any machines where it doesn't hold?
 
 > development is incomplete, but whose limbs are all the more supple. The
 > labour of women and children was, therefore, the first thing sought for by
@@ -703,7 +778,8 @@ in Austria in 1860, for children between 14 and 16,
 > material, &c., increases, while the variable component, the part laid out in
 > labour-power, decreases. 
 
-> finds no hindrance except in the supply of raw material and in the disposal of the produce.
+> finds no hindrance except in the supply of raw material and in the disposal
+> of the produce.
 
 > By ruining handicraft production in other countries, machinery forcibly
 > converts them into fields for the supply of its raw material. In this way
@@ -728,7 +804,8 @@ in Austria in 1860, for children between 14 and 16,
 > above all, a dwelling-house for the labourer and his family.
 - compare with centrally planned economics
 
-> These people are so exhausted after the day’s hard work, that neither the rules of health, of cleanliness, nor of decency are in the least observed.
+> These people are so exhausted after the day’s hard work, that neither the
+> rules of health, of cleanliness, nor of decency are in the least observed.
 - I also don't obey :-)
 
 
@@ -737,14 +814,14 @@ in Austria in 1860, for children between 14 and 16,
 - What if it is not ripping off of the working class but just low performant
   economy that couldn't keep up with the population growth and urbanisation ?
 
-> made the saving of time a necessity, and so forced into existence a dipping machine,
+> made the saving of time a necessity, and so forced into existence a dipping
+> machine,
 - I wonder if one could still earn fortune in a match factory. The general rule
   still holds that you have to sell to masses.
 
 > Modern industry never looks upon and treats the existing form of a process as
 > final. The technical basis of that industry is therefore revolutionary, while
 > all earlier modes of production were essentially conservative.
-==========
 
 > This same bourgeois is not ashamed to put this question: “Do you not think
 > that the mine-owner also suffers loss from an explosion?”
@@ -783,7 +860,7 @@ in Austria in 1860, for children between 14 and 16,
 > while, on the other hand, a decrease in such productiveness causes a rise in
 > the value of labour-power, and a fall in surplus-value.
 - the assumption of constant daily labour price is quite strong here
-- Your Note on Location 8147 | Added on Sunday, May 1, 2016 10:02:51 AM
+- He somehow forgets about lessened value produced. That baloney.
 
 > assume that it takes place under the conditions we have here supposed to
 > exist; but in reality the very contrary is the case: a change in the
@@ -836,7 +913,7 @@ in Austria in 1860, for children between 14 and 16,
 - interesting, not only capitalists are evil
 
 > Hence, e.g., in 1860 a great strike among the ribbon-weavers of Coventry.
-- todo look up if it is still important event in today's literature 
+- TODO look up if it is still important event in today's literature 
 
 > In the workshops under the Factory Acts, piece wages become the general rule,
 > because capital can there only increase the efficacy of the working day by
@@ -851,7 +928,6 @@ in Austria in 1860, for children between 14 and 16,
 > therefore, be less in the nation with more developed capitalist mode of
 > production than in the nation with less developed.
 - inflation?
-
 
 > The managers are, of course, English, as the native Russian capitalist is of
 > no use in factory business.
@@ -879,7 +955,8 @@ in Austria in 1860, for children between 14 and 16,
 #### Chapter 23: Simple Reproduction
 
 
-> The bourgeois economist whose narrow mind is unable to separate the form of appearance from the thing that appears,
+> The bourgeois economist whose narrow mind is unable to separate the form of
+> appearance from the thing that appears,
 
 > The maintenance and reproduction of the working class is, and must ever be, a
 > necessary condition to the reproduction of capital. But the capitalist may
@@ -942,7 +1019,9 @@ in Austria in 1860, for children between 14 and 16,
 
 > two primary creators of wealth, labour-power and the land,
 
-> But this prejudice was first established as a dogma by the arch-Philistine, Jeremy Bentham, that insipid, pedantic, leather-tongued oracle of the ordinary bourgeois intelligence of the 19th century.
+> But this prejudice was first established as a dogma by the arch-Philistine,
+> Jeremy Bentham, that insipid, pedantic, leather-tongued oracle of the
+> ordinary bourgeois intelligence of the 19th century.
 - What a language! (TODO Who was it?)
 
 #### Chapter 25: The General Law of Capitalist Accumulation
