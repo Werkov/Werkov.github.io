@@ -1,0 +1,9 @@
+- room with artifacts
+- not much parallelization, straighforward what to do
+- not so clear how to do it -- fun
+- later it degenerates just to identifying locks and finding proper codes
+  - you are not paranoid, just look for whatever looks like a code or lock
+  - and you forget about the background story completely
+- hints from a supervisor (big brother)
+- little surprises -- "secret" door to another room
+- it is fun but not as challenging as classic puzzlehunt game
