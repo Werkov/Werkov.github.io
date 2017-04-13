@@ -1,0 +1,83 @@
+---
+layout: post
+tags: maths lecture culture
+title: TODO Of triangles, gases, prices and men
+---
+
+- 2017-04-13
+- sponsored by K. Janeček
+- LibreOffice on MacOS
+- use of French quotes in presentation
+- Bolzano Lectures series (not in France)
+  - Bičák boasts about Bolzano
+  - how Bolzano read Euclid's Foundations and was cured
+  - also A. Lincoln read Euclides
+
+- Leather of Shallows (Challot)??
+  - can see thing only through a mirror
+- Riemann Hypothesis
+  - [ilbert]
+  - relation to prime numbers
+  - and also eigenvector of matrix describing large atoms
+  - in practice it's true (not proof, cf. physics, economics)
+- how to become famous mathematician
+  - prove great theorem
+  - find great problem
+  - find great concepts
+    - Riemannian geometry
+    - curvature
+- hyperbolic stitching
+  - constant negative curvature
+- Poincaré: the art of giving same name to different things
+- Richi curvature (cf general relativity)
+- .. the slow mastering of chance section ..
+- Boltzmann
+  - sect of people visiting Boltzmann's grave
+  - connection to statistics
+- Bernoulli
+  - law of large numbers
+- Abraham de Moivre
+  - exp(-x* *2)
+- Buffon's needle
+- Laplace
+  - the Law of Errors
+- Adolphe Quetelet -- popularized law of random causes
+- Francis Galton (if Greeks had known that law, they'd have personified it)
+- Claude Channon
+  - draft: information or uncertainity
+  - rework by von Neuman: entropy
+- entropy
+  - number of combinations is out of this world, so logarithmize it
+  - vacuum doesn't suck, it's power of statistics
+  - Disorder and information is better than order and disinformation (about broadcasting company)
+- partial differential equations
+  - Navier-Stokes equations are popular in Holywood industry
+- maximum entropy -- law of errors
+  - a Boltzmann's equation for homogenous gas (is not homogenous)
+- Cercignani Conjecture
+  - Toscani, Villani
+  - "Simple to state, difficult to prove. As you like it."
+  - this idea was completely naïve and could never work but he found an
+    interesting identity
+- Leonid Kantorovich
+  - very real-life problems (A-bomb, taxi fares, Petrograd siege)
+  - book: The best uses of economic resources
+  - operational research, plywood
+    - linear programming used to be in French high school curriculum
+  - Monge-Kantorovich
+    - min-max flow theorem?
+    - the theorem looks like maximization of capitalistic profit
+- ..conclusion of topics..
+  - prices (optimization)
+  - shapes of triangles (geometry)
+  - entropy (statistics)
+- coworkers
+  - Felix Otto, John Lott
+  - visiting in USA, no duties, just goindǵ to lunch and socialize -- it cost him fortune
+- the lazy gas experiment
+  - initial and final state of gas
+  - optimize way it transitions
+  - simlar to movement in curved space
+- Optimal transport, old and new (1000 pages book by him)
+- new theorem every month
+- importance of random encounters for research
