@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TODO
-tags: travel
+title: Králický Sněžník
+hidden: true
 ---
 
 - early morning
@@ -15,4 +15,4 @@ tags: travel
 - anti-german spray tags
 - Morava spring -- not very tasty
 - Staré Město p/Sn. equivalent of Nové Město p/Sm.
-- 1.5 l + .5 beer, on top ~3°C
+- consumption 1.5 l + .5 beer, on top ~3°C, ~30 km

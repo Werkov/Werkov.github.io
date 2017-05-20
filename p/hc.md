@@ -66,7 +66,7 @@ Peaks of selected mountain ranges (this would be a [challenge][1]).
 ## Králický Sněžník
 
 ### Králický Sněžník (1423 m)
-  * _missing_
+  * [2017, on foot]({% post_url 2017-04-14-schneeberg %})
 
 
 ## Krkonoše
