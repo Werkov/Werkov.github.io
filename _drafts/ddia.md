@@ -1,0 +1,92 @@
+---
+layout: post
+title: Designing Surveillance-Intensive Applications.
+tags: book "distributed systems" 
+---
+
+Reading period: Feb 2017--May 2017
+Designing Data-Intensive Applications. Martin Kleppmann. O'Reilly 2017 (preprint version)
+
+- a gift from O'Reilly at FOSDEM 2017
+- like Distributed Systems by Tannenbaum but with more real-world examples and
+  application explanation
+
+- startups
+  - quick iteration of features (rather than scalability)
+
+- document databases
+  - XML, JSON
+  - lack joins, encourage denormalization
+
+- log based structures
+  - TODO LSM trees
+  - append only, databases
+
+- OLTP vs OLAP (transactions vs analytics)
+  - kingdom of RDBMSs
+
+- RPC
+  - design flaw that tris to hide inherent drawbacks of network (unreliabiality, latency, repeated delivery)
+  - SOAP (reliance on scaffolders, API generators)
+
+- "For a successsful technology, reality must take precedence over public relations, for nature cannot be fooled." by Feynman
+
+- mobile clients -- extreme of distributed systems
+  - "As the rich history of broken calendar sync implementations demonstrates,
+    multi-leader replication is a tricky thing to get right."
+  - work in disconnected mode (very long latency)
+
+- TODO stages of consistency
+  - total ordering
+  - causal ordering
+  - reading your writes
+  - transactions 
+    - multi-version concurrency control (MVCC), snapshots
+      - writers never block readers and vice versa
+    - still write skew (FoL, room booking)
+      - airlines and their overbooking policies (if it's economic your data needn't be consistent)
+    - 2 phase locking vs 2 phase commit
+    - SSI (serializable snapshot isolation) -- new kid on the block
+  - strong consistency
+  - relation to distributed consensus problem
+    - various assumptions (e.g. availability of random numbers)
+    - most algorithms assume a single node can process all data (should it be necessary)
+
+- end-to-end contraints
+  - request ID to eliminate write skew(?)
+
+- immutability FTW
+  - except for data retency regulations
+    - moral aspects of data processing (data = exhaust (cf. environmentalism) , s/data/surveillance/)
+    - asymmetric relation between a user and service (cf. employee and employer)
+      - social cost of not using social networking service
+
+- skewed workload
+  - followers of Justin Bieber on Twitter
+
+- partitioning and scalability
+  - initially there is only a single partition (with little data) but it's a potential bottleneck
+
+- system model
+  - assumptions one has to take about system to provide guarantees
+
+- absolute time is a luxury
+  - even each CPU can have different time
+  - drift
+  - APIs (Google Spanner) that work with confidence intervals
+  - problem with finite windows (e.g. collecting events)
+
+- difference between computer science and software engineering
+  - "a real implementation may still have to include code to handle the case
+    where something happens that was assumed to be impossible"
+
+- tools/systems integration
+  - Unix philosophy (utilities + pipes)
+  - idea of piping e-mail account and shopping history to a data analytics tool
+  - convergence of Map-Reduce and stored procedures in RDBMS (MPP?)
+  - stream processing (dual problem to RDBMS -- static query, ephemer data)
+
+- "People often specialize in one particular niche of technology, and remain unaware of the requirements that exist in other niches."
+
+- beginnings of web/distributed applications
+  - the state: page could only scroll up and down
