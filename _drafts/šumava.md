@@ -1,0 +1,36 @@
+
+- German settlements
+- wood industry
+  - tree forests
+    - agriculture
+  - Schwarzenberg canal/channel
+    - exploiting resources to Vienna
+- people
+- true tramp
+  - true patriot
+  - I-know-everything guys
+  - metrosexual pair
+  - MFF pair
+  - random pair with coffee, early birds guys
+  - bath-seeking lonely traveler
+- single mode fountain
+- old houses labels
+- destroyed houses
+- electric bicycles, kickscooters
+- A. Stifter, Klostermann
+- three borders point
+  - this was bald: https://cs.wikipedia.org/wiki/Soubor:Trojmez%C3%AD_GER-CZE-AUT_2.jpg
+- dead trees, lake
+  - https://cs.wikipedia.org/wiki/Soubor:Plesne.png
+- povodí TODO border
+- water from pipe
+- population density doesn't take into account tourists
+- Sorbus plants
+- border stones mystery
+- Alpine outlook
+  - https://www.heywhatsthat.com/?view=QJ7I37S4
+- emergency overnights + family trips
+- great road in Strážný
+- Vydra conduit is overshot
+  - water goes to Vchynic-Tet channel
+- Kamil Klusák, zanikleobce.cz
