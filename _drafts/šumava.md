@@ -20,6 +20,7 @@
 - A. Stifter, Klostermann
 - three borders point
   - this was bald: https://cs.wikipedia.org/wiki/Soubor:Trojmez%C3%AD_GER-CZE-AUT_2.jpg
+- Třístoličník average climb: ~19 %
 - dead trees, lake
   - https://cs.wikipedia.org/wiki/Soubor:Plesne.png
 - povodí TODO border
@@ -34,3 +35,11 @@
 - Vydra conduit is overshot
   - water goes to Vchynic-Tet channel
 - Kamil Klusák, zanikleobce.cz
+- Nová Pec, railway service very relaxed
+- dense network of cycling paths
+- delimitary walls
+
+
+- daily kilometers
+ - 21.3, 29.5, 28.3, 7.3
+ - total: 86.4 km
