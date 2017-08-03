@@ -1,0 +1,93 @@
+
+---
+layout: post
+title: Holiday above 2000 meters
+tags: travel Bulgaria Serbia Hungary mountains
+---
+
+- night train
+- Serbia
+- Sofia
+- Rila
+- Pirin
+- bus back
+
+- smoking Balkan
+- first time passing Slovakia
+- seen Visegrad
+- traditional (TODO link) gyros in Budapest
+- medium comfort in Serbian sleeping carriage (with smokers)
+- Serbian facades (none)
+- Belgrade looks very poor (just neighborhood of railway station (which is quite small))
+  - affected by migrating refugees? (farsi/arabic labels in park)
+- very slow Serbian railway (and no guarantee on reservations)
+- canyon to "Bulgaria"
+- very long waiting on (Schengen area) borders (both directions)
+- contrast of EU/nonEU (nice Sofia arrival)
+- European level hostel in Sofia
+- compact center of Sofia, 
+- contrast: office buildings with cobble stone roads, housing estates, restaurants, wild dogs and horse-towed carriage)
+  - socioeconomic situation: 100, 300, 500
+  - orthodox church, mosque (open), synagogue (closed)
+- symbol of lion (church, currency)
+- tactile icons
+- horses 
+  - in cities
+  - in mountains
+- not much marks of Turkish influence (cf. Czechia and Austria-Hungary)
+- extra large tomatoes
+- scaling buses (marshrootka?)
+- meeting Czechs
+  - experienced Alda
+  - sharing experience
+    - shoes
+    - food (travel lunch)
+    - maps
+    - canyoning
+  - Czech scouts, German group/tourists
+- meeting Bulgarians
+  - silent guide and his band
+  - talkative ecologist
+  - organized trip?
+- Borovec, Bansko -- tourist hot locations for skiing
+- limited supply of water while climbing Musala
+  - crazy Bulgarian gifted with a bottle of water
+- up there is cold and windy
+- everything looks overengineered for much greater load (Musala hut, Granchar,...)
+  - perhaps used earlier
+  - camping in Predel
+- low morale in misty/cold morning + sudden change after clearing the clouds
+- landscape with green/brown grass and islands of dwarf pines
+- many lakes (water systems in mountains?)
+- descent is harder than climbing (also depends on tightening the boots)
+  - down to Makedonija was the worst
+  - later tried sandals on grassy surfaces
+- distorted estimate of inclination
+- Schopska salad, bean soup
+- pictersque sleeping by lakes above Makedonija
+- relative sunset, brown mist on horizon
+- nondistinctive/obsoleted marking of the hiking route on descent to Predel
+- Bulgarian nodding
+- various intensity of sweating + demi/dehy effect on power
+- Predel pronunciation
+  - hut vs camping
+  - shop by the road
+  - spring of Ivan the Tshudotvorets
+- animals at Javorov hut
+  - cat, fox, hunter dogs
+- sudden change from granite to lime
+- Koncheto was packed with tourists and slightly dangerous (if one was dizzy or exhausted)
+- climb to Vichren -- ferrata?
+- descent to Banderitsa hut throurgh a field of large round limestones and grass + chamois
+- long way back in luxurious bus
+  - worst road surface was between Brno and Prague (and Sofia southern ring)
+
+- Turkish toilet
+
+- path:
+  - https://mapy.cz/s/1UHZO
+
+- TODO sleeping places and their evaluation
+- TODO animals
+  - chamois, crow?, cows (dead), horses
+- TODO calculation of time spent in bus/walking
