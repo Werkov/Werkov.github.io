@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deutsch Böhmen
-tags: travel Poland
+tags: travel Poland calibration
 ---
 
 Few random notes from a calibration trip to the region of

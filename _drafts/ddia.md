@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Designing Surveillance-Intensive Applications.
-tags: book "distributed systems" 
+tags: [book, 'distributed systems']
 ---
 
 Reading period: Feb 2017--May 2017
