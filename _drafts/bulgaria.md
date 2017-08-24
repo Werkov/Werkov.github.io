@@ -26,6 +26,8 @@ tags: travel Bulgaria Serbia Hungary mountains
 - contrast of EU/nonEU (nice Sofia arrival)
 - European level hostel in Sofia
 - compact center of Sofia, 
+- no river in Sofia
+- first time in mosque
 - contrast: office buildings with cobble stone roads, housing estates, restaurants, wild dogs and horse-towed carriage)
   - socioeconomic situation: 100, 300, 500
   - orthodox church, mosque (open), synagogue (closed)
@@ -57,6 +59,7 @@ tags: travel Bulgaria Serbia Hungary mountains
   - perhaps used earlier
   - camping in Predel
 - low morale in misty/cold morning + sudden change after clearing the clouds
+  - it's actually same in real life
 - landscape with green/brown grass and islands of dwarf pines
 - many lakes (water systems in mountains?)
 - descent is harder than climbing (also depends on tightening the boots)
@@ -81,6 +84,8 @@ tags: travel Bulgaria Serbia Hungary mountains
 - descent to Banderitsa hut throurgh a field of large round limestones and grass + chamois
 - long way back in luxurious bus
   - worst road surface was between Brno and Prague (and Sofia southern ring)
+- clouds and interesting turbulent streams
+- truck loaded with steel rods
 
 - Turkish toilet
 
