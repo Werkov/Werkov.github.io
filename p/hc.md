@@ -102,7 +102,7 @@ Peaks of selected mountain ranges (this would be a [challenge][1]).
 ## Šumava
 
 ### Plechý (1378 m)
-  * _missing_
+  * [2017, on foot]({% post_url 2017-07-08-boehmerwald %})
 
 
 
