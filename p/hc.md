@@ -51,7 +51,7 @@ Peaks of selected mountain ranges (this would be a [challenge][1]).
 ## Hrubý Jeseník
 
 ### Praděd (1492 m)
-  * _missing_
+  * [2017, by bike]({% post_url 2017-08-25-altvater %})
 
 
 ## Jizerské hory
