@@ -9,7 +9,7 @@ tags: culture socialization
 A pirate crew finds a box full of gold they are mostly crooks, they honor order
 of command and democracy.
 The highest rank pirate is supposed to put forward a proposal how do they split
-the gold. If (strict) majority approves that, the proposal is exexcuted. If
+the gold. If (strict) majority approves that, the proposal is executed. If
 it's rejected, the proposing pirate is executed and the second to highest rank
 suggests the split, repeat until they make a deal.
 Note that a dead pirate cannot own any of the gold (i.e. they prefer being
@@ -24,8 +24,8 @@ A band of
 [prison wardens](https://en.wikipedia.org/wiki/Stanford_prison_experiment)
 decide to execute prisoners in very convoluted way. They give out black and
 white hats to the prisoners each prisoner one, yet unknown number of the types.
-The prisoners stand in a row so that they can see hats ofthe prisoners standing
-in front of them but they don't know their own hat color.
+The prisoners stand in a row so that they can see hats of the prisoners
+standing in front of them but they don't know their own hat color.
 The wardens offer to spare those who would correctly tell the color of their
 own hat.
 
@@ -44,15 +44,18 @@ released.
 
 ## Weighting balls
 
-There are nine balls, a single one of them is sligtly heavier than the rest of
+There are nine balls, a single one of them is slightly heavier than the rest of
 them. You get balance scales but can only use them twice.
 
 Task: Identify the heavier ball.
-Task 2: (The ball has different weight (ligher or heavier).)
+
+Task 2: The ball has different weight (ligther or heavier). Identify it.
 
 ## Monty Hall problem
 
 [Wikipedia](https://en.wikipedia.org/wiki/Monty_Hall_problem)
+
+Task: To switch or not to switch?
 
 ## British impact
 
@@ -60,3 +63,6 @@ All cars in the Great Britain switch lanes and begin riding on the right side
 of the road (it happens during ride).
 
 Task: How much would Earth rotation change due to this change?
+
+
+*Credit goes to my various friends.*
