@@ -7,9 +7,9 @@ tags: book Feynman NASA
 Reading period: Jan 2017
 
 ## Content
-- live with first wife
+- life with first wife
 - conference in Poland
-- investigating Challenger disaster (greatest part)
+- investigating the Challenger disaster (greatest part)
 - appendix -- Feynman's appendix to official presidential commission record
   - They did not want to include it in the main body of the report because of
     its controvery and open critique.
