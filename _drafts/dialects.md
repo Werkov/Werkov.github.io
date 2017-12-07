@@ -8,4 +8,6 @@
 - chvilu
 - tuto, tuten
 - ovi -> oj
+- -ovo (no declination)
+- kolečko (Čechy), kotouč (Morava), tačky (Slezsko), točky (Slezsko)
 
