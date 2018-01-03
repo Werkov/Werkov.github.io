@@ -88,6 +88,8 @@ tags: GPG certificate trust
 - there exists threshold where trust is ultimate
   - own senses, raw physical world (no illusions)
 
+edit 2017-12-10: https://aliceevebob.com/2017/05/09/what-is-trust-with-apologies-to-pontius-pilate/
+
 ===========
 
 - Golčův Jeníkov--město		18:15	18:24
