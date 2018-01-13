@@ -1,1 +1,9 @@
-https://gist.github.com/
+Public source:
+https://raw.githubusercontent.com/Werkov/Werkov.github.io/72c52850c39a102499a048e59772a4d9147ba796/_posts/2018-01-13-predictions.md
+
+Checksums:
+a9f7d7e5ddf4def05310db2196185b67dda283f2  _posts/2018-01-13-predictions.md
+e166a2a36a399a000fda91c7e71df1a8  _posts/2018-01-13-predictions.md
+
+Third party timestamped is at
+https://gist.github.com/Werkov/e610d470673111339c1e92bbc23b781b
