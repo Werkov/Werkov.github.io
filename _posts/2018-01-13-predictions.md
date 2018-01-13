@@ -8,7 +8,8 @@ Inspired by [Slate Star Codex
 predictions](http://slatestarcodex.com/2018/01/02/2017-predictions-calibration-results/).
 
 
-SHA1 sum of this is referenced [here](/resources/2018-predictions.txt).
+Timestamped checksum of this post is referenced
+[here](/resources/2018-predictions.txt).
 
 
 ## World events
@@ -22,7 +23,7 @@ SHA1 sum of this is referenced [here](/resources/2018-predictions.txt).
 - Assad will remain President of Syria: 
   80%
 - Syria’s civil war will not end this year: 
-  80%
+  70%
 - <del>ISIS will control less territory than it does right now.</del> Unmeasurable.
 - ISIS not continue to exist as a state entity in Iraq/Syria: 
   60%
@@ -42,7 +43,7 @@ SHA1 sum of this is referenced [here](/resources/2018-predictions.txt).
 - Germany does not declare plan to leave EU: 
   99%
 - Fewer refugees admitted 2018 than 2017: 
-  80X%
+  80%
 
 ## Economics
 
@@ -65,9 +66,9 @@ SHA1 sum of this is referenced [here](/resources/2018-predictions.txt).
   60%
 - Czech unemployment to be lower at end of year than beginning: 
   60% [(Q3 2017, 2.8%)](https://www.czso.cz/csu/czso/zamestnanost_nezamestnanost_prace)
-- Czech Republic will not decide to leave EU
+- Czech Republic will not decide to leave EU:
   80%
-- Czech Republic will not decide to leave NATO
+- Czech Republic will not decide to leave NATO:
   99%
 - No major flood in Prague (>3000 m^3/s):
   90%
@@ -83,7 +84,7 @@ SHA1 sum of this is referenced [here](/resources/2018-predictions.txt).
 
 - I will travel inside the Europe only in 2018: 
   90%
-- I will not have been hospitalized for any other reason: 
+- I will not have been hospitalized: 
   95%
 - I attend at least one wedding this year: 
   60%
@@ -97,9 +98,10 @@ SHA1 sum of this is referenced [here](/resources/2018-predictions.txt).
   90%
 
 ## Notes
+
 I don't think the calibration based on grouping different events by their
 probability is correct, despite that I quantized most of the probabilities. I
 may devise a better method by the end of the year.
 
-Secondly, picking the statements myself would be biased that why I adapted the
-SCC ones.
+Secondly, picking the statements myself would be biased that's why I adapted
+the SCC ones.
