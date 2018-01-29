@@ -57,10 +57,12 @@ should I put this on Wikipedia?
 ### Ripple (27e9)
 
   * [explanation video](https://www.youtube.com/watch?v=pj1QVb1vlC0)
-    * presents itself as a adistributed consensus algorithm to keep a
+    * presents itself as a distributed consensus algorithm to keep a
       distributed ledger
-  * rather a inter-bank protocol
+  * rather an inter-bank protocol
   * but they have own currency(?), how is it backed?
+  * "domains", pool of transactions, at least 80% of nodes in domain must approve the transactions from the pool (they land in the distributed ledger)
+  * nodes are in multiple domains to ensure global consensus
 
 ### Litecoin (17e9)
 
@@ -73,6 +75,7 @@ should I put this on Wikipedia?
   * block size: 1MB (as of 2016?)
 
 ### Cardano (13e9)
+  * WTF, too abstract and theoretic, proof of stake?
 
 ### IOTA (10e9)
 
