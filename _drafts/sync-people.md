@@ -13,3 +13,7 @@ https://kimonote.com/@mildbyte/against-the-synchronous-society-3146/
 aplifiction/dampening noise/emotions
 
 - distractions and interrupts (social networks)
+
+absent receiver
+- blocking
+- retries

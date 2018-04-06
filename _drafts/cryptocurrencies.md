@@ -91,3 +91,5 @@ should I put this on Wikipedia?
     * it limits no. of blocks to 500e6 (then it parses the value as a UNIX timestamp)
 
 ## Estimate of transaction confirmation time in ideal case
+
+TODO ref https://lcamtuf.blogspot.cz/2017/12/the-deal-with-bitcoin.html
