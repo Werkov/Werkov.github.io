@@ -119,6 +119,7 @@ tags: travel Spain Milan (TODO) Mallorca mountains island
 * attractive receptionist (but poor English speaker)
 * happy Mexican 
 * spicy beer
+* beer size
 * German pensioners
   * silent but everywhere (buses, restaurants, streets)
 * 17th Bundesland

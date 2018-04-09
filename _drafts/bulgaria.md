@@ -1,9 +1,10 @@
-
 ---
 layout: post
 title: Holiday above 2000 meters
 tags: travel Bulgaria Serbia Hungary mountains
 ---
+
+## Diary
 
 - night train
 - Serbia
@@ -12,33 +13,62 @@ tags: travel Bulgaria Serbia Hungary mountains
 - Pirin
 - bus back
 
-- smoking Balkan
-- first time passing Slovakia
-- seen Visegrad
-- traditional (TODO link) gyros in Budapest
+## Practicals
+
 - medium comfort in Serbian sleeping carriage (with smokers)
-- Serbian facades (none)
-- Belgrade looks very poor (just neighborhood of railway station (which is quite small))
-  - affected by migrating refugees? (farsi/arabic labels in park)
-- very slow Serbian railway (and no guarantee on reservations)
-- canyon to "Bulgaria"
+- very slow (<40 km/h) Serbian railway (and no guarantee on (seat) reservations)
 - very long waiting on (Schengen area) borders (both directions)
-- contrast of EU/nonEU (nice Sofia arrival)
-- European level hostel in Sofia
-- compact center of Sofia, 
-- no river in Sofia
-- first time in mosque
-- contrast: office buildings with cobble stone roads, housing estates, restaurants, wild dogs and horse-towed carriage)
-  - socioeconomic situation: 100, 300, 500
-  - orthodox church, mosque (open), synagogue (closed)
-- symbol of lion (church, currency)
-- tactile icons
+- European level hostel in Sofia (TODO link)
+- limited supply of water while climbing Musala
+  - crazy Bulgarian gifted us a bottle of water
+- descent is harder than climbing (also depends on tightening the boots)
+  - down to Makedonija was the worst
+  - later tried sandals on grassy surfaces
+- nondistinctive/obsoleted marking of the hiking route on descent to Predel
+- various intensity of sweating + demi/dehy effect on power and strength
+
+## Natural sights
+
+- canyon from Serbia to "Bulgaria" (TODO map check)
 - horses 
-  - in cities
-  - in mountains
-- not much marks of Turkish influence (cf. Czechia and Austria-Hungary)
-- extra large tomatoes
-- scaling buses (marshrootka?)
+  - in cities (workhorses)
+  - in mountains (wild?)
+- Musala (hihghet peak of Balkans)
+  - up there is cold and windy
+- landscape with green/brown grass and islands of dwarf pines
+- many lakes (water systems in mountains?)
+- pictersque sleeping by lakes above Makedonija
+- relative sunset (occluded by mountains), brown mist on horizon
+
+
+## Manmade sights
+
+- seen Visegrad (from train)
+- Serbian facades (none)
+- Belgrade looks very poor (just neighborhood of railway station (which is
+  quite small))
+  - affected by migrating refugees? (Farsi/Arabic labels in park)
+- Sofia
+  - compact center 
+  - no river in Sofia
+  - orthodox church, mosque (open), synagogue (closed)
+    - first time in mosque
+    - tactile icons
+- contrast: office buildings with cobble stone roads, housing estates,
+  restaurants, wild dogs and horse-towed carriage
+- Borovec, Bansko -- tourist crowded locations for skiing
+- everything looks overengineered for much greater load (Musala hut, Granchar,...)
+  - perhaps used earlier
+  - camping in Predel
+
+## People and society
+
+- people smoke more in Balkan (cigarette ends even on mountain paths)
+- contrast of EU/nonEU (nice Sofia arrival)
+- (TODO annotate better) Bulgarian socioeconomic situation: 100, 300, 500 (pension, average salary, ???)
+- Bulgarian symbol of lion (church, currency)
+- not many marks of Turkish influence (cf. Czechia and Austria-Hungary)
+- buses scaled to traffic (marshrootka?)
 - meeting Czechs
   - experienced Alda
   - sharing experience
@@ -49,29 +79,27 @@ tags: travel Bulgaria Serbia Hungary mountains
   - Czech scouts, German group/tourists
 - meeting Bulgarians
   - silent guide and his band
-  - talkative ecologist
-  - organized trip?
-- Borovec, Bansko -- tourist hot locations for skiing
-- limited supply of water while climbing Musala
-  - crazy Bulgarian gifted with a bottle of water
-- up there is cold and windy
-- everything looks overengineered for much greater load (Musala hut, Granchar,...)
-  - perhaps used earlier
-  - camping in Predel
+  - talkative attractive ecologist girl
+  - sisters at Granchar hut
 - low morale in misty/cold morning + sudden change after clearing the clouds
   - it's actually same in real life
-- landscape with green/brown grass and islands of dwarf pines
-- many lakes (water systems in mountains?)
-- descent is harder than climbing (also depends on tightening the boots)
-  - down to Makedonija was the worst
-  - later tried sandals on grassy surfaces
-- distorted estimate of inclination
+- Bulgarian nodding (it's inverse!)
+
+## Food
+
+- traditional (TODO link) gyros in Budapest
+- extra large tomatoes
 - Schopska salad, bean soup
-- pictersque sleeping by lakes above Makedonija
-- relative sunset, brown mist on horizon
-- nondistinctive/obsoleted marking of the hiking route on descent to Predel
-- Bulgarian nodding
-- various intensity of sweating + demi/dehy effect on power
+
+## Equipment
+
+## Lessons learnt
+
+## Random thoughts?
+
+- distorted estimate of inclination
+
+
 - Predel pronunciation
   - hut vs camping
   - shop by the road
