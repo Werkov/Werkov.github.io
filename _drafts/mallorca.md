@@ -1,71 +1,75 @@
 ---
 layout: post
 title: Mediterranean Easter
-tags: travel Spain Milan (TODO) Mallorca mountains island
+tags: travel Spain Milan Mallorca mountains island
 ---
 
 ## Diary
 
+  * track: [Serra de Tramuntana](https://en.mapy.cz/s/2zEX4) + [torrent de Pareis](https://en.mapy.cz/s/2zEVC)
+  * total walking distance 109 km, highest Puig de Massanella (1364 m), lowest sea beaches (0 m)
+
 ### Day 00 (2018-03-28)
 
-  * **daily stats:** TODO flight kilometers
-  * **sleeping:** Palma, hostel TODO link
+  * **daily stats:** 600 km + 890 km by airliner
+  * **sleeping:** Palma, [hostel](https://wehostelpalma.com/)
   * tiresome flight after sleepless night (packing and preparing for absence till the last moment)
   * nice view of Alps
   * weather contrast: short-sleeve evening, sunny, blooming landscape, palms
   * cocaine and brothels
 
+
 ### Day 01 (2018-03-29)
 
-  * **daily stats:**
-  * **sleeping:** premises of refugia TODO name, 15°C in the evening (after sunset)
+  * **daily stats:** 12.2 km
+  * **sleeping:** premises of refugia Ses Fontanelles, 15°C in the evening (after sunset)
   * bathing in the sea in Sant Elm
   * everything (including water) is cold, it is only radiation heating by Sun
-  * La Trapa climb, jungle-like (mist and green abundance below ~200 m), drought (TODO vyprahlo) above
+  * La Trapa climb, jungle-like (mist and green abundance below ~200 m), parched above
 
 ### Day 02 (2018-03-30)
 
-  * **daily stats:**
-  * **sleeping:** hidden by a road (flanked (TODO) by private lands), with tent
-  * morning climb to Mole d'Esclope (TODO name)
-  * Estellens: restaurant, water and shop
+  * **daily stats:** 21.3 km
+  * **sleeping:** hidden near a road (flanked by private lands), with tent
+  * morning climb to Moleta de s'Esclop
+  * Estellencs: restaurant, water and shop
 
 ### Day 03 (2018-03-31)
 
-  * **daily stats:**
+  * **daily stats:** 19.7 km
   * **sleeping:** picnic area under refugia (morning temperature 7.5°C (average guess))
-  * Esporle: market (delicious ham and cheese), shop, water
-  * climb through oak (TODO what kind) forest, sudden outlook to a hacienda/mansion
-  * Valldemosa: museum, water, toillet, shop
-  * stony valley
-  * salaše (TODO), water tanks (not drinkable), craymills (TODO milíře)
+  * Esporles: market (delicious ham and cheese), shop, water
+  * climb through oak ([holm oak](https://en.wikipedia.org/wiki/Quercus_ilex)) forest, sudden outlook to a hacienda/mansion
+  * Valldemosa: museum, water, toilet, shop
+  * climb through stony valley (Cairats)
+  * chalets, water tanks (not drinkable), charcoal kiln platforms
 
 ### Day 04 (2018-04-01)
 
-  * **daily stats:**
+  * **daily stats:** 27.3 km
   * **sleeping:** a terrace above Soller (11°C in the morning, average guess)
   * descent to Deia (slightly lost over cliffs)
   * unsuccessful sea bathing
   * easy track to Soller (many German tripping families)
-    * circum (TODO obklíčen) with lemon and orange orchards
+    * surrounded with lemon and orange orchards
   * climb through terraced valley (with water conduit), multiple springs
 
 ### Day 05 (2018-04-02)
 
-  * **daily stats:**
-  * **sleeping:** on a craymill (TODO) during descent to Lluc
-  * morning climb on paved (TODO cobble stones) road to the damm (TODO name)
+  * **daily stats:** 21.5 km
+  * **sleeping:** on a charcoal kiln platform during descent to Lluc
+  * morning climb on paved (cobble stones) road to the reservoir [de Cúber](https://en.wikipedia.org/wiki/C%C3%BAber)
   * group of (wild) horses and group of (wild) runners (they seemed like a
     guided group, mixed men and women)
   * crowded parking place, no drinking water (despite our expectation)
   * later a spring and washing ourselves
-  * pinnacle of the expedition -- Puig de Masanela
+  * pinnacle of the expedition -- Puig de Massanella
     * windy and non-trivial access
   * evening incident with tent places distribution
 
 ### Day 06 (2018-04-03)
 
-  * **daily stats:**
+  * **daily stats:** 3 km + 4.2 km
   * **sleeping:** Palma, (same) hostel
   * reached Lluc monastery (water, toillet, food)
   * taking bus to Sa Calobra beach
@@ -76,17 +80,17 @@ tags: travel Spain Milan (TODO) Mallorca mountains island
     canyon the less people were there (however, dark corners bore (fecal)
     traces of human presence)
   * bus/train to Palma with connection in Inca
-  * running down from Belveder (TODO) hill
+  * evening run (down from Bellver hill as we were afraid to be trapped in after opening hours)
     
 
 ### Day 07 (2018-04-04)
 
-  * **daily stats:**
+  * **daily stats:** 890 km + 600 km by airliner
   * **sleeping:** at home
-  * morning walk along Palma coast and checking Palma Cathedral (TODO proper name)
+  * morning walk along Palma coast and checking La Seu cathedral
     * entry fee, beggar "mums"
-  * Jehovah Witnesses campaign new Placa de Espanya (TODO name)
-  * rainy Milan and sunny Prague (disappointing too experience the same weather
+  * Jehovah Witnesses campaign new Plaça d'Espanya
+  * rainy Milan and sunny Prague (disappointing to experience the same weather
     at home as in Mallorca)
 
 
@@ -149,3 +153,5 @@ tags: travel Spain Milan (TODO) Mallorca mountains island
 * snoring "Indian", he was the only one who slept in the bedroom
 * Belveder areal closes in the night (~21:30)
 * no Kiwi check-in
+* mean, median and modus as moments
+* underground bus and train terminal
