@@ -17,3 +17,8 @@ aplifiction/dampening noise/emotions
 absent receiver
 - blocking
 - retries
+
+arranged dates (sync communication) -- time fragmentation
+
+preference of sync to async
+- being trapped and the door opening (call over SMS)
