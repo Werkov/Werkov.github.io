@@ -10,9 +10,11 @@ see also: dead drops
 Very related
 https://kimonote.com/@mildbyte/against-the-synchronous-society-3146/
 
-aplifiction/dampening noise/emotions
+amplifiction/dampening noise/emotions
 
 - distractions and interrupts (social networks)
+
+high priority/non-maskable
 
 absent receiver
 - blocking
@@ -22,3 +24,6 @@ arranged dates (sync communication) -- time fragmentation
 
 preference of sync to async
 - being trapped and the door opening (call over SMS)
+
+- multipath
+  - as antipattern: send e-mail and call or come
