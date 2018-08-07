@@ -27,3 +27,7 @@ preference of sync to async
 
 - multipath
   - as antipattern: send e-mail and call or come
+
+busy receiver (even during business hours)
+
+companies based on async communication: https://www.remoteonly.org/
