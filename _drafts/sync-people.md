@@ -31,3 +31,5 @@ preference of sync to async
 busy receiver (even during business hours)
 
 companies based on async communication: https://www.remoteonly.org/
+
+repeatability and self-documentation of written comm
