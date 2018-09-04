@@ -14,7 +14,7 @@ Peaks of selected mountain ranges (this would be a [challenge][1]).
 
 ### Velká Javořina (970 m)
   * 2006--2008, multiple times by bike
-
+  * Jun 2018, by bike
 
 ## Brdy
 
@@ -96,7 +96,7 @@ Peaks of selected mountain ranges (this would be a [challenge][1]).
 ## Orlické hory
 
 ### Velká Deštná (1115 m)
-  * _missing_
+  * Nov 2018, on foot
 
 
 ## Šumava
