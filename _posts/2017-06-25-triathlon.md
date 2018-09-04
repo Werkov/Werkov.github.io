@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sprint triathlon
-tags: sport
+tags: sport triathlon
 ---
 
 - lengths: 400 m, 10 km, 5 km
