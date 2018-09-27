@@ -33,3 +33,4 @@ busy receiver (even during business hours)
 companies based on async communication: https://www.remoteonly.org/
 
 repeatability and self-documentation of written comm
+idea: new e-mail header Expires: (for optimized inbox processing)
