@@ -25,8 +25,9 @@
   * TODO compare with Fram
   * division of captain and the crew
   * starboard and port side
-* Linie 72
+* Linie 72 (not the Hafenrundrahrten)
 * Elbphilharmonie
+  * free entry but you need a ticket
   * visited only by retired people
   * a girl playing flute in front of it
 * zwichenetage houses in the Deichstrasse
