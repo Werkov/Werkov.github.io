@@ -8,6 +8,7 @@ What is more important?
 
 * Having read a book or
 * having a record in reader's diary.
+  * [SMBC on the topic](http://www.smbc-comics.com/comic/literary-turing)
 
 * Run 5 kilometers every day or
 * have records in the training diary.
@@ -20,3 +21,5 @@ What is more important?
 
 * Sleep for several hours or
 * have a sleeping record in the diary?
+
+
