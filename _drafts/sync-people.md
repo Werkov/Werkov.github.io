@@ -24,6 +24,7 @@ arranged dates (sync communication) -- time fragmentation
 
 preference of sync to async
 - being trapped and the door opening (call over SMS)
+- con of async comm: harder to measure response times, timeouts
 
 - multipath
   - as antipattern: send e-mail and call or come
@@ -33,4 +34,5 @@ busy receiver (even during business hours)
 companies based on async communication: https://www.remoteonly.org/
 
 repeatability and self-documentation of written comm
+
 idea: new e-mail header Expires: (for optimized inbox processing)
