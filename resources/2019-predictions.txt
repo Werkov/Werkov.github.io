@@ -1,0 +1,9 @@
+Public source:
+https://raw.githubusercontent.com/Werkov/Werkov.github.io/874101fed2664468ef3b02c2486c1dc7069d5799/_posts/2019-01-09-predictions.md
+
+Checksums:
+8bc09fc868f1cc54253e865a092d15a59af0a6aa  _posts/2019-01-09-predictions.md
+3db759e1ec1f1a81a27889080eb7992b  _posts/2019-01-09-predictions.md
+
+Third party timestamped is at
+https://gist.github.com/Werkov/2854127554c967800e1de8f994d353e7
