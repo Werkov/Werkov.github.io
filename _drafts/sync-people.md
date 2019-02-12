@@ -35,4 +35,5 @@ companies based on async communication: https://www.remoteonly.org/
 
 repeatability and self-documentation of written comm
 
+con of async comm: harder to measure response times, timeouts
 idea: new e-mail header Expires: (for optimized inbox processing)
