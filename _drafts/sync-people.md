@@ -4,6 +4,11 @@ title: Synchronouse people
 tags: ['socialization', 'distributed systems', 'communication']
 ---
 
+## Synchronous and asynchronous communication
+
+## Pros and cons
+
+## Conclusion
 
 see also: dead drops
 
