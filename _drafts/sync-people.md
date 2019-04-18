@@ -42,3 +42,11 @@ repeatability and self-documentation of written comm
 
 con of async comm: harder to measure response times, timeouts
 idea: new e-mail header Expires: (for optimized inbox processing)
+
+con: relativity of time (logical clock)
+
+ETIMEDOUT as an answer
+- when real-time constraints are involved
+- when does not want to answer
+
+time to execute, time to communicate aka (deep) concentration

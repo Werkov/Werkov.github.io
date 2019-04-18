@@ -11,7 +11,7 @@ tags: travel Spain Tenerife mountains sea island
   * **daily stats:** 450 km by train, 3600 km by airliner, 78 km by car
   * **sleeping:** Las Calderatas
   * getting up at 3:30
-  * flight to the Canaries is surprisingly long (compared to central-european flights)
+  * flight to the Canaries is surprisingly long (compared to central-European flights)
     * the Alps, mouth of the Rhône, the rock of Gibraltar and shop traffic
   * very smooth arrival, in less than hour we were already driving away on
     highway TF-1
@@ -35,7 +35,7 @@ tags: travel Spain Tenerife mountains sea island
 
   * **daily stats:** 17 km walk (9:00--17:00), 1188--2248; 42 km drive
   * **sleeping:** camping place near San José de Los Llanos
-  * easy climg from Caldera to road TF-24 (slightly lost in the Mars-like landscape)
+  * easy climb from Caldera to road TF-24 (slightly lost in the Mars-like landscape)
   * Izana observatory was closer than expected, using sunscreen protection
   * watching paragliders starting spot
   * descent through trodden "conduits" in [tuff](https://en.wikipedia.org/wiki/Tuff)
@@ -78,7 +78,7 @@ tags: travel Spain Tenerife mountains sea island
       km around the car
     * car rental managed exchange, the plan is only 2 hours delayed
     * from Citroen C3 to Seat Ibiza
-  * parking under Teide (La Catedral), totaly packed with tourists
+  * parking under Teide (La Catedral), totally packed with tourists
   * I'm feeling fatigue and my performance is very low, I'm happy that I could
     reach the Altavista hut (not sure if it's the air or insufficient
     water/food (we hiked without much supplies)
@@ -103,7 +103,7 @@ tags: travel Spain Tenerife mountains sea island
   * drive to Mes del Mare, swimming in the ocean (the same day when we summitted)
   * drive to El Sauzal, café, nice park
   * evening drive to Las Calderatas
-  * we are acummulating garbage and too much food in the car
+  * we are accumulating garbage and too much food in the car
 
 ### Day 06 (2018-12-04)
 
@@ -112,7 +112,7 @@ tags: travel Spain Tenerife mountains sea island
   * homeless guy in the morning in the camp
   * mountain road to Anaga (Panoramaweg)
   * Chamorga -- a village at the very (East) end of Tenerife
-  * San Adreas -- artifical beach (sand from Sahara), last swimming
+  * San Adreas -- artificial beach (sand from Sahara), last swimming
   * Laguna -- big city, historical center
   * night drive over Teide plateau
 
@@ -128,14 +128,14 @@ tags: travel Spain Tenerife mountains sea island
 
 ## Practicals
 
-  * vineyards, highways, hairpings/sharp turns
+  * vineyards, highways, hairpins/sharp turns
   * kanarskeostrovy.com
   * UTC+0, don't know
   * water is warm in December
 
 ## Lessons learnt
 
-  * Sleep more before the trip if the day begins early. Otherwise headache is
+  * Sleep more before the trip if the travel begins early. Otherwise headache is
     likely and debilitating.
   * Canyon trip
   * Life analogy
