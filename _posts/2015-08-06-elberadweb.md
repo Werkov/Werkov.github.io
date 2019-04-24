@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Elberadweg
-tags: travel
+tags: travel cycling Germany
 ---
 
 ## Route planning
