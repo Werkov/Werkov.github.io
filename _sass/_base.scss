@@ -43,3 +43,9 @@ blockquote {
 	vertical-align: middle;
 }
 }
+@for $i from 11 through 30 {
+.tag-size-#{$i} {
+	font-size: percentage(0.4 + 10 / 5) ;
+	vertical-align: middle;
+}
+}
