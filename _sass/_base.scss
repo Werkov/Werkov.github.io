@@ -36,3 +36,10 @@ blockquote {
 .thumbnail {
 	text-align: center;
 }
+
+@for $i from 1 through 10 {
+.tag-size-#{$i} {
+	font-size: percentage(0.4 + $i / 5) ;
+	vertical-align: middle;
+}
+}
