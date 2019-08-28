@@ -54,3 +54,6 @@ time to execute, time to communicate aka (deep) concentration
 output buffering (fixing typos, refactoring)
 
 https://tech.slashdot.org/story/19/07/16/0450236/how-to-escape-the-hyperactive-hivemind-of-modern-work
+
+sync communication -- useful when deadline approaches OR project mgmt
+fails (to prepare in advance)
