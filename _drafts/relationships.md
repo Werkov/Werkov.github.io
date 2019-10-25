@@ -24,9 +24,16 @@ Of interpersonal relationships.
 - enforced relationships
   - on bus/train/project?
 
+- relationship has multiple dimensions rather than scalar sum of categories above
+
 ## Emergence
 - TODO
 
 ## Maintenance
 - repeating
 - resources
+
+## Misc
+- limited supply of people/saturation
+- allowance of mocking
+- marriage

@@ -18,6 +18,7 @@ https://kimonote.com/@mildbyte/against-the-synchronous-society-3146/
 amplifiction/dampening noise/emotions
 
 - distractions and interrupts (social networks)
+  - notifications
 
 high priority/non-maskable
 
@@ -58,3 +59,9 @@ https://tech.slashdot.org/story/19/07/16/0450236/how-to-escape-the-hyperactive-h
 
 sync communication -- useful when deadline approaches OR project mgmt
 fails (to prepare in advance)
+
+sync communication -- pro: when handling delegated resource/valuable
+(money,...), prevents fraud
+
+sync communication -- contraint solving w/out xactions (e.g. arranging multiple meetings)
+
