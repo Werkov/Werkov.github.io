@@ -12,10 +12,254 @@ Reading period: Jul--Sep 2018.
 
 ## Topics
 
-- https://www.artsy.net/news/artsy-editorial-artwork-banksy-shredded-selling-13-million-sothebys
+* https://www.artsy.net/news/artsy-editorial-artwork-banksy-shredded-selling-13-million-sothebys
+
+* random quotable wisdoms (mostly uttered by Dorian Gray):
+> "There is no such thing as a moral or an immoral book. Books are well
+> written, or badly written."
+ 
+> "there is only one thing in the world worse than being talked about, and
+> that is not being talked about."
+
+*  with some it's not clear whether they are genuine or passed along
+> "Nowadays people know the price of everything and the value of nothing."
+
+* on social graph building
+> "I choose my friends for their good looks, my acquaintances for their good
+> characters, and my enemies for their good intellects."
+
+* information over matter
+  * visionary or social constants?
+> "The thoroughly well-informed man--that is the modern ideal."
+
+> "can stand brute force, but brute reason is quite unbearable."
+
+* matter over intellect
+> Mysticism, with its marvellous power of making common things strange to us,
+> and the subtle antinomianism that always seems to accompany it, moved him for
+> a season; and for a season he inclined to the materialistic doctrines of the
+> Darwinismus movement in Germany, and found a curious pleasure in tracing the
+> thoughts and passions of men to some pearly cell in the brain, or some white
+> nerve in the body, delighting in the conception of the absolute dependence of
+> the spirit on certain physical conditions, morbid or healthy, normal or
+> diseased.
+
+  * misogyny/trolling?
+> "[...]no woman is a genius. Women are a decorative sex. They never have
+> anything to say, but they say it charmingly. Women represent the triumph of
+> matter over mind, just as men represent the triumph of mind over morals."
+  * also (has any women read the book?)
+> Women, as some witty Frenchman once put it, inspire us with the desire to do
+> masterpieces and always prevent us from carrying them out.
+
+> the only way a woman can ever reform a man is by boring him so completely
+> that he loses all possible interest in life.
+
+> We have emancipated them, but they remain slaves looking for their masters,
+> all the same. They love being dominated.
+
+* evolution of human relationships
+> "When one is in love, one always begins by deceiving one's self, and one
+> always ends by deceiving others."
+
+> Children begin by loving their parents; as they grow older they judge them;
+> sometimes they forgive them.
+
+> When a woman marries again, it is because she detested her first husband.
+> When a man marries again, it is because he adored his first wife. Women try
+> their luck; men risk theirs."
+
+> She is very clever, too clever for a woman. [on Lady Monmouth]
+
+* perceiving relationships and self
+> When we blame ourselves, we feel that no one else has a right to blame us. It
+> is the confession, not the priest, that gives us absolution. When Dorian had
+> finished the letter, he felt that he had been forgiven.
+
+> A man who is master of himself can end a sorrow as easily as he can invent a
+> pleasure. I don't want to be at the mercy of my emotions. I want to use them,
+> to enjoy them, and to dominate them.
+
+* I like this
+> To become the spectator of one's own life, as Harry says, is to escape the
+> suffering of life.
+
+* "work-life" balance
+> "Good artists exist simply in what they make, and consequently are perfectly
+> uninteresting in what they are. A great poet, a really great poet, is the
+> most unpoetical of all creatures."
+
+* too much weight on looks
+
+> Besides, he has the appearance of being rich, and
+
+> I trust he is one of the aristocracy. He has all the appearance of it, I must
+> say. It might be a most brilliant marriage for Sibyl.
+
+  * from Lord Henry
+> I admit that I think that it is better to be beautiful than to be good. But
+> on the other hand, no one is more ready than I am to acknowledge that it is
+> better to be good than to be ugly."
+
+```
+       good
+     \22|22/1
+      \2|2/11
+       \|/111
+ugly -------- beautiful
+        |\111
+        | \11
+       bad
+
+```
+
+> All crime is vulgar, just as all vulgarity is crime. It is not in you,
+> Dorian, to commit a murder.
+
+* the miraculous painting
+  * the first encounter
+> the dim arrested light that struggled through the cream-coloured silk blinds,
+> the face appeared to him to be a little changed. The expression looked
+> different. One would have said that there was a touch of cruelty in the
+> mouth. It was certainly strange.
+
+> It had made him conscious how unjust, how cruel, he had been to Sibyl Vane.
+
+> There were opiates for remorse, drugs that could lull the moral sense to
+> sleep. But here was a visible symbol of the degradation of sin. Here was an
+> ever-present sign of the ruin men brought upon their souls.
+
+> He hated to be separated from the picture that was such a part of his life,
+
+> He felt a terrible joy at the thought that some one else was to share his
+> secret, and that the man who had painted the portrait that was the origin of
+> all his shame was to be burdened for the rest of his life with the hideous
+> memory of what he had done.
+
+> "You told me you had destroyed it." "I was wrong. It has destroyed me."
+
+* epistemology
+> What was the use of knowing? If the thing was true, it was terrible. If it
+> was not true, why trouble about it?
+
+> I wish I knew," she said at last. He shook his head. "Knowledge would be
+> fatal. It is the uncertainty that charms one. A mist makes things wonderful."
+
+* on catholics
+> [...] stirred him as much by its superb rejection of the evidence of the
+> senses as by the primitive simplicity of its elements and the eternal pathos
+> of the human tragedy that it sought to symbolize.
+
+* contrast with today
+> Society--civilized society, at least-- is never very ready to believe
+> anything to the detriment of those who are both rich and fascinating.
+
+* on countryside
+> They get up early, because they have so much to do, and go to bed early,
+> because they have so little to think about.
+
+> anybody can be good in the country. There are no temptations there. That is
+> the reason why people who live out of town are so absolutely uncivilized.
 
 ## Characters
 
+### Dorian Gray
+* 19th century free-thinker lifestyle (cf Eugen Oniegin)
+
+> "what brings you out so early? I thought you dandies never got up till two,
+> and were not visible till five."
+
+> "Half-past six! What an hour! It will be like having a meat-tea, or reading
+> an English novel. It must be seven. No gentleman dines before seven.
+
+> Harry spends his days in saying what is incredible and his evenings in doing
+> what is improbable.
+
+* processing mail (cf spam)
+> The others he opened listlessly. They contained the usual collection of
+> cards, invitations to dinner, tickets for private views, programmes of
+> charity concerts, and the like that are showered on fashionable young men
+> every morning during the season.
+
+* and 38 starts at 17 yo, continues at 25 and 38
+> I shall be of age in less than a year, and then I can do what I like.
+
+* psychopath
+> Dorian looked at Campbell. "How long will your experiment take, Alan?" he
+> said in a calm indifferent voice. The presence of a third person in the room
+> seemed to give him extraordinary courage.
+
+* exploits his young-looking face to get away with Sibyl's suicide
+
+### Basil Hallward
+* painter
+* killed by DG
+
+### Lord Herry Henry
+> "It was clear to him that the experimental method was the only method by
+> which one could arrive at any scientific analysis of the passions; and
+> certainly Dorian Gray was a subject made to his hand, and seemed to promise
+> rich and fruitful results."
+
+> The real drawback to marriage is that it makes one unselfish. And unselfish
+> people are colourless. They lack individuality.
+* pair selfishness, greed for children
+
+* many quotes come from him, it's even reflected in the book
+
+> "[...]forget you and all your wrong, fascinating, poisonous, delightful theories."
+> "And those are ... ?" asked Lord Henry, helping himself to some salad. "Oh,
+> your theories about life, your theories about love, your theories about
+> pleasure. All your theories, in fact, Harry."
+
+* Dorian respects him
+
+### Lady Agatha
+
+### Sibyl Vane
+  * actress
+  * naïve (16 yo)
+> "what does money matter? Love is more than money."
+
+### James Vane (brother)
+  * accidentally shot
+
+### Alan Campbell
+* chemist, solves problems
+> His dominant intellectual passion was for science.
+* dissolves the corpse in nitric acid
+* blackmailed
+* commits suicide eventually
+
+### Adrian Singleton
+* ???
 
 ## Language & style
 
+* Basil/Dorian: a chapter written as a dialogue
+* Chapter 4: part of chapter is more descriptive and contemplating
+* chapters are sharp delimiters (timeline jumps)
+* in later parts, the inter-chapter gaps get shorter
+* French excerpts I did not understand
+
+* **some** for singular? "as if awakened from some dream."
+* indirect enumeration, requiring cultural knowledge
+> "One evening she is Rosalind, and the next evening she is Imogen. I have seen
+> her die in the gloom of an Italian tomb, sucking the poison from her lover's
+> lips. I have watched her wandering through the forest of Arden, disguised as
+> a pretty boy in hose and doublet and dainty cap. She has been mad, and has
+> come into the presence of a guilty king, and given him rue to wear and bitter
+> herbs to taste of. She has been innocent, and the black hands of jealousy
+> have crushed her reedlike throat. I have seen her in every age and in every
+> costume.
+* another cultural ref
+> Besides, how do you know that Hetty isn't floating at the present moment in
+> some starlit mill-pond, with lovely water-lilies round her, like Ophelia?"
+
+
+TODO when does it take place
+> in London and in the nineteenth century. I
+
+> am off to Paris by the midnight train, and I particularly wanted to see you before I left.
+
+TODO unify quote signs
