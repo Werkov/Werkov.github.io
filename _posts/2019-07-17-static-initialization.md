@@ -75,9 +75,9 @@ static int *ptr_val = add_ptr(int, &val, 1);
 The compilation succeeds :-o If you are thinking of arrays right now, you are
 nailing it.
 
-{% highlight console %}
-
 The relocation entries actually allow specifing an *addend* for each resolved address.
+
+{% highlight console %}
 
 $ readelf -r static.o
 
