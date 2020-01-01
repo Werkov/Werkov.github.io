@@ -12,17 +12,19 @@ Conversely, the asynchronous communication allows (time) decoupling of the
 communicating entities.
 
 ## Examples of sync communication
-TODO
-- social networks chats
-- phone calls
-- business hours
+
+  * face to face, dialogue
+  * phone calls
+  * instant messaging, chats
+  * video calls, conference calls
 
 ## Examples of async communication
-TODO
-- SMS
 
+  * letters, notice board
+  * SMS
+  * e-mail
+  * ticket systems
 
-# Pros and cons
 
 ## Pros of asynchronous communication
 
@@ -48,13 +50,13 @@ This also leverages time management -- time to communicate, time to execute.
 ### Not affected by busy receiver
 
 Asynchronous communication does not prevent sender from independent activities
-while the receiver is busy or absent.
+while the receiver is busy or absent (also out of business hours).
 A synchronous sender will be blocked or keep retrying.
 
 ### No schedule fragmentation
 
 As a way of coping with interrupts or being busy, the synchronous communicants
-(TODO is it a word) may coordinate a common date for the session.
+may coordinate a common date for the session.
 This leads to fragmentation of their schedule, potentially wasting their time.
 
 ### Multiple streams
@@ -67,7 +69,7 @@ in parallel.
 
 There is a middle entity in the asynchronous communication that conveys the
 messages.
-This provides easy archiving, documentation and repeatability of the
+This provides easy archive, documentation and repeatability of the
 communication.
 
 
@@ -84,8 +86,8 @@ tight schedule.
 A timeout in asynchronous communication can be either a consequence of a
 deadline or failure to obtain a response (the other party rejected to respond,
 the message got lost).
-If the response is relevant for the sender, they must have a strategy for the
-timeout answers.
+If the response is relevant for the sender, they must *have a strategy for the
+timeout answers*.
 The timeouts add up in [case of more parties
 communicating](https://en.wikipedia.org/wiki/Consensus_(computer_science)),
 rendering the overall resolution time impractical.
@@ -93,13 +95,13 @@ rendering the overall resolution time impractical.
 ### Ultimate blocking
 
 In the case the sender is in a context where/when they cannot progress
-otherwise without a response, then synchrounous communication is potentially
+otherwise without a response, then synchronous communication is potentially
 preferred.
 
 ### No absolute time
 
 Despite there is [no absolute
-time](https://en.wikipedia.org/wiki/Absolute_space_and_time), typicall human
+time](https://en.wikipedia.org/wiki/Absolute_space_and_time), typical human
 interactions happen much slower than speed of light.
 The "speed" of asynchronous communication can be significantly slower than the
 light (it takes arbitrary time between the send and delivery).
@@ -113,8 +115,8 @@ especially if more than two communicating parties are involved.
 The interpersonal contact by the means of synchronous communication is
 beneficial for initiating an action/activity of the receiver.
 
-When a resource is passed along the message, asynchronicity may support fraud
-("here's the money" vs "I won't see how you handle the money").
+When a resource is passed along the message, asynchronous delivery may support
+fraud ("here's the money" vs "I won't see how you handle the money").
 
 ## Common antipatterns
 
@@ -139,17 +141,10 @@ Phone calls combine the lack of personal contact with all
 [Important does not mean
 urgent](https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method),
 i.e. consider the deadline for the information exchange.
-Also mind the asymmetry between the sender and the receiver (the sender may
+Also mind the asymmetry between the sender and the receiver (the sender may not
 notice an interrupt but receiver does).
 
-avoid LMS by better management
-
-idea: new e-mail header Expires: (for optimized inbox processing)
-- field to express urgency
-
-
-
-## Conclusion
+Avoid last minute storm by better (not only time) management.
 
 ## Further reading
 
@@ -158,44 +153,3 @@ idea: new e-mail header Expires: (for optimized inbox processing)
   * [Dead letter box](https://en.wikipedia.org/wiki/Dead_drop)
   * [How to escape the ‘hyperactive hivemind’ of modern work](https://www.bbc.com/worklife/article/20190715-how-to-escape-the-hyperactive-hivemind-of-modern-work)
 
-TODO
-
-signs of sync people
-
-scalability to mcast, bcast, anycast
-
-DONE
-amplifiction/dampening noise/emotions
-- distractions and interrupts (social networks)
-  - notifications
-high priority/non-maskable
-absent receiver
-- blocking
-- retries
-arranged dates (sync communication) -- time fragmentation
-preference of sync to async
-- being trapped and the door opening (call over SMS)
-  - deadline
-- con of async comm: harder to measure response times, timeouts
-- multipath
-  - as antipattern: send e-mail and call or come
-OTOH multithreading (parallel streams)
-busy receiver (even during business hours)
-repeatability and self-documentation of written comm
-Very related
-https://kimonote.com/@mildbyte/against-the-synchronous-society-3146/
-see also: dead drops
-con of async comm: harder to measure response times, timeouts
-con: relativity of time (logical clock)
-ETIMEDOUT as an answer
-- when real-time constraints are involved
-- when does not want to answer
-
-time to execute, time to communicate aka (deep) concentration
-output buffering (fixing typos, refactoring)
-https://tech.slashdot.org/story/19/07/16/0450236/how-to-escape-the-hyperactive-hivemind-of-modern-work
-sync communication -- useful when deadline approaches OR project mgmt
-fails (to prepare in advance)
-sync communication -- pro: when handling delegated resource/valuable
-(money,...), prevents fraud
-sync communication -- contraint solving w/out xactions (e.g. arranging multiple meetings)
