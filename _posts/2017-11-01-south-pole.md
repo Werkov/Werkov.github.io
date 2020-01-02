@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The South Pole (book)
-tags: book
+tags: book Antarctica Madeira
 ---
 
 Reading period: Jul--Oct 2017.
@@ -61,16 +61,15 @@ Schedule
   reprobate), Frithjof (killed at one of camps during return), Nigger (didn't survie descent)
   Snuppesen (gave birth to 8 pups)
 * plan: 42 up the plateau, 24 slaughter, 18 continuing (6 per sledge)
+
+> the thought of the fresh dog cutlets that awaited us when we got to the top
+> made our mouths water.
+
 * returned with 11 dogs and two sledges
 * 29th, first dog shot (80°45')
 * Dec 19, first dog killed on homeward journey (worn out)
 * 500 g/day of pemmican (still they were greedy)
 * worries that astray dogs ate their depots
-
-
-```
-the thought of the fresh dog cutlets that awaited us when we got to the top made our mouths water.
-```
 * interestingly the decided to save on of Argentinian pigs
 
 ### Misc
@@ -156,35 +155,30 @@ the thought of the fresh dog cutlets that awaited us when we got to the top made
 
 ### Language & style
 
-```
-...big Emperor penguin, making bow after bow. It gave exactly the impression of
-having come up simply to pay us its respects. We were sorry to repay its
-attention so poorly, but such is the way of the world. With a final bow it
-ended its days in the frying-pan.
-```
-```
-came a crab-eater, shining like silver in the sun. He came right up, was photographed, and -- shot.
-```
-```
-"An Emperor penguin just come on a visit -- soup-kettle." He did not get a very long epitaph.
-```
+Animals aren't humans and humans are carnivores:
+
+> ...big Emperor penguin, making bow after bow. It gave exactly the impression
+> of having come up simply to pay us its respects. We were sorry to repay its
+> attention so poorly, but such is the way of the world. With a final bow it
+> ended its days in the frying-pan.
+
+> came a crab-eater, shining like silver in the sun. He came right up, was
+> photographed, and -- shot.
+
+> "An Emperor penguin just come on a visit -- soup-kettle." He did not get a
+> very long epitaph.
 
 Environment reference
-```
-as they say, you never know what the day is like before sunset.
-```
+> as they say, you never know what the day is like before sunset.
 
-irony
-```
-the pleasure of standing out there in rather light attire had not exactly put warmth into our bodies.
-```
+Bitterness
+> the pleasure of standing out there in rather light attire had not exactly put
+> warmth into our bodies.
 
-joking (on the vessel)
-```
-first, I came by and told him that it was blowing a hurricane if he cared to
-see what it looked like. 'Oh, yes,' he said, 'I could guess it was blowing, for
-the galley fire has never drawn so well;
-```
+Joking (on the vessel during sail)
+> first, I came by and told him that it was blowing a hurricane if he cared to
+> see what it looked like. 'Oh, yes,' he said, 'I could guess it was blowing, for
+> the galley fire has never drawn so well;
 
-* they employed bitches
-* intermezzo with a 3rd person visits the hut
+* they employed *bitches*
+* intermezzo with a 3rd person visiting the hut
