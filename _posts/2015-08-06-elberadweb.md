@@ -14,35 +14,35 @@ Though it was theoretically viable to undertake the whole track, I wanted to
 enjoy the ride, for instance have a sufficient stop for a sufficient
 [lunch][3].
 Thus I decided to take a [shortcut through the hilly region of *České
-Středohoří*][4], with it's measured 175 km it provided enough time reserve for
+Středohoří*][4], with its measured 175 km it provided enough time reserve for
 various stops.
 
 ## The journey
 
 I bought two bananas, some sweets, took ~2.75 liters of beverages and packed
-some clothes for consequent stay in Berlin and early in the morning I set out
-for the trip.
+some clothes for consequent stay in Berlin and I set out for the trip early in
+the morning.
 
 ### 8:59 Mělník (56 km)
 
 Due to organization issues I departed at 6:00 from Troja.
 There was already some light and the air was coldly refreshing.
 Interestingly, the light mist above the river was filled with plethora of
-fishermen continuing up to 10 km out of Prague.
-I climbed the Vltava valley in Klecánky and saw the sun directly sun first time
-that day.
+fishermen spreading almost 10 km out of Prague.
+I climbed the Vltava valley in Klecánky and saw the sun directly shining the
+first time that day.
 When I was passing through Kralupy nad Vltavou, I stopped at a gas station to
-inflate my tyres -- I did not regret, the road surface was much better during
-the rest of the path.
+inflate my tires -- I did not regret, the road surface was much better during
+the rest of the journey.
 Even though I had already been cycling for more than an hour, people were only
 travelling to work and shops were still closed.
-With accordance to my schedule, I came to Mělník moments before 9:00 and had a
+In accordance with my schedule, I came to Mělník moments before 9:00 and had a
 short stop on the Labe bank with the view of the Mělník castle and a vineyard
 hillside.
 
 ### 11:07 Liběšice (93 km)
 
-The scenery of the Labe river behind Mělník reminded me a maritime coasts of
+The scenery of the Labe river behind Mělník reminded me maritime coasts of
 Mediterranean countries -- flat land, ports and cargo boats as well as personal
 boats.
 On the route, I passed by quite an impressive buildings and chimneys of the
@@ -52,7 +52,7 @@ The climbs weren't steep neither long (comparable to Vysočina) and fortunately
 they were shaded by trees, so it was a welcomed change from the flat riverbank
 ride.
 
-In Liběšice, I made a navigational mistake and began returning to the river's
+In Liběšice, I made a navigation mistake and began returning to the river's
 course to Litoměřice.
 I noticed this after I climbed around one kilometer behind
 Liběšice village.
@@ -116,18 +116,18 @@ properly, I missed a ferry in Königsberg and continued on the right bank of the
 river.
 I realized it was not correct when the road began to climb and changed to a
 forest path full of roots.
-With help of OpenCycleMaps, I discovered a narrow path right along the right
+With the help of OpenCycleMaps, I discovered a narrow path right along the right
 side of the Elbe river.
 The surface was poor yet the path was wide enough not be burnt by adjacent
 nettles.
 I relieved when I reached Kurort Rathen with paved road again.
 Following kilometers were quite exhausting as it was a really hot afternoon and
-despite being very thirsty warm water from my bottles wasn't very refreshing
-(though dehydration would be worse).
+despite being very thirsty, the warm water from my bottles wasn't very
+refreshing (though dehydration would be worse).
 Earlier (from readings of various maps) I thought Pirna was a suburb of Dresden
--- well, it is not.
-I stopped there to buy a cold (and sweet) drink and start worrying whether I'd
-catch the bus in more than 20 kilometers distant Dresden.
+-- well, it was not.
+I stopped there to buy a cold (and sweet) drink and to start worrying whether
+I'd catch the bus in more than 20 kilometers distant Dresden.
 
 ### 18:21 Dresden (202 km)
 
@@ -138,7 +138,7 @@ route and thus effectively slow me down.
 Fortunately, the pointer signs were quite good on the final stage and I didn't
 get lost.
 There were other obstacles though.
-What got on I my nerves first was the cobblestoned road while entering the
+What got on my nerves first was the cobblestoned road while entering the
 Dresden.
 I would expected that the Landshauptstadt would have better surface on the
 major cycling path than coarse cobblestones where you could ride 15 km/h
@@ -155,7 +155,7 @@ the rack on the bus' tail.
 ### Conclusion
 
 In the bus, I had a little nausea (probably because of all that liquids that I
-drank) and couldn't properly finish a sneeze.
+drank) and couldn't properly finish a yawn.
 I realized maybe it wasn't the cleverest idea to cycle 200 km a day when the
 day is a really hot one.
 
