@@ -1,6 +1,6 @@
 ---
 title: Šumava trip
-tags: travel Czechia calibration
+tags: travel Czechia calibration physics
 layout: post
 ---
 
@@ -41,8 +41,7 @@ the morning and later a thunderstorm at night.
 - There are many areas with dead trees because of bark beetles and wind
   exposition. It is deliberately kept this way so that you can see how a
   "natural" forest looks like.
-  - We saw no trees compared to an [older
-    photo](https://cs.wikipedia.org/wiki/Soubor:Trojmez%C3%AD_GER-CZE-AUT_2.jpg).
+  - We saw no trees compared to an [older photo](https://cs.wikipedia.org/wiki/Soubor:Trojmez%C3%AD_GER-CZE-AUT_2.jpg).
 - There is a border between North and Black sea drainage basins which we
   crossed.
 - Alpine outlook, in [theory](https://www.heywhatsthat.com/?view=QJ7I37S4) and
@@ -73,6 +72,7 @@ the morning and later a thunderstorm at night.
     added energy to the wave.
   - We waited some time (at least 2 minutes but in total ~5 minutes) and this
     configuration seemed quite stable.
+  - It's [not that rare](https://www.youtube.com/watch?v=IaY6hHb4FgI).
 
 ![Figure 1](/resources/kasperske-hory-fountain.svg)
 
