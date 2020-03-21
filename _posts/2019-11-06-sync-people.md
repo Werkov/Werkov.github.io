@@ -133,8 +133,8 @@ When deadline approaches and there is a bulk of communication to happen, it may
 cause synchronous messaging storm and overload.
 
 ### Phone calls
-Phone calls combine the lack of personal contact with all
-- verbal/nonverbal
+Phone calls combine the lack of personal contact, inability to transfer
+nonverbal channel with drawbacks of synchronous communication.
 
 ## Recommendations
 
