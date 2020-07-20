@@ -64,5 +64,13 @@ of the road (it happens during ride).
 
 Task: How much would Earth rotation change due to this change?
 
+## Burning sticks
 
-*Credit goes to my various friends.*
+You have two sticks that when lit at en end burn to the other end with variable
+rate but it always takes one hour to burn the stick. You have two such sticks
+(each has different variations in its rate). How to measure 45 minutes with
+these?
+
+[Source and solution](https://www.youtube.com/watch?v=VvqajwOOmpM)
+
+*Credit goes to my various friends or named online sources.*
