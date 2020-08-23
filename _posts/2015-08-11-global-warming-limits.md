@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Global warming limits
-tags: physics
+tags: environment physics
 ---
 
 ## Motivation
@@ -19,24 +19,24 @@ astronomical unit away from the Sun?
 The power received from Sun at 1 astronomical unit is
 
 \\[
-\frac{\pi r_{Earth}^2}{4 \pi \cdot (1 AU)^2} P_\odot \,.
+\frac{\pi r\_{E}^2}{4 \pi \cdot (1 AU)^2} P_\odot \,.
 \\]
 
 By the Stefan-Boltzmann radiation law the radiated power is
 
 \\[
-\frac{\pi r_{Earth}^2}{4 \pi \cdot (1 AU)^2} P_\odot \,.
-4 \pi r_{Earth}^2 \sigma T^4\,.
+4 \pi r\_{E}^2 \sigma T^4\,.
 \\]
 
 Together, the equilibrium temperature is thus
 
 \\[
-\frac{\pi r_{Earth}^2}{4 \pi \cdot (1 AU)^2} P_\odot \,.
+\frac{\pi r\_{E}^2}{4 \pi \cdot (1 AU)^2} P_\odot = 4 \pi r\_{E}^2 \sigma T^4
+\,\Rightarrow\,
 T = \sqrt[4]{\frac{P_\odot}{16 \pi (1 AU)^2 \sigma}}\,.
 \\]
 
-Feeding this into [Wolfram Alpha][1] (reducing incoming power by Earth albedo),
+Feeding this into [Wolfram Alpha][1] (reducing incoming power by Earth's albedo),
 we obtain the equilibrium temperature of Earth $T \approx -25 °C$.
 
 ## Conclusion
