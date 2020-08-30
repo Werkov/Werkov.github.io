@@ -40,6 +40,7 @@ Peaks of selected mountain ranges (this would be a [challenge][1]).
 
 ### Čerchov (1042 m)
   * 2007?, on foot
+  * [2020, by bike]({% post_url 2020-08-02-corona %})
 
 
 ## Doupovské hory
