@@ -54,8 +54,9 @@ comparison would be still valid.)
     * OTOH, it's a shallow achievement compared with science discoveries,
       bootstraping a successfull project (whatever it is), being a dictator
       etc.
-  * Expect to [have less and less free-/open-minded friends][2] (like you)
+  * Expect to have [less][2] and [less][3] free-/open-minded friends (like you)
     since they settle and you have to adapt as well.
 
 [2]: http://www.theatlantic.com/health/archive/2015/10/how-friendships-change-over-time-in-adulthood/411466/
+[3]: https://ourworldindata.org/time-with-others-lifetime
 
