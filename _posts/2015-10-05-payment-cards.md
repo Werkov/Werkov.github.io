@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Payment cards entropy
+tags: number
 ---
 
 ## Naïve fantasy
