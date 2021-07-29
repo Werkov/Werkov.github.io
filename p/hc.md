@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Hill climbing
+homelink: true
 ---
 
 Peaks of selected mountain ranges (this would be a [challenge][1]).

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tags
+homelink: true
 ---
 
 <div id='tag_cloud'>
