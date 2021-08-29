@@ -1,0 +1,54 @@
+---
+layout: post
+title: Bohemian-Moravian Highlands
+tags: ['travel', 'cycling', 'national park', 'Vysočina']
+---
+
+## Diary
+
+### Day 0
+- train travel, quite OK
+- running in the rain
+
+### Day 1
+- bicycle trip
+  - warmup, short(er)
+  - acknowledging glades
+  - enjoying new cycling path along the river
+
+### Day 2
+- slow morning, changed plans due to outer conditions
+- good lecture about probability (TODO embed notes)
+
+### Day 3
+- cleaning and maintenance
+- good trip to the national park
+  - good weather but first signs of allergy
+- accidental socialization with old friends in a pub -- very good (factor of surprise, unexpected)
+
+### Day 4
+- trip to highlands
+  - very picturesque sceneries
+  - colder windier weather
+  - the chateaux was underwhelming (but not the rest of trip)
+  - allergy getting stronger?
+  - brownfield visit, it'd be good to gentrify but there are still factories
+- windmill
+  - plain exposition
+  - not much technical details -- it is undocumented and unique so it could only be estimated
+  - the staff knew only the learnt basics
+  - reason: it was actually a social living/flats, most of the 20th century
+
+### Day 5
+- trip to water dam
+  - almost trapped in fallen forest and river vegetation
+  - surprising unquality of cycling paths, not really for a road bike
+  - swimming on a lonely beach
+  - good lunch and child labor in brewery restaurant (also teambuilding of a company and groups in the vicinity)
+  - extension to the dam body itself, learning taking photos in automatic panorama mode
+  - nice cycling path along south "banks" of the dam, flat profile, good forest scenery
+- evening pub with another friend, discussing cycling trips
+
+### Day 6
+- travel back to Prague
+- one quick AG test and pub after arrival
