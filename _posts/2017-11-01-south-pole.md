@@ -9,7 +9,9 @@ Reading period: Jul--Oct 2017.
 ## Plot
 
 Schedule
-* Dec 15, 1911, first polar station
+* Aug 1910, setting out from Norway
+* Jan 1910, setting up Framheim
+* Dec 15, 1911, reaching the pole
 * Jan 30, 1912, last farewell to the Barrier
 
 
