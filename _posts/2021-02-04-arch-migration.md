@@ -52,3 +52,9 @@ tags: Linux desktop sysadmin Arch Ubuntu
   * unclear semantics of `optdepends` dependency
   * gnu-free-fonts can't be watched (too thin, weirdly blurred antialiasing)
     * helpful [calibration image](http://www.lagom.nl/lcd-test/subpixel.php)
+
+## October 2021 update
+
+  * no debuginfo, need to rebuild packages with debuginfo flag (I can't just download debuginfo)
+  * OTOH, fix (for a severe memory corruptino bug) was already commited when I
+    started dealing with it
