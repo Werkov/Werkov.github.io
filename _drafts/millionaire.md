@@ -54,17 +54,21 @@ function setBit(a, range, val) {
 	return a;
 }
 
+/*
+ * n	input value
+ * r	how many bits to rotate
+ * w	wraparound width in bit
+ */
 function leftrot(n, r, w) {
 	r = BigInt(r);
 	w = BigInt(w);
 	let full_mask = (0x1n << w) - 1n;
 	let mask = ((0x1n << r) - 1n) << (w-r);
 
-        // < r <  w-r <
+	// < r <  w-r <
 	// ....|.......
 
-	return
-		((n << r) & full_mask)
+	return	((n << r) & full_mask)
 		|
 		((n & mask) >> (w-r));
 }
@@ -127,20 +131,21 @@ let R = new Array(d);
 // Bob's _R_eceipt as array
 
 res = R.reduce((acc, x) => acc ^= x, sendS);
-console.log(res);
+console.log("res:", res);
 
 streak = 0;
+streakThr = 10; // TODO understand better this value
 for (let j = k; j >= 0; --j) {
 	if (getBit(res, j))
 		streak = 0;
 	else
 		++streak;
-	if (streak > TODO_thr)
+	if (streak > streakThr)
 		console.log(j);
 }
 
 
 console.log(a+b);
 console.log(a, b);
-console.log(K);
+console.log(k);
 </script>
