@@ -4,18 +4,32 @@ title: YMP
 tags: cryptography
 ---
 
+See also https://blog.goodaudience.com/understanding-zero-knowledge-proofs-through-simple-examples-df673f796d99
+
 <script>
 // Protocol implementation as per
 // https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.110.8816
+// - paper indexing:
+//   <-->  0..k-1
+//   ^v    1..d
+// - my indexing:
+//   <-->  0..k-1
+//   ^v    0..d-1
 // and
 // https://en.wikipedia.org/wiki/Yao%27s_Millionaires%27_problem
 
 function getRandInt(n) {
 	return Math.floor(Math.random() * n);
+	if (typeof(getRandInt.seed) == 'undefined')
+		getRandInt.seed = 42;
+	// TODO replace with crypto API
+	ret = (getRandInt.seed * 16807) % ((1 << 31) - 1);
+	getRandInt.seed = ret;
+	return ret % n;
 }
 
-function rand() {
-	return BigInt(Math.floor(Math.random() * 2));
+function randBit() {
+	return getRandInt(2);
 }
 
 /*
@@ -36,6 +50,7 @@ function getBit(a, range) {
 	return (a >> low) & mask;
 }
 
+// TODO consider high-boundary exclusive
 function setBit(a, range, val) {
 	if (typeof(range) == 'number')
 		range = BigInt(range);
@@ -73,65 +88,107 @@ function leftrot(n, r, w) {
 		((n & mask) >> (w-r));
 }
 
-var a = 10n;
-var b = 30n;
+function hexArray(a) {
+	if (typeof(a) == 'number' || typeof(a) == 'bigint')
+		return a.toString(16);
+	let res = new Array();
+	for (let i in a) {
+		res[i] = hexArray(a[i]);
+	}
+	return res;
+}
+
+var a = 49n;
+var b = 51n;
 
 // key len in OT
+// must hold: k > d*d
 var k = 512;
 var d = 20;
 
+var k = 64;
+var d = 6;
+
+console.log(
+	"a:\t", a.toString(16),
+	"b:\t", b.toString(16)
+);
 
 // Alice
 let A = new Array(d);
 for (let i = 0; i < d; ++i)
 	A[i] = [0n, 0n];
 
-let r = getRandInt(2*k);
-let s = getRandInt(k);
+// XXX paper states 2*k but makes no sense for rotations of k-bit numbers
+let r = getRandInt(k);
+// debug rot: while ((r = getRandInt(k)) % 4);
+
+// paper says "large enough" without specification
+// generate in [2*d, (k-1)] (inclusive)
+let s = 2*d + getRandInt(k-2*d);
+
+console.log(
+	"r = ", r,
+	"s = ", s
+);
 
 for (let i = 0; i < d; ++i) {
 	// set parts based on a[i]
-	l = 1 - Number(getBit(a, i));
-	A[i][l] = setBit(A[i][l], [0, 2*i + 1], rand);
-	m = 2*i+2; // TODO check off by one
+	let l = 1 - Number(getBit(a, i));
+	let m = 2*i; 
+
+	// random triangle
+	A[i][l] = setBit(A[i][l], [0, m-1], randBit);
+	// decisive "diagonal"
+	A[i][l] = setBit(A[i][l], m, getBit(a, i));
 	A[i][l] = setBit(A[i][l], m+1, 1);
-	A[i][l] = setBit(A[i][l], m+1, getBit(a, i));
 
 	// randomize others
-	A[i][0] = setBit(A[i][0], [s, k], rand);
-	A[i][1] = setBit(A[i][1], [s, k], rand);
+	A[i][0] = setBit(A[i][0], [s, k-1], randBit);
+	A[i][1] = setBit(A[i][1], [s, k-1], randBit);
 }
 
 let S = new Array(d);
 for (let i = 0; i < d; ++i)
-	S[i] = setBit(0n, [0, k], rand);
+	// S[i] = setBit(0n, [0, k-1], randBit);
+	S[i] = setBit(0n, [0, k-1], 0);
 
+// two most significat bits
 ss = S.slice(0, d-1).map(x => getBit(x, [k-2, k-1]));
 as = A.slice(0, d).map(x => getBit(x[0], [k-2, k-1]));
-xorval = ss.reduce((acc, x) => acc ^= x, 0x11n);
+xorval = ss.reduce((acc, x) => acc ^= x, 0x3n);
 xorval = as.reduce((acc, x) => acc ^= x, xorval);
-S[d-1] = setBit(S[d-1], k-1, xorval & 0x1n);
-S[d-1] = setBit(S[d-1], k-2, (xorval >> 1n)); // TODO check bit order
+S[d-1] = setBit(S[d-1], k-2, xorval & 0x1n);
+S[d-1] = setBit(S[d-1], k-1, (xorval >> 1n));
 
 let A2 = new Array(d);
 for (let i = 0; i < d; ++i) {
 	A2[i] = Array(2);
 	A2[i][0] = leftrot(A[i][0] ^ S[i], r, k);
 	A2[i][1] = leftrot(A[i][1] ^ S[i], r, k);
+	if (i == d-1){
+		console.log(hexArray(A[i]), "^", hexArray(S[i]), "=", hexArray([A[i][0] ^ S[i], A[i][1] ^ S[i]]));
+	}
 }
+
+sendS = leftrot(S.reduce((acc, x) => acc ^= x, 0n), r, k);
+console.log("sendS:\t", sendS.toString(16));
 
 // Alice does OT of A2[i][0] and A2[i][1]
 // Bob receives A2[i][b[i]]
 
-sendS = leftrot(S.reduce((acc, x) => acc ^= x, 0n), r, k);
 
-// TODO Bob's evaluation
-
-let R = new Array(d);
 // Bob's _R_eceipt as array
+let R = new Array(d);
 
+// TODO oblivious transfer here
+for (let i = 0; i < d; ++i) {
+	R[i] = A2[i][getBit(b, i)];
+}
+
+console.log("R:\t", hexArray(R));
 res = R.reduce((acc, x) => acc ^= x, sendS);
-console.log("res:", res);
+console.log("res:\t", (res + (0xbeefn << BigInt(k))).toString(16));
 
 streak = 0;
 streakThr = 10; // TODO understand better this value
@@ -140,8 +197,6 @@ for (let j = k; j >= 0; --j) {
 		streak = 0;
 	else
 		++streak;
-	if (streak > streakThr)
-		console.log(j);
 }
 
 
