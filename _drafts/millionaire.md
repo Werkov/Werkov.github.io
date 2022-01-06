@@ -100,7 +100,9 @@ function hexArray(a) {
 }
 
 var a = 0x8n;
-var b = 0x0n;
+var b = 0x8n;
+
+// a,b,r,s 8,8,14,55 gives wrong result
 
 // key len in OT
 // must hold: k > d*d (even more, see below)
@@ -165,18 +167,27 @@ for (let i = 0; i < d; ++i) {
 }
 
 let S = new Array(d);
-for (let i = 0; i < d; ++i)
+for (let i = 0; i < d; ++i) {
 	S[i] = setBit(0n, [0, k-1], randBit);
 	// debug: disable xor encryption
-	//S[i] = setBit(0n, [0, k-1], 0);
+	S[i] = setBit(0n, [0, k-1], 0);
+}
 
 // two most significat bits
 ss = S.slice(0, d-1).map(x => getBit(x, [k-2, k-1]));
+// XXX this only works if Bob's number is all zeroes, but Alice doesn't know what he'll pick
+//     the '11' mark is then transferred corrupted
+//     the upside is that this matters only when a==b (and then the actual result is not that important)
 as = A.slice(0, d).map(x => getBit(x[0], [k-2, k-1]));
 xorval = ss.reduce((acc, x) => acc ^= x, 0x3n);
+console.log("xorval = ", xorval);
 xorval = as.reduce((acc, x) => acc ^= x, xorval);
+console.log("xorval = ", xorval);
+console.log("S=", hexArray(S));
 S[d-1] = setBit(S[d-1], k-2, xorval & 0x1n);
+console.log("S=", hexArray(S));
 S[d-1] = setBit(S[d-1], k-1, (xorval >> 1n));
+console.log("S=", hexArray(S));
 
 let A2 = new Array(d);
 for (let i = 0; i < d; ++i) {
@@ -209,11 +220,16 @@ console.log("cw:\t", codeword.toString(16));
 
 streak = 0;
 let reply = undefined;
-for (let j = k; j >= 0; --j) {
+for (let j = k-1; j >= 0; --j) {
 	if (getBit(codeword, j)) {
 		if (streak >= minZone) {
-			console.assert(j > 1);
-			reply = getBit(codeword, j-1);
+			let r;
+			// rotation in the middle 2b encoding
+			if (j == 0)
+				r = k-1;
+			else
+				r = j-1;
+			reply = getBit(codeword, r);
 		}
 		streak = 0;
 	} else
