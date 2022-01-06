@@ -17,6 +17,7 @@ See also https://blog.goodaudience.com/understanding-zero-knowledge-proofs-throu
 //   ^v    0..d-1
 // and
 // https://en.wikipedia.org/wiki/Yao%27s_Millionaires%27_problem
+// beware its just a toy (bugs, side-channels, post-quantum crypto)
 
 function getRandInt(n) {
 	return Math.floor(Math.random() * n);
@@ -98,16 +99,19 @@ function hexArray(a) {
 	return res;
 }
 
-var a = 49n;
-var b = 51n;
+var a = 0x8n;
+var b = 0x0n;
 
 // key len in OT
-// must hold: k > d*d
+// must hold: k > d*d (even more, see below)
 var k = 512;
 var d = 20;
 
 var k = 64;
 var d = 6;
+
+var k = 132;
+var d = 10;
 
 console.log(
 	"a:\t", a.toString(16),
@@ -120,18 +124,30 @@ for (let i = 0; i < d; ++i)
 	A[i] = [0n, 0n];
 
 // XXX paper states 2*k but makes no sense for rotations of k-bit numbers
-let r = getRandInt(k);
-// debug rot: while ((r = getRandInt(k)) % 4);
+// actually, there have to be at least d options (equal to guessing the
+// position of highest decisive bit) but we use 2 bit encoding,
+// so the rotation has to cover 2*d bits
+// we could use even k bit rotation but:
+//   a) that would inflict more contraints on the lenght of zero-zone to
+//      avoid encountering zone of zeroes generated randomly
+//   b) rotation boundary can be in the middle of the 2 encoding bits making 
+//      result detection harder
+let r = getRandInt(2*d);
 
-// paper says "large enough" without specification
-// generate in [2*d, (k-1)] (inclusive)
-let s = 2*d + getRandInt(k-2*d);
+// paper says "large enough" without clear specification
+// paper specifies zone of zeroes to be from [d, d*d+d] interval
+//   that gives s \in (3*d, d*d+3*d]
+// k must be designed k >= d*d+3*d
+let minZone = d;
+console.assert(k >= d*d + 2*d + minZone);
+let s = (2*d + minZone) + getRandInt(k - (2*d + minZone));
 
 console.log(
 	"r = ", r,
 	"s = ", s
 );
 
+// TODO refactor the A generation into more reusable code
 for (let i = 0; i < d; ++i) {
 	// set parts based on a[i]
 	let l = 1 - Number(getBit(a, i));
@@ -150,8 +166,9 @@ for (let i = 0; i < d; ++i) {
 
 let S = new Array(d);
 for (let i = 0; i < d; ++i)
-	// S[i] = setBit(0n, [0, k-1], randBit);
-	S[i] = setBit(0n, [0, k-1], 0);
+	S[i] = setBit(0n, [0, k-1], randBit);
+	// debug: disable xor encryption
+	//S[i] = setBit(0n, [0, k-1], 0);
 
 // two most significat bits
 ss = S.slice(0, d-1).map(x => getBit(x, [k-2, k-1]));
@@ -187,20 +204,22 @@ for (let i = 0; i < d; ++i) {
 }
 
 console.log("R:\t", hexArray(R));
-res = R.reduce((acc, x) => acc ^= x, sendS);
-console.log("res:\t", (res + (0xbeefn << BigInt(k))).toString(16));
+let codeword = R.reduce((acc, x) => acc ^= x, sendS);
+console.log("cw:\t", codeword.toString(16));
 
 streak = 0;
-streakThr = 10; // TODO understand better this value
+let reply = undefined;
 for (let j = k; j >= 0; --j) {
-	if (getBit(res, j))
+	if (getBit(codeword, j)) {
+		if (streak >= minZone) {
+			console.assert(j > 1);
+			reply = getBit(codeword, j-1);
+		}
 		streak = 0;
-	else
+	} else
 		++streak;
 }
+console.assert(typeof(reply) != "undefined");
 
-
-console.log(a+b);
-console.log(a, b);
-console.log(k);
+console.log(a, reply ? ">=" : "<",  b);
 </script>
