@@ -91,7 +91,7 @@ function leftrot(n, r, w) {
 
 function hexArray(a) {
 	if (typeof(a) == 'number' || typeof(a) == 'bigint')
-		return a.toString(16);
+		return a.toString(16).padStart(k/4, '0');
 	let res = new Array();
 	for (let i in a) {
 		res[i] = hexArray(a[i]);
@@ -198,6 +198,7 @@ for (let i = 0; i < d; ++i) {
 		console.log(hexArray(A[i]), "^", hexArray(S[i]), "=", hexArray([A[i][0] ^ S[i], A[i][1] ^ S[i]]));
 	}
 }
+console.log("A2\n", hexArray(A2));
 
 sendS = leftrot(S.reduce((acc, x) => acc ^= x, 0n), r, k);
 console.log("sendS:\t", sendS.toString(16));
