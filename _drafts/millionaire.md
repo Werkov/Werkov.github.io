@@ -164,6 +164,11 @@ for (let i = 0; i < d; ++i) {
 	// randomize others
 	A[i][0] = setBit(A[i][0], [s, k-1], randBit);
 	A[i][1] = setBit(A[i][1], [s, k-1], randBit);
+
+	// top 2 bit must be bitwise equal not to corrupt '11' mark
+	// XXX paper had this wrong
+	A[i][0] = setBit(A[i][0], k-1, getBit(A[i][1], k-1));
+	A[i][0] = setBit(A[i][0], k-2, getBit(A[i][1], k-2));
 }
 
 let S = new Array(d);
@@ -173,21 +178,14 @@ for (let i = 0; i < d; ++i) {
 	S[i] = setBit(0n, [0, k-1], 0);
 }
 
-// two most significat bits
-ss = S.slice(0, d-1).map(x => getBit(x, [k-2, k-1]));
-// XXX this only works if Bob's number is all zeroes, but Alice doesn't know what he'll pick
-//     the '11' mark is then transferred corrupted
-//     the upside is that this matters only when a==b (and then the actual result is not that important)
-as = A.slice(0, d).map(x => getBit(x[0], [k-2, k-1]));
-xorval = ss.reduce((acc, x) => acc ^= x, 0x3n);
-console.log("xorval = ", xorval);
-xorval = as.reduce((acc, x) => acc ^= x, xorval);
-console.log("xorval = ", xorval);
-console.log("S=", hexArray(S));
-S[d-1] = setBit(S[d-1], k-2, xorval & 0x1n);
-console.log("S=", hexArray(S));
-S[d-1] = setBit(S[d-1], k-1, (xorval >> 1n));
-console.log("S=", hexArray(S));
+// XXX paper botched this: only sendS must xor the mark, not S[d-1]
+// mark is xor-sum of all As ^ the real mark (only top 2b)
+// this way As would xor away, the result would me the real mark only then
+let as = A.slice(0, d).map(x => getBit(x[0], [k-2, k-1]));
+let xorval = as.reduce((acc, x) => acc ^= x, 0x3n);
+let mark = 0n;
+mark = setBit(mark, k-1, (xorval >> 1n));
+mark = setBit(mark, k-2, xorval & 0x1n);
 
 let A2 = new Array(d);
 for (let i = 0; i < d; ++i) {
@@ -200,7 +198,7 @@ for (let i = 0; i < d; ++i) {
 }
 console.log("A2\n", hexArray(A2));
 
-sendS = leftrot(S.reduce((acc, x) => acc ^= x, 0n), r, k);
+sendS = leftrot(S.reduce((acc, x) => acc ^= x, mark), r, k);
 console.log("sendS:\t", sendS.toString(16));
 
 // Alice does OT of A2[i][0] and A2[i][1]
