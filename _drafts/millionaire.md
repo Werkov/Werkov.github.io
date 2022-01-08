@@ -234,6 +234,9 @@ for (let j = k-1; j >= 0; --j) {
 	} else
 		++streak;
 }
+if (typeof(reply) == "undefined" && streak >= minZone) {
+	reply = getBit(codeword, k-2);
+}
 console.assert(typeof(reply) != "undefined");
 
 console.log(a, reply ? ">=" : "<",  b);
