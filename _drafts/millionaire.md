@@ -142,7 +142,7 @@ let r = getRandInt(2*d);
 // k must be designed k >= d*d+3*d
 let minZone = d;
 console.assert(k >= d*d + 2*d + minZone);
-let s = (2*d + minZone) + getRandInt(k - (2*d + minZone));
+let s = (2*d + minZone) + getRandInt(d*d);
 
 console.log(
 	"r = ", r,
