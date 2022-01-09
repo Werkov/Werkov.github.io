@@ -7,6 +7,8 @@ tags: cryptography
 See also https://blog.goodaudience.com/understanding-zero-knowledge-proofs-through-simple-examples-df673f796d99
 
 <script>
+// TODO isea: use promises where user input matters?
+
 // Protocol implementation as per
 // https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.110.8816
 // - paper indexing:
@@ -89,6 +91,24 @@ function leftrot(n, r, w) {
 		((n & mask) >> (w-r));
 }
 
+/*
+ * a, b		ArrayBuffer
+ * result	Uint8Array
+ */
+function xorArray(a, b) {
+	// not working with 64b,
+	// not ideal but avoid endianess issues when converting typed arrays
+	// and easier alignment
+	let va = new Uint16Array(a);
+	let vb = new Uint16Array(b);
+	console.assert(va.length == vb.length, va.length, vb.length);
+	let res = new Uint16Array(va.length);
+	for (let i = 0; i < res.length; ++i) {
+		res[i] = va[i] ^ vb[i];
+	}
+	return new Uint8Array(res.buffer);
+}
+
 function hexArray(a) {
 	if (typeof(a) == 'number' || typeof(a) == 'bigint')
 		return a.toString(16).padStart(k/4, '0');
@@ -100,21 +120,24 @@ function hexArray(a) {
 }
 
 var a = 0x8n;
-var b = 0x8n;
+var b = 0x9n;
 
 // a,b,r,s 8,8,14,55 gives wrong result
 
 // key len in OT
 // must hold: k > d*d (even more, see below)
-var k = 512;
+// k must be compatible with RSA message len
+const k = 512;
 var d = 20;
 
-var k = 64;
+// var k = 64;
 var d = 6;
+//var d = 3;
 
-var k = 132;
-var d = 10;
+// var k = 132;
+// var d = 10;
 
+function ioanis() {
 console.log(
 	"a:\t", a.toString(16),
 	"b:\t", b.toString(16)
@@ -130,7 +153,7 @@ for (let i = 0; i < d; ++i)
 // position of highest decisive bit) but we use 2 bit encoding,
 // so the rotation has to cover 2*d bits
 // we could use even k bit rotation but:
-//   a) that would inflict more contraints on the lenght of zero-zone to
+//   a) that would inflict more contraints on the length of zero-zone to
 //      avoid encountering zone of zeroes generated randomly
 //   b) rotation boundary can be in the middle of the 2 encoding bits making 
 //      result detection harder
@@ -175,7 +198,7 @@ let S = new Array(d);
 for (let i = 0; i < d; ++i) {
 	S[i] = setBit(0n, [0, k-1], randBit);
 	// debug: disable xor encryption
-	S[i] = setBit(0n, [0, k-1], 0);
+	// S[i] = setBit(0n, [0, k-1], 0);
 }
 
 // XXX paper botched this: only sendS must xor the mark, not S[d-1]
@@ -217,6 +240,7 @@ console.log("R:\t", hexArray(R));
 let codeword = R.reduce((acc, x) => acc ^= x, sendS);
 console.log("cw:\t", codeword.toString(16));
 
+
 streak = 0;
 let reply = undefined;
 for (let j = k-1; j >= 0; --j) {
@@ -240,4 +264,164 @@ if (typeof(reply) == "undefined" && streak >= minZone) {
 console.assert(typeof(reply) != "undefined");
 
 console.log(a, reply ? ">=" : "<",  b);
+}
+
+// Nevšímavý přenos
+// https://dspace.cuni.cz/handle/20.500.11956/81963?show=full
+
+console.log("New algo");
+
+// it's possible to use RSA in browser
+// I need blinded RSA encryption -- not available with the crypto API
+
+// https://www.lix.polytechnique.fr/~catuscia/teaching/papers_and_books/SigningContracts.pdf
+// the original paper blinds the result by XORing
+
+let modulus = 4096;
+let hLen = 256/8; // that is SHA-256 below
+let nonceLen = modulus/8 - 2*hLen - 2; // must fit into RSA-OAEP message
+console.assert(k/8 <= nonceLen); // see https://datatracker.ietf.org/doc/html/rfc3447#section-7.1.1
+
+let keyParams = {
+	name: "RSA-OAEP",
+	modulusLength: modulus,
+	publicExponent: new Uint8Array([1, 0, 1]),
+	hash: "SHA-256",	
+};
+let algoParams = {
+	name: "RSA-OAEP",
+};
+
+(async function() {
+
+// Alice
+let keyPairs = new Array(d);
+
+for (let i = 0; i < d; ++i) {
+	keyPairs[i] = window.crypto.subtle.generateKey(
+		keyParams,
+		true,
+		["encrypt", "decrypt"]
+	);
+}
+
+let blinders = new Array(d);
+
+for (let i = 0; i < d; ++i) {
+	blinders[i] = [new Uint8Array(modulus / 8), new Uint8Array(modulus / 8)];
+	window.crypto.getRandomValues(blinders[i][0]);
+	window.crypto.getRandomValues(blinders[i][1]);
+}
+
+keyPairs = await Promise.all(keyPairs);
+let pubkeys = keyPairs.map(kp => kp.publicKey);
+
+let challenge = {
+	pubkeys: pubkeys,
+	blinders: blinders,
+};
+
+// TODO send challenge
+console.log(challenge);
+
+// Bob
+console.assert(challenge.pubkeys.length == challenge.pubkeys.length);
+console.assert(challenge.pubkeys.length == d);
+
+// TODO is this possible to have one loop?
+let nonces = new Array(d);
+for (let i = 0; i < d; ++i) {
+	nonces[i] = new Uint8Array(nonceLen);
+	window.crypto.getRandomValues(nonces[i]);
+}
+let eNonces = new Array(d);
+for (let i = 0; i < d; ++i) {
+	console.log(algoParams, challenge.pubkeys[i], nonces[i]);
+	eNonces[i] = crypto.subtle.encrypt(algoParams, challenge.pubkeys[i], nonces[i]);
+}
+eNonces = await Promise.all(eNonces);
+let pickedNonces = new Array(d);
+for (let i = 0; i < d; ++i) {
+	pickedNonces[i] = xorArray(eNonces[i], challenge.blinders[i][getBit(b, i)].buffer);
+}
+
+let accept = {
+	picked: pickedNonces,
+}
+
+// TODO send accept
+console.log(accept);
+
+// Alice again
+console.assert(accept.picked.length == d);
+
+let guessNonces = new Array(d);
+for (let i = 0; i < d; ++i) {
+	let eNonces = [
+		xorArray(accept.picked[i].buffer, blinders[i][0].buffer),
+		xorArray(accept.picked[i].buffer, blinders[i][1].buffer),
+		];
+	// console.log("pre-de:", accept.picked[i], blinders[i], "post-bl", eNonces, keyPairs[i].privateKey);
+	guessNonces[i] = Promise.all([
+		crypto.subtle.decrypt(algoParams, keyPairs[i].privateKey, eNonces[0]).catch(err => new Uint8Array(nonceLen).buffer),
+		crypto.subtle.decrypt(algoParams, keyPairs[i].privateKey, eNonces[1]).catch(err => new Uint8Array(nonceLen).buffer),
+		]);
+	// XXX I can't do the blinding on RSA-OAEP, it won't be correct ciphertext encoding :-/
+	// likely 7.1.2, 3g
+}
+guessNonces = await Promise.all(guessNonces);
+console.log(guessNonces);
+
+let A2 = new Array(d);
+for (let i = 0; i < d; ++i) {
+	A2[i] = Array(2);
+	A2[i] = [new Uint8Array(nonceLen), new Uint8Array(nonceLen)];
+	A2[i][0][0] = 42;
+	A2[i][1][0] = 43;
+}
+
+let messages = new Array(d);
+for (let i = 0; i < d; ++i) {
+	console.log("msg", guessNonces);
+	messages[i] = [
+		xorArray(A2[i][0].buffer, guessNonces[i][0]),
+		xorArray(A2[i][1].buffer, guessNonces[i][1]),
+	];
+}
+
+// TODO send messages
+console.log(messages);
+
+
+// Bob again (evaluation)
+console.assert(messages.length == d);
+
+let transfered = new Array(d);
+for (let i = 0; i < d; ++i) {
+	transfered[i] = xorArray(nonces[i].buffer, messages[i][1n-getBit(b, i)].buffer)
+}
+console.log(transfered);
+
+
+//let encrypted = await crypto.subtle.encrypt(algoParams, keyPair.publicKey, plainText);
+// TODO is output fully random, w/out header/magic bytes
+// TODO is shorter input padded with what?, check RFC3447
+// TODO how is longer input block-combined?
+
+//console.log(encrypted);
+
+})();
+
+
+// about: promise debugging sucks DOMException
+//   - it's actually crypto.subtle that gives this error
+
+kp = window.crypto.subtle.generateKey(
+	keyParams,
+	true,
+	["encrypt", "decrypt"]
+);
+let plainText = new Uint8Array(k / 8);
+crypto.getRandomValues(plainText);
+
 </script>
