@@ -424,4 +424,13 @@ kp = window.crypto.subtle.generateKey(
 let plainText = new Uint8Array(k / 8);
 crypto.getRandomValues(plainText);
 
+/* WORK DUMP (2022-01-09)
+- I need OT 1-of-2, I wanted to use RSA-based but the RSA implementation RSA-OAEP can't be used for that
+- EC curves would result in smaller messages but the algos aren't established
+- EC asymmetric encryption works based on shared secret, so it doesn't help the OT impl.
+- although there's a good "the simplest OT" method based on ECDH (https://eprint.iacr.org/2015/267.pdf)
+  - but it'd need manual implementation of the curve(s) in JS, web crypto can't be used for that neither
+  --> but it still looks most promising approach
+      (considering this all experimental/toy, i.e. rolling my own crypto).
+*/
 </script>
