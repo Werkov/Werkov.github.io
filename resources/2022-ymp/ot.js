@@ -47,12 +47,11 @@ function num2bytes(n) {
 	return res;
 }
 
-const Sender = function(ms) {
+const Sender = function(n) {
 	this.y = ristretto255.scalar.getRandom();
 	this.S = ristretto255.scalarMultBase(this.y);
 	this.T = g(this.S);
-	this.n = ms.length;
-	this.ms = ms;
+	this.n = n;
 };
 
 Sender.prototype.produceS = function() {
@@ -68,9 +67,11 @@ Sender.prototype.consumeR = function(R) {
 	return true;
 };
 
-Sender.prototype.produceEs = function(nonce) {
+Sender.prototype.produceEs = function(ms, nonce) {
 	if (!this.R)
-		return false;
+		return null;
+	if (this.n != ms.length)
+		return null;
 
 	let es = new Array(this.n);
 
@@ -80,9 +81,8 @@ Sender.prototype.produceEs = function(nonce) {
 			ristretto255.scalarMult(num2bytes(j), this.T)
 		);
 		let P = ristretto255.scalarMult(this.y, tmp);
-		console.log(j, P);
 		let k = keyGen(this.S, this.R, P);
-		es[j] = nacl.secretbox(this.ms[j], nonce, k);
+		es[j] = nacl.secretbox(ms[j], nonce, k);
 	}
 
 	return es;
@@ -93,7 +93,6 @@ const Receiver = function(n, c) {
 	this.n = n;
 	// TODO check 0 <= c < n;
 	this.c = c;
-	console.log("Receiver", n, c);
 };
 
 Receiver.prototype.consumeS = function(S) {
@@ -106,7 +105,7 @@ Receiver.prototype.consumeS = function(S) {
 	return true;
 };
 
-Receiver.prototype.produceR = function() {
+Receiver.prototype.produceR = function(c) {
 	if (!this.T)
 		return null;
 
@@ -125,7 +124,6 @@ Receiver.prototype.consumeEs = function(es, nonce) {
 		return false;
 
 	let P = ristretto255.scalarMult(this.x, this.S);
-	console.log("rcv", P);
 	let k = keyGen(this.S, this.R, P);
 
 	let e = es[this.c];
@@ -133,11 +131,10 @@ Receiver.prototype.consumeEs = function(es, nonce) {
 	return this.m !== null;
 };
 
-const VecSender = function(d, ms) {
+const VecSender = function(d, n) {
 	this.senders = new Array(d);
 	for (let i = 0; i < d; ++i)
-		this.senders[i] = new Sender(ms[i]);
-	// TODO check all senders have same n
+		this.senders[i] = new Sender(n);
 	this.d = d;
 }
 
@@ -150,9 +147,9 @@ VecSender.prototype.consumeR = function(R) {
 	return r.reduce((acc, x) => acc && x);
 };
 
-VecSender.prototype.produceEs = function() {
+VecSender.prototype.produceEs = function(mss) {
 	let nonce = new Uint8Array(nacl.secretbox.nonceLength);
-	let r = this.senders.map(s => s.produceEs(nonce));
+	let r = this.senders.map((s, i) => s.produceEs(mss[i], nonce));
 	return {n:nonce, es:r};
 }
 
@@ -179,12 +176,26 @@ VecReceiver.prototype.consumeEs = function(es) {
 
 VecReceiver.prototype.getMessage = function() {
 	return this.receivers.map(r => r.m);
-}
+};
 
 
-// debug export
-window.Sender = Sender;
-window.Receiver = Receiver;
-window.VecSender = VecSender;
-window.VecReceiver = VecReceiver;
-console.log("exported");
+export default {
+	Sender		: Sender,
+	Receiver	: Receiver,
+	VecSender	: VecSender,
+	VecReceiver	: VecReceiver,
+};
+
+// TODO how original paper encodes b==0 into response
+// TODO why original paper hashes group element for symmetric key?
+
+// nacl.lowlevel works with all scalars (whole group?)
+// whereas public API crypto_scalarmult et al works with scalars/8
+/* References
+https://github.com/archit-p/simplest-oblivious-transfer
+- use cyclic group Z_p of random prime p
+
+https://github.com/danzipie/simplest-ot/blob/master/src/main.rs
+- rust impl, relies on operator overload for RistrettoPoint (i.e. inversion for free)
+  - maybe use Ristretto js (https://github.com/novifinancial/ristretto255-js)
+*/
