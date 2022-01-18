@@ -1,4 +1,26 @@
-// <script src="/resources/2022-ymp/nacl.js"></script>
+/*
+ * Copyright (c) 2022 Michal Koutný
+ *
+ * This program is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option)
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program. If not, see <https://www.gnu.org/licenses/>.
+ *
+ * The implementation is based on the Simplest OT [1] with modifications from
+ * [2]. The underlying group is Ristretto255.
+ *
+ * [1] https://eprint.iacr.org/2015/267.pdf
+ * [2] https://eprint.iacr.org/2017/1011.pdf
+ */
+
 import ristretto255 from './ristretto255.js';
 import nacl from './nacl.js';
 
