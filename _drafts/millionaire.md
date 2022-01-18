@@ -6,7 +6,8 @@ tags: cryptography
 
 See also https://blog.goodaudience.com/understanding-zero-knowledge-proofs-through-simple-examples-df673f796d99
 
-<script src="/resources/2022-ymp/nacl.js"></script>
+<script src="/resources/2022-ymp/ot.js" type="module"></script>
+<!--<script src="/resources/2022-ymp/ymp.js" type="module"></script>-->
 <script>
 // TODO isea: use promises where user input matters?
 
@@ -324,132 +325,156 @@ console.log(a, reply ? ">=" : "<",  b);
 
 console.log("New algo");
 
-const SCALAR_LEN = 32; // B
-const ELEMENT_LEN = 32; // B
+document.addEventListener('DOMContentLoaded', () => {
+	let ms1 = [new Uint8Array([11]), new Uint8Array([11])];
+	let ms2 = [new Uint8Array([12]), new Uint8Array([12])];
+	let ms3 = [new Uint8Array([14]), new Uint8Array([14])];
+	window.sender = new window.VecSender(3, [ms1, ms2, ms3]);
+	window.receiver = new window.VecReceiver(3, 2, [1,0,1]);
+	
+	// window.sender = new window.Sender(ms1);
+	// window.receiver = new window.Receiver(2, 1);
 
-// Alice challenge
+	mS = sender.produceS();
+	receiver.consumeS(mS);
+	mR = receiver.produceR();
+	sender.consumeR(mR);
+	nonce = new Uint8Array(24);
+	window.mEs = sender.produceEs(nonce);
+	receiver.consumeEs(mEs, nonce);
+	
+	if (receiver.getMessage)
+		console.log(receiver.getMessage());
+	else
+		console.log(receiver.m);
+});
 
-let y = new Array(d);
-let S = new Array(d);
-let aliceT = new Array(d);
-for (let i = 0; i < d; ++i) {
-	y[i] = nacl.randomBytes(SCALAR_LEN); // TODO group cofactor
-	S[i] = nacl.scalarMult.base(y[i]);
-	aliceT[i] = g2gHash(S[i]);
-}
-
-// TODO send S to Bob
-
-// Bob's response
-// XXX S should be checked on group membership
-let rcvS = S;
-
-let x = new Array(d);
-let R = new Array(d);
-let bobT = new Array(d);
-for (let i = 0; i < d; ++i) {
-	x[i] = nacl.randomBytes(SCALAR_LEN);
-	bobT[i] = g2gHash(rcvS[i]);
-
-	let gf = nacl.lowlevel.gf;
-	let a_ = [gf(), gf(), gf(), gf()];
-	let b_ = [gf(), gf(), gf(), gf()];
-	let s_ = new Uint8Array(ELEMENT_LEN);
-
-	// XXX if b[i] == 0, we drop bobT[i], is it secure?
-	console.log("Bob:", getBit(b, i));
-	nacl.lowlevel.unpackneg(a_, nacl.scalarMult(idx2Scalar(getBit(b, i)), bobT[i]));
-	nacl.lowlevel.unpackneg(b_, nacl.scalarMult.base(x[i]));
-	nacl.lowlevel.add(a_, b_);
-	nacl.lowlevel.pack(s_, a_);
-
-	R[i] = s_;
-}
-
-// TODO send R to Alice
-// Alice's response 2 (transferring her messages)
-
-let A2 = new Array(d);
-for (let i = 0; i < d; ++i) {
-	A2[i] = [42, 11];
-}
-
-// XXX R should be checked on group membership
-let rcvR = R;
-
-// it'd be nice to use nacl's (public) box but it does salsa authentication which would interfere with OT paper assumptions
-// - think about it more, I could use nonce=0 because I'd add variability in per-message computed "pubkey"
-// - does Salsa bring robustness, i.e. ciphertext only decrypts with the correct key, other return failure (instead of noise)
-//   - but is that a problem? could I enumerate possible keys to retrieve unselected messages?
-//   - XXX I don't generate key via oracle but just encode salsa(R'^y)
-//       TODO check simple-OT paper why hash functions are from R'xS
-
-// convert from 8b limbs to 16b limbs
-let L_1 = new Float64Array(new Uint16Array(new Uint8Array(nacl.lowlevel.L).buffer))
-L_1[0] -= 1; // assume LE, L[0] != 0
-let sL_1 = new Uint8Array(32);
-nacl.lowlevel.pack25519(sL_1, L_1); // this is not divisible by 8, so it'll fail to produce good iverse
-
-// this negative-one is a mess and it doesn't seem to work, furthermore I had
-// to add 8*-hacks to bypass cofactor clamping
-// - it seems the easiest would be to use ristretto group, implemented by ristretto-js for simplicity
-// - or noble-ed25519 (not sure if it supports ristretto points arithmetics, undocumented feature)
-
-let eMessages = new Array(d);
-for (let i = 0; i < d; ++i) {
-	// TODO replace with constant
-	eMessages[i] = new Array(2);
-	for (let j = 0; j < 2; ++j) {
-		let gf = nacl.lowlevel.gf;
-		let a_ = [gf(), gf(), gf(), gf()];
-		let b_ = [gf(), gf(), gf(), gf()];
-		let s_ = new Uint8Array(32);
-		let t_ = [gf(), gf(), gf(), gf()];
-		let negt_ = [gf(), gf(), gf(), gf()];
-		let negT = new Uint8Array(32);
-
-		nacl.lowlevel.unpackneg(t_, aliceT[i]); // XXX distortion point?
-		nacl.lowlevel.scalarmult(negt_, t_, L_1); // XXX distortion point?
-		nacl.lowlevel.pack(negT, negt_);
-		/* T^-j = (T^-1)^j = (T^(L-1))^j */
-		// nacl.lowlevel.unpackneg(a_, nacl.scalarMult(idx2Scalar(j), nacl.scalarMult(sL_1, aliceT[i])));
-		nacl.lowlevel.unpackneg(a_, nacl.scalarMult(idx2Scalar(j), negT));
-		//nacl.lowlevel.unpackneg(a_, nacl.scalarMult(idx2Scalar(j), aliceT[i]));
-		console.log("a_, negT", a_, negT);
-		nacl.lowlevel.unpackneg(b_, rcvR[i]);
-		console.log("b_", b_);
-		nacl.lowlevel.add(a_, b_); // XXX can s_ be distortion point?
-		console.log("a_+", a_);
-		nacl.lowlevel.pack(s_, a_); 
-		console.log("s_", s_);
-
-		let Rm = s_;
-
-		let key = nacl.box.before(Rm, y[i])
-		// XXX S,R should seed key generation, not nonce
-		let nonce = keyGen(S[i], rcvR[i], new Uint8Array()).slice(0, nacl.box.nonceLength);
-
-		console.log("Ae:", num2bytes(A2[i][j]), nonce, key);
-		let msg = nacl.box.after(num2bytes(A2[i][j]), nonce, key);
-		eMessages[i][j] = msg;
-	}
-
-}
-
-// TODO send eMessages
-
-// Bob's evaluation
-
-let oblA = new Array(d);
-for (let i = 0; i < d; ++i) {
-	let key = nacl.box.before(rcvS[i], x[i])
-	let nonce = keyGen(rcvS[i], R[i], new Uint8Array()).slice(0, nacl.box.nonceLength);
-	console.log("Bd:", eMessages[i][getBit(b, i)], nonce, key);
-	let msg = nacl.box.open.after(eMessages[i][getBit(b, i)], nonce, key);
-	oblA[i] = msg;
-}
-
-console.log(oblA);
+//    const SCALAR_LEN = 32; // B
+//    const ELEMENT_LEN = 32; // B
+//    
+//    // Alice challenge
+//    
+//    let y = new Array(d);
+//    let S = new Array(d);
+//    let aliceT = new Array(d);
+//    for (let i = 0; i < d; ++i) {
+//    	y[i] = nacl.randomBytes(SCALAR_LEN); // TODO group cofactor
+//    	S[i] = nacl.scalarMult.base(y[i]);
+//    	aliceT[i] = g2gHash(S[i]);
+//    }
+//    
+//    // TODO send S to Bob
+//    
+//    // Bob's response
+//    // XXX S should be checked on group membership
+//    let rcvS = S;
+//    
+//    let x = new Array(d);
+//    let R = new Array(d);
+//    let bobT = new Array(d);
+//    for (let i = 0; i < d; ++i) {
+//    	x[i] = nacl.randomBytes(SCALAR_LEN);
+//    	bobT[i] = g2gHash(rcvS[i]);
+//    
+//    	let gf = nacl.lowlevel.gf;
+//    	let a_ = [gf(), gf(), gf(), gf()];
+//    	let b_ = [gf(), gf(), gf(), gf()];
+//    	let s_ = new Uint8Array(ELEMENT_LEN);
+//    
+//    	// XXX if b[i] == 0, we drop bobT[i], is it secure?
+//    	console.log("Bob:", getBit(b, i));
+//    	nacl.lowlevel.unpackneg(a_, nacl.scalarMult(idx2Scalar(getBit(b, i)), bobT[i]));
+//    	nacl.lowlevel.unpackneg(b_, nacl.scalarMult.base(x[i]));
+//    	nacl.lowlevel.add(a_, b_);
+//    	nacl.lowlevel.pack(s_, a_);
+//    
+//    	R[i] = s_;
+//    }
+//    
+//    // TODO send R to Alice
+//    // Alice's response 2 (transferring her messages)
+//    
+//    let A2 = new Array(d);
+//    for (let i = 0; i < d; ++i) {
+//    	A2[i] = [42, 11];
+//    }
+//    
+//    // XXX R should be checked on group membership
+//    let rcvR = R;
+//    
+//    // it'd be nice to use nacl's (public) box but it does salsa authentication which would interfere with OT paper assumptions
+//    // - think about it more, I could use nonce=0 because I'd add variability in per-message computed "pubkey"
+//    // - does Salsa bring robustness, i.e. ciphertext only decrypts with the correct key, other return failure (instead of noise)
+//    //   - but is that a problem? could I enumerate possible keys to retrieve unselected messages?
+//    //   - XXX I don't generate key via oracle but just encode salsa(R'^y)
+//    //       TODO check simple-OT paper why hash functions are from R'xS
+//    
+//    // convert from 8b limbs to 16b limbs
+//    let L_1 = new Float64Array(new Uint16Array(new Uint8Array(nacl.lowlevel.L).buffer))
+//    L_1[0] -= 1; // assume LE, L[0] != 0
+//    let sL_1 = new Uint8Array(32);
+//    nacl.lowlevel.pack25519(sL_1, L_1); // this is not divisible by 8, so it'll fail to produce good iverse
+//    
+//    // this negative-one is a mess and it doesn't seem to work, furthermore I had
+//    // to add 8*-hacks to bypass cofactor clamping
+//    // - it seems the easiest would be to use ristretto group, implemented by ristretto-js for simplicity
+//    // - or noble-ed25519 (not sure if it supports ristretto points arithmetics, undocumented feature)
+//    
+//    let eMessages = new Array(d);
+//    for (let i = 0; i < d; ++i) {
+//    	// TODO replace with constant
+//    	eMessages[i] = new Array(2);
+//    	for (let j = 0; j < 2; ++j) {
+//    		let gf = nacl.lowlevel.gf;
+//    		let a_ = [gf(), gf(), gf(), gf()];
+//    		let b_ = [gf(), gf(), gf(), gf()];
+//    		let s_ = new Uint8Array(32);
+//    		let t_ = [gf(), gf(), gf(), gf()];
+//    		let negt_ = [gf(), gf(), gf(), gf()];
+//    		let negT = new Uint8Array(32);
+//    
+//    		nacl.lowlevel.unpackneg(t_, aliceT[i]); // XXX distortion point?
+//    		nacl.lowlevel.scalarmult(negt_, t_, L_1); // XXX distortion point?
+//    		nacl.lowlevel.pack(negT, negt_);
+//    		/* T^-j = (T^-1)^j = (T^(L-1))^j */
+//    		// nacl.lowlevel.unpackneg(a_, nacl.scalarMult(idx2Scalar(j), nacl.scalarMult(sL_1, aliceT[i])));
+//    		nacl.lowlevel.unpackneg(a_, nacl.scalarMult(idx2Scalar(j), negT));
+//    		//nacl.lowlevel.unpackneg(a_, nacl.scalarMult(idx2Scalar(j), aliceT[i]));
+//    		console.log("a_, negT", a_, negT);
+//    		nacl.lowlevel.unpackneg(b_, rcvR[i]);
+//    		console.log("b_", b_);
+//    		nacl.lowlevel.add(a_, b_); // XXX can s_ be distortion point?
+//    		console.log("a_+", a_);
+//    		nacl.lowlevel.pack(s_, a_); 
+//    		console.log("s_", s_);
+//    
+//    		let Rm = s_;
+//    
+//    		let key = nacl.box.before(Rm, y[i])
+//    		// XXX S,R should seed key generation, not nonce
+//    		let nonce = keyGen(S[i], rcvR[i], new Uint8Array()).slice(0, nacl.box.nonceLength);
+//    
+//    		console.log("Ae:", num2bytes(A2[i][j]), nonce, key);
+//    		let msg = nacl.box.after(num2bytes(A2[i][j]), nonce, key);
+//    		eMessages[i][j] = msg;
+//    	}
+//    
+//    }
+//    
+//    // TODO send eMessages
+//    
+//    // Bob's evaluation
+//    
+//    let oblA = new Array(d);
+//    for (let i = 0; i < d; ++i) {
+//    	let key = nacl.box.before(rcvS[i], x[i])
+//    	let nonce = keyGen(rcvS[i], R[i], new Uint8Array()).slice(0, nacl.box.nonceLength);
+//    	console.log("Bd:", eMessages[i][getBit(b, i)], nonce, key);
+//    	let msg = nacl.box.open.after(eMessages[i][getBit(b, i)], nonce, key);
+//    	oblA[i] = msg;
+//    }
+//    
+//    console.log(oblA);
 
 
 
