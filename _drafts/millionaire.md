@@ -14,20 +14,21 @@ See also https://blog.goodaudience.com/understanding-zero-knowledge-proofs-throu
 // TODO note: why JS? available, interactive
 
 document.addEventListener('DOMContentLoaded', () => {
-	let alice = new window.Alice(5684, 14);
-	let bob = new window.Bob(9543, 14);
+	let a, b;
+	let alice = new window.Alice(new window.Domain(0, 1000, 1), a = 684);
+	let bob = new window.Bob(new window.Domain(0, 1000, 1), b = 954);
 
-	let c = alice.produceChallenge();
-	bob.consumeChallenge(c);
+	let ch = alice.produceChallenge();
+	bob.consumeChallenge(ch);
 
-	let r = bob.produceResponse();
-	alice.consumeResponse(r);
+	let re = bob.produceResponse();
+	alice.consumeResponse(re);
 
-	let a = alice.produceAcknowledgement();
-	console.log(a);
-	bob.consumeAcknowledgement(a);
+	let ac = alice.produceAcknowledgement();
+	console.log(ac);
+	bob.consumeAcknowledgement(ac);
 
-	console.log(alice.secret, bob.secret, bob.result);
+	console.log(a, b, bob.result);
 });
 
 

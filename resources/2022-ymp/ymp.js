@@ -156,20 +156,69 @@ function bytes2num(bytes) {
 	return result;
 }
 
-const Alice = function(secret, d) {
-	secret = BigInt(secret);
-	if (secret < 0 || secret >= Math.pow(2, d))
-		throw "Invalid bit width and secret value."
+/*
+ * paper says "large enough" without clear specification
+ * paper specifies zone of zeroes to be from [d, d*d+d] interval
+ *   that gives s \in (3*d, d*d+3*d]
+ * k must be designed k >= d*d+3*d
+ */
+const Ioannis = {
+	minZone: d => d,
+	minK: d => d*d + 2*d + Ioannis.minZone(d),
 
-	this.ot = new ot.VecSender(d, 2);
-	this.secret = secret;
-	this.d = d;
+};
+
+/*
+ *  secret min..max
+ * binSecret 0..2^d-1
+ *
+ */
+const Domain = function(min, max, step) {
+	if (min > max)
+		throw "Empty domain";
+	if (min == max)
+		throw "Singular domain " + min + ", " + max + ".";
+	if (step <= 0)
+		throw "Invalid step";
+
+	this.min = min;
+	this.max = max;
+	this.step = step;
+	this.bits = Math.ceil(Math.log2((max - min) / step));
+};
+
+Domain.prototype.transformSecret = function(secret) {
+	if (secret < this.min || secret > this.max)
+		throw "Secret out of domain";
+
+	return BigInt(Math.floor((secret - this.min) / this.step));
+};
+
+Domain.prototype.toMessage = function() {
+	return [this.min, this.max, this.step];
+};
+
+Domain.fromMessage = function(m) {
+	return new Domain(m[0], m[1], m[2]);
+};
+
+Domain.prototype.match = function(other) {
+	return this.min == other.min &&
+	       this.max == other.max &&
+	       this.step == other.step;
+};
+
+
+const Alice = function(domain, secret) {
+	this.ot = new ot.VecSender(domain.bits, 2);
+	this.domain = domain;
+	this.binSecret = domain.transformSecret(secret);
 };
 
 Alice.prototype.produceChallenge = function() {
 	return {
-		d: this.d,
-		c: this.ot.produceS(),
+		d: this.domain.toMessage(), /* domain definition */
+		c: this.ot.produceS(), /* OT Sender "keys" */
 	};
 };
 
@@ -180,8 +229,9 @@ Alice.prototype.consumeResponse = function(r) {
 Alice.prototype.produceAcknowledgement = function() {
 	/* This is where we start processing secret */
 
-	let A = new Array(this.d);
-	for (let i = 0; i < this.d; ++i)
+	let d = this.domain.bits;
+	let A = new Array(d);
+	for (let i = 0; i < d; ++i)
 		A[i] = [0n, 0n];
 	
 	// XXX paper states 2*k but makes no sense for rotations of k-bit numbers
@@ -209,16 +259,15 @@ Alice.prototype.produceAcknowledgement = function() {
 		"k = ", k
 	);
 	
-	// TODO refactor the A generation into more reusable code
-	for (let i = 0; i < this.d; ++i) {
+	for (let i = 0; i < d; ++i) {
 		// set parts based on a[i]
-		let l = 1 - Number(getBit(this.secret, i));
+		let l = 1 - Number(getBit(this.binSecret, i));
 		let m = 2*i; 
 	
 		// random triangle
 		A[i][l] = setBit(A[i][l], [0, m-1], randBit);
 		// decisive "diagonal"
-		A[i][l] = setBit(A[i][l], m, getBit(this.secret, i));
+		A[i][l] = setBit(A[i][l], m, getBit(this.binSecret, i));
 		A[i][l] = setBit(A[i][l], m+1, 1);
 	
 		// randomize others
@@ -231,8 +280,8 @@ Alice.prototype.produceAcknowledgement = function() {
 		A[i][0] = setBit(A[i][0], k-2, getBit(A[i][1], k-2));
 	}
 	
-	let S = new Array(this.d);
-	for (let i = 0; i < this.d; ++i) {
+	let S = new Array(d);
+	for (let i = 0; i < d; ++i) {
 		S[i] = setBit(0n, [0, k-1], randBit);
 		// debug: disable xor encryption
 		// S[i] = setBit(0n, [0, k-1], 0);
@@ -241,14 +290,14 @@ Alice.prototype.produceAcknowledgement = function() {
 	// XXX paper botched this: only sendS must xor the mark, not S[d-1]
 	// mark is xor-sum of all As ^ the real mark (only top 2b)
 	// this way As would xor away, the result would me the real mark only then
-	let as = A.slice(0, this.d).map(x => getBit(x[0], [k-2, k-1]));
+	let as = A.slice(0, d).map(x => getBit(x[0], [k-2, k-1]));
 	let xorval = as.reduce((acc, x) => acc ^= x, 0x3n);
 	let mark = 0n;
 	mark = setBit(mark, k-1, (xorval >> 1n));
 	mark = setBit(mark, k-2, xorval & 0x1n);
 	
-	let A2 = new Array(this.d);
-	for (let i = 0; i < this.d; ++i) {
+	let A2 = new Array(d);
+	for (let i = 0; i < d; ++i) {
 		A2[i] = Array(2);
 		A2[i][0] = num2bytes(leftrot(A[i][0] ^ S[i], r, k));
 		A2[i][1] = num2bytes(leftrot(A[i][1] ^ S[i], r, k));
@@ -264,22 +313,27 @@ Alice.prototype.produceAcknowledgement = function() {
 	};
 };
 
-const Bob = function(secret, d) {
-	secret = BigInt(secret);
-	if (secret < 0 || secret >= Math.pow(2, d))
-		throw "Invalid bit width and secret value."
-
-	let cs = [...Array(d).keys()].map(i => Number(getBit(secret, i)));
-	this.ot = new ot.VecReceiver(d, 2, cs);
-	this.secret = secret;
-	this.d = d;
+const Bob = function(domain, secret) {
+	let binSecret = domain.transformSecret(secret)
+	let cs = [...Array(domain.bits).keys()].map(i => Number(getBit(binSecret, i)));
+	this.ot = new ot.VecReceiver(domain.bits, 2, cs);
+	this.domain = domain;
 };
 
-Bob.prototype.consumeChallenge = function(c) {
-	if (this.d != c.d)
-		return false;
+// TODO idea
+// Bob.fromChallenge = function(c, secret) {
+// 	let cDomain = Domain.fromMessage(c.d);
+// 	return new Bob(cDomain, secret);
+// };
 
-	return this.ot.consumeS(c.c);
+Bob.prototype.consumeChallenge = function(c) {
+	let cDomain = Domain.fromMessage(c.d);
+
+	if (!this.domain.match(cDomain))
+		throw "Unexpected domain in challenge";
+
+	if (!this.ot.consumeS(c.c))
+		throw "Wrong OT challenge";
 };
 
 Bob.prototype.produceResponse = function() {
@@ -319,17 +373,19 @@ Bob.prototype.consumeAcknowledgement = function(a) {
 	}
 
 	this.result = reply ? "A>=B" : "A<B";
-	return true;
 };
 
 
 // debug export
 window.Alice = Alice;
 window.Bob = Bob;
+window.Domain = Domain;
 
 export default {
 	Alice	: Alice,
 	Bob	: Bob,
+	Domain  : Domain,
 };
 
 // TODO remove debug prints exposing secrets
+// TODO idea: session id (prevent replay, derive from A's secret)
