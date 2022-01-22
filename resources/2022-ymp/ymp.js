@@ -245,15 +245,11 @@ Alice.prototype.produceAcknowledgement = function() {
 	//      avoid encountering zone of zeroes generated randomly
 	//   b) rotation boundary can be in the middle of the 2 encoding bits making 
 	//      result detection harder
-	let r = getRandInt(2*this.d);
+	let r = getRandInt(2*d);
 	
-	// paper says "large enough" without clear specification
-	// paper specifies zone of zeroes to be from [d, d*d+d] interval
-	//   that gives s \in (3*d, d*d+3*d]
-	// k must be designed k >= d*d+3*d
-	let minZone = this.d;
-	let k = this.d*this.d + 2*this.d + minZone;
-	let s = (2*this.d + minZone) + getRandInt(this.d*this.d);
+	let minZone = Ioannis.minZone(d);
+	let k = Ioannis.minK(d);
+	let s = (2*d + minZone) + getRandInt(d*d);
 	
 	console.log(
 		"r = ", r,
@@ -353,8 +349,9 @@ Bob.prototype.consumeAcknowledgement = function(a) {
 
 	let streak = 0;
 	let reply = undefined;
-	let minZone = this.d; // XXX make minZone definition common for A and B?
-	let k = this.d*this.d + 2*this.d + minZone; // make k definition also common
+	let minZone = Ioannis.minZone(this.domain.bits);
+	let k = Ioannis.minK(this.domain.bits);
+
 	for (let j = k-1; j >= 0; --j) {
 		if (getBit(codeword, j)) {
 			if (streak >= minZone) {
