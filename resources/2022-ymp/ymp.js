@@ -223,7 +223,9 @@ Alice.prototype.produceChallenge = function() {
 };
 
 Alice.prototype.consumeResponse = function(r) {
-	return this.ot.consumeR(r);
+	// TODO check r matches this.domain (not only bits), or just rely on bits?
+	if (!this.ot.consumeR(r))
+		throw "Wront OT response";
 };
 
 Alice.prototype.produceAcknowledgement = function() {
@@ -337,12 +339,12 @@ Bob.prototype.consumeChallenge = function(c) {
 };
 
 Bob.prototype.produceResponse = function() {
-	return this.ot.produceR();
+	return this.ot.produceR(); /* OT Receiver keys */
 };
 
 Bob.prototype.consumeAcknowledgement = function(a) {
 	if (!this.ot.consumeEs(a.a))
-		return false;
+		throw new "Wrong OT acknowledgement";
 
 	let R = this.ot.getMessage();
 	console.log("OT R:", R);
