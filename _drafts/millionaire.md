@@ -3,6 +3,7 @@ layout: post
 title: YMP
 tags: cryptography
 ---
+<link rel="stylesheet" href="/resources/2022-ymp/style.css"/>
 
 See also https://blog.goodaudience.com/understanding-zero-knowledge-proofs-through-simple-examples-df673f796d99
 
@@ -24,12 +25,12 @@ See also https://blog.goodaudience.com/understanding-zero-knowledge-proofs-throu
 
 ## Alice
 
+<div class="alice">
 
 <label for="a_secret">Secret value</label>
-<input type="number" id="a_secret" disabled="disabled"/>
+<input type="number" id="a_secret" disabled="disabled" class="secret"/>
 <button id="a_prepare" disabled="disabled">Prepare</button>
 <button id="a_reset" disabled="disabled">Reset</button>
-
 
 <textarea id="a_challenge" readonly="readonly" disabled="disabled"></textarea>
 
@@ -39,12 +40,13 @@ See also https://blog.goodaudience.com/understanding-zero-knowledge-proofs-throu
 
 <textarea id="a_acknowledgement" readonly="readonly" disabled="disabled"></textarea>
 
+</div>
 
 ## Bob
 
-
+<div class="bob">
 <label for="b_secret">Secret value</label>
-<input type="number" id="b_secret"  disabled="disabled"/>
+<input type="number" id="b_secret"  disabled="disabled" class="secret"/>
 <button id="b_prepare" disabled="disabled">Prepare</button>
 <button id="b_reset" disabled="disabled">Reset</button>
 
@@ -316,7 +318,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// TODO CSS delineation
 // TODO quick explanation text, ideal functionality picture
 // TODO refactor ymp internals to bytes
 
@@ -328,5 +329,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // DONE secret input validation
 // DONE error (message) handling
 // CANC RO fields copy-paste on click? -> permissions unclear
+// TODO CSS delineation
 </script>
 
