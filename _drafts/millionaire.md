@@ -6,14 +6,114 @@ tags: cryptography
 
 See also https://blog.goodaudience.com/understanding-zero-knowledge-proofs-through-simple-examples-df673f796d99
 
+## Domain
+
+<fieldset>
+<legend>Domain</legend>
+<label for="dom_min">Minimum</label>
+<input type="number" id="dom_min" value="0" />
+
+<label for="dom_max">Maximum</label>
+<input type="number" id="dom_max" value="1000" />
+
+<label for="dom_step">Step</label>
+<input type="number" id="dom_step" value="1" />
+
+<button id="dom_setup">Setup</button>
+</fieldset>
+
+## Alice
+
+
+<label for="a_secret">Secret value</label>
+<input type="number" id="a_secret" disabled="disabled"/>
+<button id="a_prepare" disabled="disabled">Prepare</button>
+<button id="a_reset" disabled="disabled">Reset</button>
+
+
+<textarea id="a_challenge" readonly="readonly" disabled="disabled"></textarea>
+
+
+<textarea id="a_response" disabled="disabled" placeholder="Bob's response"></textarea>
+<button id="a_cons_response" disabled="disabled">Consume response</button>
+
+<textarea id="a_acknowledgement" readonly="readonly" disabled="disabled"></textarea>
+
+
+## Bob
+
+
+<label for="b_secret">Secret value</label>
+<input type="number" id="b_secret"  disabled="disabled"/>
+<button id="b_prepare" disabled="disabled">Prepare</button>
+<button id="b_reset" disabled="disabled">Reset</button>
+
+
+<textarea id="b_challenge" disabled="disabled" placeholder="Alice's challenge"></textarea>
+<button id="b_cons_challenge" disabled="disabled">Consume challenge</button>
+
+
+<textarea id="b_response" readonly="readonly" disabled="disabled"></textarea>
+
+<textarea id="b_acknowledgement" disabled="disabled" placeholder="Alice's acknowledgement"></textarea>
+<button id="b_cons_acknowledgement" disabled="disabled">Consume acknowledgement</button>
+
+<div id="b_result"></div>
+
+
 <script src="/resources/2022-ymp/ot.js" type="module"></script>
 <script src="/resources/2022-ymp/ymp.js" type="module"></script>
+<script src="/resources/2022-ymp/nacl-util.js"></script>
 <script>
 // TODO idea: use promises where user input matters?
-// beware its just a toy (bugs, side-channels, post-quantum crypto)
+// beware its just a toy, self-rolled (bugs, side-channels, post-quantum crypto)
 // TODO note: why JS? available, interactive
+// TODO note: protocol encodingencoding  is still evolving
 
-document.addEventListener('DOMContentLoaded', () => {
+// TODO move functions out of even handler
+function encode_(o) {
+	if (typeof(o) == "string")
+		throw "Cannot encode string";
+
+	if (o instanceof Uint8Array)
+		return nacl.util.encodeBase64(o);
+	if (o instanceof Array)
+		return o.map(encode_);
+	if (typeof(o) == "object") {
+		let r = {};
+		for (let k in o)
+			r[k] = encode_(o[k]);
+		return r;
+	}
+	/* numbers */
+	return o;
+}
+
+function encode(obj) {
+	return JSON.stringify(encode_(obj));
+}
+
+function decode_(o) {
+	if (typeof(o) == "string")
+		return nacl.util.decodeBase64(o);
+
+	if (o instanceof Array)
+		return o.map(decode_);
+	if (typeof(o) == "object") {
+		let r = {};
+		for (let k in o)
+			r[k] = decode_(o[k]);
+		return r;
+	}
+	/* numbers only?*/
+	return o;
+}
+function decode(str) {
+	let o1 = JSON.parse(str)
+	return decode_(o1);
+}
+
+function test() {
 	let a, b;
 	let alice = new window.Alice(new window.Domain(0, 1000, 1), a = 684);
 	let bob = new window.Bob(new window.Domain(0, 1000, 1), b = 954);
@@ -28,9 +128,205 @@ document.addEventListener('DOMContentLoaded', () => {
 	console.log(ac);
 	bob.consumeAcknowledgement(ac);
 
-	console.log(a, b, bob.result);
+	console.log(a, b, bob.isGreater ? "A<B" : "A>=B");
+}
+
+function buttonUnlocker(elField, elButton) {
+	function handler(e) {
+		if (e.currentTarget.value)
+			elButton.disabled = false;
+		else
+			elButton.disabled = true;
+	};
+	elField.addEventListener("change", handler);
+	elField.addEventListener("mouseup", handler);
+	elField.addEventListener("keyup", handler);
+}
+
+function setupAlice(domain) {
+	let elSecret = document.getElementById("a_secret");
+	let elPrepare = document.getElementById("a_prepare");
+	let elReset = document.getElementById("a_reset");
+	let elChallenge = document.getElementById("a_challenge");
+	let elResponse = document.getElementById("a_response");
+	let elConsResponse = document.getElementById("a_cons_response");
+	let elAcknowledgement = document.getElementById("a_acknowledgement");
+
+	let alice;
+
+	function reset(e) {
+		elSecret.value = "";
+		elSecret.disabled = false;
+
+		elPrepare.disabled = false;
+		elReset.disabled = false;
+
+		elChallenge.value = "";
+		elChallenge.disabled = true;
+
+		elResponse.value = "";
+		elResponse.disabled = true;
+		elConsResponse.disabled = true;
+
+		elAcknowledgement.value = "";
+		elAcknowledgement.disabled = true;
+
+		alice = null;
+	};
+	reset();
+	elReset.addEventListener("click", reset);
+
+	elPrepare.addEventListener("click", e => {
+		if (elSecret.value === "")
+			return;
+		alice = new window.Alice(domain, Number(elSecret.value));
+		let ch = alice.produceChallenge();
+
+		elPrepare.disabled = true;
+		elSecret.disabled = true;
+		elChallenge.value = encode(ch)
+		elChallenge.disabled = false;
+		elResponse.disabled = false;
+	});
+
+	buttonUnlocker(elResponse, elConsResponse);
+
+	elConsResponse.addEventListener("click", e => {
+		let re = decode(elResponse.value);
+		alice.consumeResponse(re);
+		let ack = alice.produceAcknowledgement();
+
+		elChallenge.disabled = true;
+		elResponse.disabled = true;
+		elConsResponse.disabled = true;
+		elAcknowledgement.value = encode(ack);
+		elAcknowledgement.disabled = false;
+	});
+}
+
+
+function setupBob(domain) {
+	let elSecret = document.getElementById("b_secret");
+	let elPrepare = document.getElementById("b_prepare");
+	let elReset = document.getElementById("b_reset");
+	let elChallenge = document.getElementById("b_challenge");
+	let elConsChallenge = document.getElementById("b_cons_challenge");
+	let elResponse = document.getElementById("b_response");
+	let elAcknowledgement = document.getElementById("b_acknowledgement");
+	let elConsAcknowledgement = document.getElementById("b_cons_acknowledgement");
+	let elResult = document.getElementById("b_result");
+
+	let bob;
+
+	function reset(e) {
+		elSecret.value = "";
+		elSecret.disabled = false;
+
+		elPrepare.disabled = false;
+		elReset.disabled = false;
+
+		elChallenge.value = "";
+		elChallenge.disabled = true;
+		elConsChallenge.disabled = true;
+
+		elResponse.value = "";
+		elResponse.disabled = true;
+
+		elAcknowledgement.value = "";
+		elAcknowledgement.disabled = true;
+		elConsAcknowledgement.disabled = true;
+
+		elResult.innerText = "";
+
+		bob = null;
+	};
+	reset();
+
+	elReset.addEventListener("click", reset);
+
+	elPrepare.addEventListener("click", e => {
+		if (elSecret.value === "")
+			return;
+		bob = new window.Bob(domain, Number(elSecret.value));
+
+		elPrepare.disabled = true;
+		elSecret.disabled = true;
+		elChallenge.disabled = false;
+	});
+
+	buttonUnlocker(elChallenge, elConsChallenge);
+
+	elConsChallenge.addEventListener("click", e => {
+		let ch = decode(elChallenge.value);
+		bob.consumeChallenge(ch);
+		let re = bob.produceResponse();
+		elResponse.value = encode(re);
+
+		elChallenge.disabled = true;
+		elConsChallenge.disabled = true;
+		elResponse.disabled = false;
+		elAcknowledgement.disabled = false;
+	});
+
+	buttonUnlocker(elAcknowledgement, elConsAcknowledgement);
+
+	elConsAcknowledgement.addEventListener("click", e => {
+		let ack = decode(elAcknowledgement.value);
+		bob.consumeAcknowledgement(ack);
+		if (bob.isGreater)
+			elResult.innerText = "Bob.secret > Alice.secret";
+		else
+			elResult.innerText = "Alice.secret >= Bob.secret";
+
+		elResponse.disabled = true;
+		elAcknowledgement.disabled = true;
+		elConsAcknowledgement.disabled = true;
+	});
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	test();
+
+	// ------
+	function setupDomain(e) {
+		let elMin = document.getElementById("dom_min");
+		let elMax = document.getElementById("dom_max");
+		let elStep = document.getElementById("dom_step");
+		let elASecret = document.getElementById("a_secret");
+		let elBSecret = document.getElementById("b_secret");
+
+		let domain = new window.Domain(
+					       Number(elMin.value),
+					       Number(elMax.value),
+					       Number(elStep.value)
+					      );
+		elASecret.min = elMin.value;
+		elASecret.max = elMax.value;
+		elASecret.step = elStep.value;
+
+		elBSecret.min = elMin.value;
+		elBSecret.max = elMax.value;
+		elBSecret.step = elStep.value;
+
+		setupAlice(domain);
+		setupBob(domain);
+	};
+	setupDomain();
+	document.getElementById("dom_setup").addEventListener("click", setupDomain);
+
 });
 
+// TODO CSS delineation
+// TODO quick explanation text, ideal functionality picture
+// TODO refactor ymp internals to bytes
 
+// DONE
+// DONE fix resets
+// DONE disabled consumed fields
+// DONE enable consume button after inserting text
+// DONE domain select
+// DONE secret input validation
+// DONE error (message) handling
+// CANC RO fields copy-paste on click? -> permissions unclear
 </script>
 

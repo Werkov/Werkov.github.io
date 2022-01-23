@@ -148,7 +148,7 @@ VecSender.prototype.consumeR = function(R) {
 };
 
 VecSender.prototype.produceEs = function(mss) {
-	let nonce = new Uint8Array(nacl.secretbox.nonceLength);
+	let nonce = nacl.randomBytes(nacl.secretbox.nonceLength);
 	let r = this.senders.map((s, i) => s.produceEs(mss[i], nonce));
 	return {n:nonce, es:r};
 }

@@ -136,6 +136,10 @@ function num2bytes(n) {
 	let neg = (n < 0);
 	n = neg ? -n-1 : n;
 	n = BigInt(n);
+
+	if (n > ((256n << 256n) - 1n))
+		throw "Too big bignum :-p, " + n;
+
 	for (let i = 0; i < 32; ++i) {
 		result[i] = Number(n % 256n);
 		if (neg)
@@ -188,7 +192,7 @@ const Domain = function(min, max, step) {
 };
 
 Domain.prototype.transformSecret = function(secret) {
-	if (secret < this.min || secret > this.max)
+	if (typeof(secret) != "number" || secret < this.min || secret > this.max)
 		throw "Secret out of domain";
 
 	return BigInt(Math.floor((secret - this.min) / this.step));
@@ -306,7 +310,7 @@ Alice.prototype.produceAcknowledgement = function() {
 
 	console.log("A2", A2);
 	return {
-		s: sendS,
+		s: num2bytes(sendS), // TODO remove num2bytes
 		a: this.ot.produceEs(A2),
 	};
 };
@@ -340,12 +344,12 @@ Bob.prototype.produceResponse = function() {
 
 Bob.prototype.consumeAcknowledgement = function(a) {
 	if (!this.ot.consumeEs(a.a))
-		throw new "Wrong OT acknowledgement";
+		throw "Wrong OT acknowledgement";
 
 	let R = this.ot.getMessage();
 	console.log("OT R:", R);
 	R = R.map(x => bytes2num(x));
-	let codeword = R.reduce((acc, x) => acc ^= x, a.s);
+	let codeword = R.reduce((acc, x) => acc ^= x, bytes2num(a.s)); // TODO remove bytes2num
 
 	let streak = 0;
 	let reply = undefined;
@@ -371,7 +375,8 @@ Bob.prototype.consumeAcknowledgement = function(a) {
 		reply = getBit(codeword, k-2);
 	}
 
-	this.result = reply ? "A>=B" : "A<B";
+	/* reply ? "A>=B" : "A<B" */
+	this.isGreater = !reply;
 };
 
 
