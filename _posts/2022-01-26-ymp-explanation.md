@@ -53,16 +53,16 @@ If it was possible to somehow "disassemble" the messages and learn anything
 extra about Bob's secret, she could exploit that to tell the simulated and real
 world apart.
 
-[^sim] I can't explain myself this part clearly as I didn't find consistent and
-       easy to grasp definitions of de-facto standard simulation-based proofs.
-       Obviously, the simulator cannot decrypt the messages from Alice to provide `a` to the ideal functionality.
-       But it can "fake" any values tha Alice obtains from random oracles (hash
-       functions) so the simulator keeps information about secrets derived by
-       Alice and only that way it can decrypt and pass raw `a` to the ideal
-       functionality.
-[^sim2] I'm also mixing the simulator model for oblivious transfer with more
-	complex YMP computation (that builds on top of an OT primitive) and
-	those may not compose.
+[^sim]: I can't explain myself this part clearly as I didn't find consistent and
+        easy to grasp definitions of de-facto standard simulation-based proofs.
+        Obviously, the simulator cannot decrypt the messages from Alice to provide `a` to the ideal functionality.
+        But it can "fake" any values tha Alice obtains from random oracles (hash
+        functions) so the simulator keeps information about secrets derived by
+        Alice and only that way it can decrypt and pass raw `a` to the ideal
+        functionality.
+[^sim2]: I'm also mixing the simulator model for oblivious transfer with more
+	 complex YMP computation (that builds on top of an OT primitive) and
+	 those may not compose.
 
 (The goal applies vice versa with a simulator on Bob's side too.)
 
