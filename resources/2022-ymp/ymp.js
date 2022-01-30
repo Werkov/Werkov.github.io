@@ -149,7 +149,7 @@ const Domain = function(min, max, step) {
 	this.min = min;
 	this.max = max;
 	this.step = step;
-	this.bits = Math.ceil(Math.log2((max - min) / step));
+	this.bits = Math.ceil(Math.log2((max - min) / step + 1));
 };
 
 Domain.prototype.transformSecret = function(secret) {
