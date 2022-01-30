@@ -2,7 +2,6 @@
 layout: post
 title: Yao's Millionaires' problem – explanation
 tags: cryptography programming javascript
-hidden: true
 ---
 
 
