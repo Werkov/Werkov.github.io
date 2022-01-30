@@ -230,7 +230,7 @@ I chose a client-side JavaScript implementation so that:
   * the result is an "app" for interactive use,
   * the code can be run both on desktop PC or cell phone,
   * the code can work offline (akin to simple calculator),
-  * the code can be easily examined by anyone,
+  * the code can be easily examined by anyone ([PRs welcomed](https://github.com/Werkov/Werkov.github.io/tree/master/resources/2022-ymp)),
   * (learn news in the JavaScript ecosystem).
 
 The underlying group for the modified "simplest OT" is [the Ristretto group](https://ristretto.group/)[^ristretto].
