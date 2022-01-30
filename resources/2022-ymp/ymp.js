@@ -168,7 +168,9 @@ function bytes2num(bytes) {
  */
 const Ioannis = {
 	minZone: d => d,
-	minK: d => d*d + 2*d + Ioannis.minZone(d),
+	/* align k to bytes */
+	// TODO also account for 2b mark?
+	minK: d => 8*Math.ceil((d*d + 2*d + Ioannis.minZone(d)) / 8),
 
 };
 
