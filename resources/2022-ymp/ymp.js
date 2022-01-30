@@ -188,7 +188,7 @@ Alice.prototype.produceChallenge = function() {
 };
 
 Alice.prototype.consumeResponse = function(r) {
-	// TODO check r matches this.domain (not only bits), or just rely on bits?
+	// XXX Bob may be responding within a domain with different offset
 	if (!this.ot.consumeR(r))
 		throw "Wront OT response";
 };
@@ -212,7 +212,7 @@ Alice.prototype.produceAcknowledgement = function() {
 	let k = Ioannis.minK(d);
 	let s = (2*d + minZone) + getRandInt(d*d);
 
-	console.log(
+	log(
 		"r = ", r,
 		"s = ", s,
 		"k = ", k
@@ -242,14 +242,14 @@ Alice.prototype.produceAcknowledgement = function() {
 		setBit(A[i][0], k-1, getBit(A[i][1], k-1));
 		setBit(A[i][0], k-2, getBit(A[i][1], k-2));
 	}
-	console.log("A", A, hexDump(A));
+	log("A", A, hexDump(A));
 	
 	let S = new Array(d);
 	for (let i = 0; i < d; ++i) {
 		S[i] = num(k);
 		fillRandom(S[i], 0, k);
 	}
-	console.log("S", S, hexDump(S));
+	log("S", S, hexDump(S));
 	
 	// XXX paper botched this: only sendS must xor the mark, not S[d-1]
 	// mark is xor-sum of all As ^ the real mark (only top 2b)
@@ -269,9 +269,9 @@ Alice.prototype.produceAcknowledgement = function() {
 	
 	let red = S.reduce((acc, x) => xor(acc, x), mark)
 	let sendS = leftrot(red, r);
-	console.log("sendS, mark", hexDump(sendS), hexDump(mark));
+	log("sendS, mark", hexDump(sendS), hexDump(mark));
 
-	console.log("A2", A2, hexDump(A2));
+	log("A2", A2, hexDump(A2));
 	return {
 		s: sendS,
 		a: this.ot.produceEs(A2),
@@ -284,12 +284,6 @@ const Bob = function(domain, secret) {
 	this.ot = new ot.VecReceiver(domain.bits, 2, cs);
 	this.domain = domain;
 };
-
-// TODO idea
-// Bob.fromChallenge = function(c, secret) {
-// 	let cDomain = Domain.fromMessage(c.d);
-// 	return new Bob(cDomain, secret);
-// };
 
 Bob.prototype.consumeChallenge = function(c) {
 	let cDomain = Domain.fromMessage(c.d);
@@ -310,9 +304,9 @@ Bob.prototype.consumeAcknowledgement = function(a) {
 		throw "Wrong OT acknowledgement";
 
 	let R = this.ot.getMessage();
-	console.log("OT R:", R, hexDump(R));
+	log("OT R:", R, hexDump(R));
 	let codeword = R.reduce((acc, x) => xor(acc, x), a.s);
-	console.log("cw", codeword, hexDump(codeword));
+	log("cw", codeword, hexDump(codeword));
 
 	let streak = 0;
 	let candidates = new Array();
@@ -350,7 +344,7 @@ function selftest() {
 		let ac = alice.produceAcknowledgement();
 		bob.consumeAcknowledgement(ac);
 
-		console.log("test:", a, b, bob.isGreater, (b>a));
+		log("test:", a, b, bob.isGreater, (b>a));
 		return bob.isGreater;
 	}
 
@@ -370,18 +364,29 @@ function selftest() {
 		try {
 			console.assert(test(a, b) === b > a, a + ", " + b);
 		} catch (e) {
-			console.assert(false, a + ", " + b + " (inc)");
+			if (e == "Inconclusive zone of zeroes")
+				console.assert(false, a + ", " + b + " (inc)");
+			throw e;
 		}
 	}
 }
 
 
 
-// debug export
+// non-module export
 window.Alice = Alice;
 window.Bob = Bob;
 window.Domain = Domain;
-window.ympSelftest = selftest;
+
+let debug = 0;
+let log;
+if (debug) {
+	window.ympSelftest = selftest;
+	log = console.log;
+} else {
+	window.ympSelftest = function() {};
+	log = function() {};
+}
 
 export default {
 	Alice	: Alice,
@@ -389,5 +394,4 @@ export default {
 	Domain  : Domain,
 };
 
-// TODO remove debug prints exposing secrets
 // TODO idea: session id (prevent replay, derive from A's secret)
