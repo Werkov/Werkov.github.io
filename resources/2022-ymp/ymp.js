@@ -116,9 +116,13 @@ function bytes2num(bytes) {
 function num(n, v) {
 	let res = new Uint8Array(Math.ceil(n / 8));
 
-	/* support 0..255 initializer */
-	if (typeof(v) != "undefined")
-		res[0] = v;
+	if (typeof(v) != "undefined") {
+		let n = BigInt(v);
+		for (let i = 0; n > 0n; ++i) {
+			res[i] = Number(n % 256n);
+			n /= 256n;
+		}
+	}
 	return res;
 }
 
