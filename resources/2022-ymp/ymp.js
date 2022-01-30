@@ -37,117 +37,66 @@ function getRandInt(n) {
 	return ret % n;
 }
 
-function randBit() {
-	return getRandInt(2);
+function getBit(a, n) {
+	return (a[n / 8 | 0] >> (n % 8)) & 1;
 }
 
-/*
- * range
- * n	gets n-th least significant bit (0-based)
- * [low, high] low..high (incl.), (little endian: high..low)
- */
-function getBit(a, range) {
-	if (typeof(range) == 'number')
-		range = BigInt(range);
-
-	if (typeof(range) == 'bigint')
-		return (a >> range) & 0x1n;
-
-	let low = BigInt(range[0]);
-	let high = BigInt(range[1]);
-	let mask = (0x1n << (high - low + 1n)) - 1n;
-	return (a >> low) & mask;
+function setBit(a, n, v) {
+	if (v)
+		a[n / 8 | 0] |= 1 << (n % 8);
+	else
+		a[n / 8 | 0] &= ~(1 << (n % 8));
 }
 
-// TODO consider high-boundary exclusive
-function setBit(a, range, val) {
-	if (typeof(range) == 'number')
-		range = BigInt(range);
+function leftrot(a, r) {
+	let res = new Uint8Array(a.length);
+	let full = r / 8 | 0;
+	let part = r % 8;
 
-	if (typeof(range) == 'bigint') {
-		a = a & ~(0x1n << range);
-		let x = typeof(val) == 'function' ? val() : val
-		a = a | (BigInt(x) << range);
-		return a;
-	}
-
-	let low = range[0];
-	let high = range[1];
-	for (let i = low; i <= high; ++i)
-		a = setBit(a, i, val);
-	return a;
-}
-
-/*
- * n	input value
- * r	how many bits to rotate
- * w	wraparound width in bit
- */
-function leftrot(n, r, w) {
-	r = BigInt(r);
-	w = BigInt(w);
-	let full_mask = (0x1n << w) - 1n;
-	let mask = ((0x1n << r) - 1n) << (w-r);
-
-	// < r <  w-r <
-	// ....|.......
-
-	return	((n << r) & full_mask)
-		|
-		((n & mask) >> (w-r));
-}
-
-/*
- * a, b		ArrayBuffer
- * result	Uint8Array
- */
-function xorArray(a, b) {
-	// not working with 64b,
-	// not ideal but avoid endianess issues when converting typed arrays
-	// and easier alignment
-	let va = new Uint16Array(a);
-	let vb = new Uint16Array(b);
-	console.assert(va.length == vb.length, va.length, vb.length);
-	let res = new Uint16Array(va.length);
 	for (let i = 0; i < res.length; ++i) {
-		res[i] = va[i] ^ vb[i];
+		res[i] = a[(i + res.length - full) % res.length] << part;
+		res[i] |= a[(i + res.length - full - 1) % res.length] >> (8-part);
 	}
-	return new Uint8Array(res.buffer);
-}
 
-function hexArray(a) {
-	if (typeof(a) == 'number' || typeof(a) == 'bigint')
-		return a.toString(16).padStart(k/4, '0');
-	let res = new Array();
-	for (let i in a) {
-		res[i] = hexArray(a[i]);
-	}
 	return res;
 }
 
-// TODO num2bytes() works only with 256 bits, replace bit functions with uint8 functions
-/*
- * n	number
- *	returns LE 2-complement encoded number as byte-array
- */
-function num2bytes(n) {
-	// TODO work with byte arrays instead of bignum?
-	let result = new Array(32);
-	let neg = (n < 0);
-	n = neg ? -n-1 : n;
-	n = BigInt(n);
+function xor(a, b) {
+	console.assert(a.length == b.length, a.length, b.length);
+	let res = new Uint8Array(a.length);
+	for (let i = 0; i < res.length; ++i)
+		res[i] = a[i] ^ b[i];
+	return res;
+}
 
-	if (n > ((256n << 256n) - 1n))
-		throw "Too big bignum :-p, " + n;
+function fillRandom(a, begin, end) {
+	let sub = a.subarray((begin + 7) / 8 | 0, end / 8 | 0)
+	crypto.getRandomValues(sub);
 
-	for (let i = 0; i < 32; ++i) {
-		result[i] = Number(n % 256n);
-		if (neg)
-			result[i] = ~result[i];
-		n = n / 256n;
+	let padding = new Uint8Array(2);
+	crypto.getRandomValues(padding);
+
+	let bmask = (begin % 8) ? (0xff << (begin % 8)) & 0xff : 0;
+	a[begin / 8 | 0] &= ~bmask;
+	a[begin / 8 | 0] |= padding[0] & bmask;
+
+	let emask = (1 << (end % 8)) - 1;
+	a[end / 8 | 0] &= ~emask;
+	a[end / 8 | 0] |= padding[1] & emask;
+	console.log("b,e:", begin, end,
+		"sub:", (begin + 7) / 8 | 0, end / 8 | 0, 
+		"bmask:", bmask,
+		"emask:", emask);
+}
+
+function hexDump(a) {
+	if (a instanceof Uint8Array)
+		return bytes2num(a).toString(16).padStart(24/4, '0');
+	let res = new Array();
+	for (let i in a) {
+		res[i] = hexDump(a[i]);
 	}
-	//return new Uint8Array(result.reverse());
-	return new Uint8Array(result);
+	return res;
 }
 
 function bytes2num(bytes) {
@@ -158,6 +107,15 @@ function bytes2num(bytes) {
 	}
 
 	return result;
+}
+
+function num(n, v) {
+	let res = new Uint8Array(Math.ceil(n / 8));
+
+	/* support 0..255 initializer */
+	if (typeof(v) != "undefined")
+		res[0] = v;
+	return res;
 }
 
 /*
@@ -197,7 +155,7 @@ Domain.prototype.transformSecret = function(secret) {
 	if (typeof(secret) != "number" || secret < this.min || secret > this.max)
 		throw "Secret out of domain";
 
-	return BigInt(Math.floor((secret - this.min) / this.step));
+	return num(this.bits, Math.floor((secret - this.min) / this.step));
 };
 
 Domain.prototype.toMessage = function() {
@@ -236,12 +194,8 @@ Alice.prototype.consumeResponse = function(r) {
 
 Alice.prototype.produceAcknowledgement = function() {
 	/* This is where we start processing secret */
-
 	let d = this.domain.bits;
-	let A = new Array(d);
-	for (let i = 0; i < d; ++i)
-		A[i] = [0n, 0n];
-	
+
 	// XXX paper states 2*k but makes no sense for rotations of k-bit numbers
 	// actually, there have to be at least d options (equal to guessing the
 	// position of highest decisive bit) but we use 2 bit encoding,
@@ -256,70 +210,76 @@ Alice.prototype.produceAcknowledgement = function() {
 	let minZone = Ioannis.minZone(d);
 	let k = Ioannis.minK(d);
 	let s = (2*d + minZone) + getRandInt(d*d);
-	
+
 	console.log(
 		"r = ", r,
 		"s = ", s,
 		"k = ", k
 	);
 	
+	let A = new Array(d);
+	for (let i = 0; i < d; ++i)
+		A[i] = [num(k), num(k)];
+	
 	for (let i = 0; i < d; ++i) {
 		// set parts based on a[i]
-		let l = 1 - Number(getBit(this.binSecret, i));
+		let l = 1 - getBit(this.binSecret, i);
 		let m = 2*i; 
 	
 		// random triangle
-		A[i][l] = setBit(A[i][l], [0, m-1], randBit);
+		fillRandom(A[i][l], 0, m);
 		// decisive "diagonal"
-		A[i][l] = setBit(A[i][l], m, getBit(this.binSecret, i));
-		A[i][l] = setBit(A[i][l], m+1, 1);
-	
+		setBit(A[i][l], m, getBit(this.binSecret, i));
+		setBit(A[i][l], m+1, 1);
+
 		// randomize others
-		A[i][0] = setBit(A[i][0], [s, k-1], randBit);
-		A[i][1] = setBit(A[i][1], [s, k-1], randBit);
+		fillRandom(A[i][0], s, k);
+		fillRandom(A[i][1], s, k);
 	
 		// top 2 bit must be bitwise equal not to corrupt '11' mark
 		// XXX paper had this wrong
-		A[i][0] = setBit(A[i][0], k-1, getBit(A[i][1], k-1));
-		A[i][0] = setBit(A[i][0], k-2, getBit(A[i][1], k-2));
+		setBit(A[i][0], k-1, getBit(A[i][1], k-1));
+		setBit(A[i][0], k-2, getBit(A[i][1], k-2));
 	}
+	console.log("A", A, hexDump(A));
 	
 	let S = new Array(d);
 	for (let i = 0; i < d; ++i) {
-		S[i] = setBit(0n, [0, k-1], randBit);
-		// debug: disable xor encryption
-		// S[i] = setBit(0n, [0, k-1], 0);
+		S[i] = num(k);
+		fillRandom(S[i], 0, k);
 	}
+	console.log("S", S, hexDump(S));
 	
 	// XXX paper botched this: only sendS must xor the mark, not S[d-1]
 	// mark is xor-sum of all As ^ the real mark (only top 2b)
 	// this way As would xor away, the result would me the real mark only then
-	let as = A.slice(0, d).map(x => getBit(x[0], [k-2, k-1]));
-	let xorval = as.reduce((acc, x) => acc ^= x, 0x3n);
-	let mark = 0n;
-	mark = setBit(mark, k-1, (xorval >> 1n));
-	mark = setBit(mark, k-2, xorval & 0x1n);
+	let as = A.slice(0, d).map(x => (getBit(x[0], k-1) << 1) | getBit(x[0], k-2));
+	let xorval = as.reduce((acc, x) => acc ^ x, 0x3);
+	let mark = num(k);
+	setBit(mark, k-1, (xorval >> 1));
+	setBit(mark, k-2, xorval & 0x1);
 	
 	let A2 = new Array(d);
 	for (let i = 0; i < d; ++i) {
 		A2[i] = Array(2);
-		A2[i][0] = num2bytes(leftrot(A[i][0] ^ S[i], r, k));
-		A2[i][1] = num2bytes(leftrot(A[i][1] ^ S[i], r, k));
+		A2[i][0] = leftrot(xor(A[i][0], S[i]), r);
+		A2[i][1] = leftrot(xor(A[i][1], S[i]), r);
 	}
 	
-	let sendS = leftrot(S.reduce((acc, x) => acc ^= x, mark), r, k);
-	//console.log("sendS:\t", sendS.toString(16));
+	let red = S.reduce((acc, x) => xor(acc, x), mark)
+	let sendS = leftrot(red, r);
+	console.log("sendS, mark", hexDump(sendS), hexDump(mark));
 
-	console.log("A2", A2);
+	console.log("A2", A2, hexDump(A2));
 	return {
-		s: num2bytes(sendS), // TODO remove num2bytes
+		s: sendS,
 		a: this.ot.produceEs(A2),
 	};
 };
 
 const Bob = function(domain, secret) {
 	let binSecret = domain.transformSecret(secret)
-	let cs = [...Array(domain.bits).keys()].map(i => Number(getBit(binSecret, i)));
+	let cs = [...Array(domain.bits).keys()].map(i => getBit(binSecret, i));
 	this.ot = new ot.VecReceiver(domain.bits, 2, cs);
 	this.domain = domain;
 };
@@ -349,9 +309,9 @@ Bob.prototype.consumeAcknowledgement = function(a) {
 		throw "Wrong OT acknowledgement";
 
 	let R = this.ot.getMessage();
-	console.log("OT R:", R);
-	R = R.map(x => bytes2num(x));
-	let codeword = R.reduce((acc, x) => acc ^= x, bytes2num(a.s)); // TODO remove bytes2num
+	console.log("OT R:", R, hexDump(R));
+	let codeword = R.reduce((acc, x) => xor(acc, x), a.s);
+	console.log("cw", codeword, hexDump(codeword));
 
 	let streak = 0;
 	let reply = undefined;
