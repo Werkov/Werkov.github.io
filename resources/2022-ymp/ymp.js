@@ -90,12 +90,15 @@ function fillRandom(a, begin, end) {
 	a[end / 8 | 0] |= padding[1] & emask;
 }
 
-function hexDump(a) {
+function hexDump(a, width) {
 	if (a instanceof Uint8Array)
-		return bytes2num(a).toString(16).padStart(24/4, '0');
+		if (width)
+			return bytes2num(a).toString(16).padStart(Math.ceil(width/4), '0');
+		else
+			return bytes2num(a).toString(16);
 	let res = new Array();
 	for (let i in a) {
-		res[i] = hexDump(a[i]);
+		res[i] = hexDump(a[i], width);
 	}
 	return res;
 }
