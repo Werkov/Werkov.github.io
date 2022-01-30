@@ -379,11 +379,48 @@ Bob.prototype.consumeAcknowledgement = function(a) {
 	this.isGreater = !reply;
 };
 
+function selftest() {
+	function test(a, b) {
+		let alice = new Alice(new Domain(0, Math.max(a, b), 1), a);
+		let bob = new Bob(new Domain(0, Math.max(a, b), 1), b);
+
+		let ch = alice.produceChallenge();
+		bob.consumeChallenge(ch);
+
+		let re = bob.produceResponse();
+		alice.consumeResponse(re);
+
+		let ac = alice.produceAcknowledgement();
+		bob.consumeAcknowledgement(ac);
+
+		console.log("test:", a, b, bob.isGreater, (b>a));
+		return bob.isGreater;
+	}
+
+	let cases = [
+		[2, 2],
+		[200, 200],
+		[1, 2],
+		[2, 1],
+		[100, 200],
+		[200, 100],
+		[1e6, 1e6+1],
+		[1e6+1, 1e6],
+	];
+	for (let c in cases) {
+		let a = cases[c][0];
+		let b = cases[c][1];
+		console.assert(test(a, b) === b > a, a + ", " + b);
+	}
+}
+
+
 
 // debug export
 window.Alice = Alice;
 window.Bob = Bob;
 window.Domain = Domain;
+window.ympSelftest = selftest;
 
 export default {
 	Alice	: Alice,
