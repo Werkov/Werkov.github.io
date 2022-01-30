@@ -48,7 +48,7 @@ messages from real world implementation to the ideal functionality for Alice.
 
 The goal is that Alice cannot distinguish whether she communicates via the sim
 (the *shim* is a handy typo, it is actually called simulator) with the ideal
-functionality or participates in the real world implementation.[^sim][^sim2]
+functionality or participates in the real world implementation.[^sim] [^sim2]
 If it was possible to somehow "disassemble" the messages and learn anything
 extra about Bob's secret, she could exploit that to tell the simulated and real
 world apart.
@@ -61,6 +61,7 @@ world apart.
         functions) so the simulator keeps information about secrets derived by
         Alice and only that way it can decrypt and pass raw `a` to the ideal
         functionality.
+
 [^sim2]: I'm also mixing the simulator model for oblivious transfer with more
 	 complex YMP computation (that builds on top of an OT primitive) and
 	 those may not compose.
@@ -256,14 +257,14 @@ unnecessary bloat given this is expected to serve as a standalone tool.
 
 ## References
 
+* Ioannis Ioannidis, Ananth Grama. [An efficient protocol for Yao's
+  millionaires' problem](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.110.8816)
 * Tung Chou and Claudio Orlandi. [The Simplest Protocol for Oblivious Transfer](https://eprint.iacr.org/2015/267.pdf)
 * Ziya Alper Genç, Vincenzo Iovino, and Alfredo Rial. ["The Simplest Protocol for Oblivious Transfer" Revisited](https://eprint.iacr.org/2017/370.pdf)
 * Eduard Hauck and Julian Loss. [Efficient and Universally Composable Protocols
   for Oblivious Transfer from the CDH Assumption](https://eprint.iacr.org/2017/1011.pdf)
-* Ioannis Ioannidis, Ananth Grama. [An efficient protocol for Yao's
-  millionaires' problem](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.110.8816)
-* https://github.com/novifinancial/ristretto255-js
-* https://tweetnacl.js.org/
+* [Ristretto group](https://github.com/novifinancial/ristretto255-js)
+* [TweetNaCl.js](https://tweetnacl.js.org/)
 * Loosely related [Understanding Zero-knowledge proofs through illustrated
   examples](https://blog.goodaudience.com/understanding-zero-knowledge-proofs-through-simple-examples-df673f796d99)
 
