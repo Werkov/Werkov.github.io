@@ -27,14 +27,19 @@
  */
 import ot from './ot.js';
 
+/*
+ * random integer in [0, n) (n is Number)
+ */
 function getRandInt(n) {
-	return Math.floor(Math.random() * n);
-	if (typeof(getRandInt.seed) == 'undefined')
-		getRandInt.seed = 42;
-	// TODO replace with crypto API
-	ret = (getRandInt.seed * 16807) % ((1 << 31) - 1);
-	getRandInt.seed = ret;
-	return ret % n;
+	let bits = Math.ceil(Math.log2(n));
+	let number = num(bits);
+	let res;
+	do {
+		fillRandom(number, 0, bits);
+		res = Number(bytes2num(number));
+	} while (res >= n);
+
+	return res;
 }
 
 function getBit(a, n) {
@@ -83,10 +88,6 @@ function fillRandom(a, begin, end) {
 	let emask = (1 << (end % 8)) - 1;
 	a[end / 8 | 0] &= ~emask;
 	a[end / 8 | 0] |= padding[1] & emask;
-	console.log("b,e:", begin, end,
-		"sub:", (begin + 7) / 8 | 0, end / 8 | 0, 
-		"bmask:", bmask,
-		"emask:", emask);
 }
 
 function hexDump(a) {
@@ -125,10 +126,10 @@ function num(n, v) {
  * k must be designed k >= d*d+3*d
  */
 const Ioannis = {
-	minZone: d => d,
-	/* align k to bytes */
-	// TODO also account for 2b mark?
-	minK: d => 8*Math.ceil((d*d + 2*d + Ioannis.minZone(d)) / 8),
+	/* bump the minZone to lower probabilty of random false zone */
+	minZone: d => Math.max(10, d),
+	/* align k to bytes, another 2*d for rotation space */
+	minK: d => 8*Math.ceil((d*d + 4*d + Ioannis.minZone(d)) / 8),
 
 };
 
@@ -314,31 +315,25 @@ Bob.prototype.consumeAcknowledgement = function(a) {
 	console.log("cw", codeword, hexDump(codeword));
 
 	let streak = 0;
-	let reply = undefined;
+	let candidates = new Array();
 	let minZone = Ioannis.minZone(this.domain.bits);
 	let k = Ioannis.minK(this.domain.bits);
 
-	for (let j = k-1; j >= 0; --j) {
-		if (getBit(codeword, j)) {
+	for (let j = k-1; j >= -1; --j) {
+		if (getBit(codeword, (k+j) % k)) {
 			if (streak >= minZone) {
-				let r;
-				// rotation in the middle 2b encoding
-				if (j == 0)
-					r = k-1;
-				else
-					r = j-1;
-				reply = getBit(codeword, r);
+				let r = (k + j - 1) % k;
+				candidates.push(getBit(codeword, r));
 			}
 			streak = 0;
 		} else
 			++streak;
 	}
-	if (typeof(reply) == "undefined" && streak >= minZone) {
-		reply = getBit(codeword, k-2);
-	}
+	if (candidates.length != 1)
+		throw "Inconclusive zone of zeroes";
 
-	/* reply ? "A>=B" : "A<B" */
-	this.isGreater = !reply;
+	/* bit ? "A>=B" : "A<B" */
+	this.isGreater = !candidates[0];
 };
 
 function selftest() {
@@ -372,7 +367,11 @@ function selftest() {
 	for (let c in cases) {
 		let a = cases[c][0];
 		let b = cases[c][1];
-		console.assert(test(a, b) === b > a, a + ", " + b);
+		try {
+			console.assert(test(a, b) === b > a, a + ", " + b);
+		} catch (e) {
+			console.assert(false, a + ", " + b + " (inc)");
+		}
 	}
 }
 
