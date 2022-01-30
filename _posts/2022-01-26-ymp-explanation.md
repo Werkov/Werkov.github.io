@@ -37,7 +37,7 @@ In the real implementation Alice and Bob exchange messages between each other.
 
 You can also imagine a [shim](https://en.wikipedia.org/wiki/Shim_(computing))
 sitting between Alice and the ideal functionality that translates the
-messages from real world implemenation to the ideal functionality for Alice.
+messages from real world implementation to the ideal functionality for Alice.
 
 
 	        m1 > +-----+             +-----+
@@ -55,7 +55,8 @@ world apart.
 
 [^sim]: I can't explain myself this part clearly as I didn't find consistent and
         easy to grasp definitions of de-facto standard simulation-based proofs.
-        Obviously, the simulator cannot decrypt the messages from Alice to provide `a` to the ideal functionality.
+        Obviously, the simulator cannot decrypt the messages from Alice to
+        provide `a` to the ideal functionality.
         But it can "fake" any values tha Alice obtains from random oracles (hash
         functions) so the simulator keeps information about secrets derived by
         Alice and only that way it can decrypt and pass raw `a` to the ideal
@@ -107,7 +108,7 @@ The algorithm is based on the following construction (each digit has own row):
 	xxxxxxx      1Mxxxxxx // codeword
 
 The `x` denotes a random bit, `M` is a message bit (can be different on
-different rows), 0 is a space (for readability) and 1 is `1`.
+different rows), space stands for 0 and `1` is just 1.
 We pick only the rows representing the decisive digits (more on that later)
 and sum them (bitwise) at the bottom.
 The resulting codeword would preserve a *zone* of zeroes followed by `1` and a
@@ -118,10 +119,10 @@ How are the decisive bits picked? Alice actually prepares two alternatives for
 each digit
 
 	decisive
-	xxxxxxx        1Mxxxx
+	xxxxxxx        1Mxxxx|
 	
 	non-decisive
-	xxxxxxx              
+	xxxxxxx              |
 
 and Bob picks based on *his* digit.
 The pair of binary digits is decisive iff their XOR is 1.
@@ -151,7 +152,7 @@ i.e. the desired result of the comparison.
 paper or implementation on details how codeword decryption works.)
 
 There are two final catches.
-First, Bob could try swap his pick for chosen digit and see whether the
+First, Bob could try to swap his pick for chosen digit and see whether the
 resulting codeword changed and hence derive Alice's digit.
 Another neat property of the oblivious transfer is that Bob cannot do this, he
 receives the alternative for his single pick only.
@@ -172,6 +173,26 @@ randomizing size of the random padding (denoted by random bits `y`).
 Upon decryption, Bob cannot tell what was the original rotation (or the length
 of the zone of zeroes), so he cannot reason anything about the difference of
 secrets.
+
+### Structure of the codeword
+
+The structure of the codeword without rotation is as follows
+
+	   pad   |     d^2     | m  |    2*d
+	11xxxxxxx|xxxxx        |    |  1Mxxxxxx
+	                               <------- decisive
+	               <----------------------- s
+	<-------------------------------------- k
+
+The size of the zone of zeros depends on random `s` and the highest decisive bit.
+The minimum size of the zone of zeroes is `m`.
+Beware that the smaller `s`, the higher probability that a false zone of zeroes
+*randomly* occurs among the random bits.
+Bob can detect multiple zones and the algorithm yields inconclusive result.
+
+(You can notice a mark `11` at the beginning of the codeword. This marks serves
+in the case of equal secrets of Alice and Bob.)
+
 
 ## Oblivious transfer
 
@@ -196,7 +217,7 @@ Refer to the linked papers for details.
 
 ## Implementation
 
-Warning right at the beginnig the implementation *is* rolling own crypto.
+Warning right at the beginning the implementation *is* rolling own crypto.
 When possible I tried to reuse existing more or less standard libs but due to
 the nature of not-widely used and tried algorithms involved I had to implement
 some parts myself.
@@ -209,7 +230,7 @@ I chose a client-side JavaScript implementation so that:
   * the result is an "app" for interactive use,
   * the code can be run both on desktop PC or cell phone,
   * the code can work offline (akin to simple calculator),
-  * the code can easily examined by anyone,
+  * the code can be easily examined by anyone,
   * (learn news in the JavaScript ecosystem).
 
 The underlying group for the modified "simplest OT" is [the Ristretto group](https://ristretto.group/)[^ristretto].
@@ -222,7 +243,7 @@ implementation that builds on top of another "standard" libarary
 	      robust Ristretto API that works with just the subgroup.
 
 **The message encoding is not stable and may be subject to future change.**
-The intended channel for the messages is copy-pasting via clipoard to a communication application.
+The intended channel for the messages is copy-pasting via clipboard to a communication application.
 Currently, I decided to go with raw JSON messages with binary strings encoded with base64[^rsamsg].
 
 The GUI is implemented in plain JavaScript without any framework, to avoid
