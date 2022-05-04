@@ -70,6 +70,7 @@ tags: ['security', 'flowchart', 'personal computing']
  * Bitwarden
    * Looks like sharing counterpart of KeePassXC
    * It’s open source *and* backed by a company
+   * [comment on master password](https://news.ycombinator.com/item?id=31261226) and server security
 
 ## Update 2021-12-11
 
