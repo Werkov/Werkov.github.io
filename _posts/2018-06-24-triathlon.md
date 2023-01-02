@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sprint triathlon
+title: Super sprint triathlon
 tags: sport triathlon
 ---
 
