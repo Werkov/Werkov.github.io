@@ -58,3 +58,8 @@ tags: Linux desktop sysadmin Arch Ubuntu
   * no debuginfo, need to rebuild packages with debuginfo flag (I can't just download debuginfo)
   * OTOH, fix (for a severe memory corruptino bug) was already commited when I
     started dealing with it
+
+## Feb 2023 update
+  
+  * /lib/modules/$(uname -r)/ may be empty after kernel update AND NO reboot
+    * that sucks for lazily loaded modules
