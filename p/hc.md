@@ -21,17 +21,20 @@ Peaks of selected mountain ranges (this would be a [challenge][1]).
 
 ### Tok (865 m)
   * [2016, by bike]({% post_url 2016-09-28-tok %})
+  * 2025, on foot in winter
 
 ## České středohoří
 
 ### Milešovka (837 m)
   * 2006?, by bike (pushed a lot)
+  * 2022?, on foot
 
 
 ## Českomoravská vrchovina
 
 ### Javořice (837 m)
   * 2008?, by bike
+  * more times
 
 ### Devět skal (836 m)
   * 2009?, by bike
@@ -74,13 +77,14 @@ Peaks of selected mountain ranges (this would be a [challenge][1]).
 ## Krkonoše
 
 ### Sněžka (1602 m)
-  * _missing!_
+  * 2023, on foot by cable car with hangover
 
 
 ## Krušné hory
 
 ### Klínovec (1244 m)
   * 2015, on foot
+  * [2023]({% post_url 2023-11-23-karlsbad %}), 2024: by bike
 
 
 ## Lužické hory
@@ -93,6 +97,7 @@ Peaks of selected mountain ranges (this would be a [challenge][1]).
 
 ### Lysá hora (1323 m)
   * 2007?, by bike
+  * 2024, on foot with hangover
 
 
 ## Orlické hory
