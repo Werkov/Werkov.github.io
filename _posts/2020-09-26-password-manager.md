@@ -83,3 +83,6 @@ tags: ['security', 'flowchart', 'personal computing']
     * keyloggers
     * solvable by HW tokens/MFA?
 
+## Update 2025-09-14
+
+  * [critique of pass on HN](https://news.ycombinator.com/item?id=45236079)
