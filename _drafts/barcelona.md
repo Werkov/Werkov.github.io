@@ -26,11 +26,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
     * e.g. forgot to download offline maps for Lombardia
 
 {:.thumbnail}
-[![Recorded path](/resources/2024-firenze/map-composed.jpg)](/resources/2024-firenze/map-composed.jpg)
-
-### Day 00 (2025-10-12)
-
-  * **sleeping:** Tarvisio, hotel Tarvis
+[![Recorded path](/resources/2025-barcelona/overlayed-tracks.png)](/resources/2025-barcelona/overlayed-tracks.png)
 
 
 ## Diary
@@ -49,6 +45,11 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
     from the receptions whether I'd come, in the end I manage to arrive at 8:48
 
   * **sleeping:** Tarvisio, hotel Tarvis
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251012_193459.jpg)](/resources/2025-barcelona/20251012_193459.jpg)
+
+*Photo* Night climb to Tarvis
 
 ### Day 01 (2025-10-13)
 
@@ -89,6 +90,11 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** Treviso, friend of mine
 
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251013_091224.jpg)](/resources/2025-barcelona/20251013_091224.jpg)
+
+*Photo* Descent from Tarvisio
+
 ### Day 02 (2025-10-14)
 
   * I wake up tired and unsettled stomach, slow morning
@@ -118,6 +124,11 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** a playground near Correzzo (with all-night lamp next to head)
 
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251014_155318.jpg)](/resources/2025-barcelona/20251014_155318.jpg)
+
+*Photo* Stretches of former Treviso-Ostigila railway, Chiesa di S.Sebastiano Martire ahead
+
 ### Day 03 (2025-10-15)
 
   * happy morning as I managed to avoid dew (the bench seems to be ideal
@@ -145,6 +156,17 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** family B&B in Caorso
 
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251015_103741.jpg)](/resources/2025-barcelona/20251015_103741.jpg)
+
+*Photo* Entering Mantova, this time from the east
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251015_162710.jpg)](/resources/2025-barcelona/20251015_162710.jpg)
+
+*Photo* Bicycles in Cremona
+
+
 ### Day 04 (2025-10-16)
 
   * I continue along the Po river, greeting black workers who pick cucumbers in the fields
@@ -170,7 +192,27 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** border of a field near Villalvernia
 
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251016_110954.jpg)](/resources/2025-barcelona/20251016_110954.jpg)
+
+*Photo* Special serving of ??? in Piacenza
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251016_145210.jpg)](/resources/2025-barcelona/20251016_145210.jpg)
+
+*Photo* First hills before Tortona
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251016_172635.jpg)](/resources/2025-barcelona/20251016_172635.jpg)
+
+*Photo* A church in Tortona
+
 ### Day 05 (2025-10-17)
+
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251017_081407.jpg)](/resources/2025-barcelona/20251017_081407.jpg)
+
 
   * I cannot wait for the morning -- I'm woken by cold, I don't understand it,
     the sleeping bag should be comfortable down to 1°C and the forecast
@@ -207,6 +249,17 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
       in the well-equipped flat
 
   * **sleeping:** rented appartment in Vado Ligure
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251017_161254.jpg)](/resources/2025-barcelona/20251017_161254.jpg)
+
+*Photo* Abandoned cycling path along road in Genova
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251017_173453.jpg)](/resources/2025-barcelona/20251017_173453.jpg)
+
+*Photo* Riding into/until sunset
+
 
 ### Day 06 (2025-10-18)
 
@@ -247,6 +300,22 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
       signs, even when walking
 
   * **sleeping:** Nice, hostel, 4 bed bedroom
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251018_100452.jpg)](/resources/2025-barcelona/20251018_100452.jpg)
+
+*Photo* Cycling riviera Liguria
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251018_171414.jpg)](/resources/2025-barcelona/20251018_171414.jpg)
+
+*Photo* Skyscraper in Monaco
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251018_181145.jpg)](/resources/2025-barcelona/20251018_181145.jpg)
+
+*Photo* Passing "the Alps" second time
+
 
 ### Day 07 (2025-10-19)
 
@@ -290,6 +359,22 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** Barjols, countryside hotel run by senior couple
 
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251019_090204.jpg)](/resources/2025-barcelona/20251019_090204.jpg)
+
+*Photo* Saturday morning on Promenade des Anglais
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251019_124601.jpg)](/resources/2025-barcelona/20251019_124601.jpg)
+
+*Photo* Descent from Col du Logis de Paris
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251019_130834.jpg)](/resources/2025-barcelona/20251019_130834.jpg)
+
+*Photo* Closed Decathlon in Frejus
+
 ### Day 08 (2025-10-20)
 
   * the hopes of avoiding the rainy day and worries about the mechanical woke
@@ -332,6 +417,17 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** Aix-en-Provence, suburban hotel supporting handicapped employees
 
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251020_111609(1).jpg)](/resources/2025-barcelona/20251020_111609(1).jpg)
+
+*Photo* La Croix de Provence
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251020_140707.jpg)](/resources/2025-barcelona/20251020_140707.jpg)
+
+*Photo* Waiting for repair of the bike
+
+
 ### Day 09 (2025-10-21)
 
   * chilly morning, tendon was good 1 km, first climb and it started to ache
@@ -350,6 +446,17 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
     without dishwasher, it doesn't save much time (cf camping)
   
   * **sleeping:** studio appartment in Le Grau-du Roi
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251021_110629.jpg)](/resources/2025-barcelona/20251021_110629.jpg)
+
+*Photo* Busy street in Salon-en-Provence
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251021_135932.jpg)](/resources/2025-barcelona/20251021_135932.jpg)
+
+*Photo* Look down from an arena in Arles
+
 
 ### Day 10 (2025-10-22)
 
@@ -373,7 +480,22 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
     evening, fortunately, the injured tendon didn't bother me much in climbs
 
   * **sleeping:** box hotel (former F1?) near Narbonne
-  // todo photo with tires
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251022_112344.jpg)](/resources/2025-barcelona/20251022_112344.jpg)
+
+*Photo* Brutalism in Montpellier
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251022_172941.jpg)](/resources/2025-barcelona/20251022_172941.jpg)
+
+*Photo* Drive by backwards photo of Cathedral in Béziers
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251022_213204.jpg)](/resources/2025-barcelona/20251022_213204.jpg)
+
+*Photo* Ultimate repair of the day's punctures
+
 
 ### Day 11 (2025-10-23)
 
@@ -412,8 +534,31 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** highway hotel in La Jonquera
 
-// todo pic
-// The winds in the area were really strong. Even few days later when I was returning by bus, it was rocked by the winds.
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251023_093458.jpg)](/resources/2025-barcelona/20251023_093458.jpg)
+
+*Photo* Coastal rainbow
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251023_115722.jpg)](/resources/2025-barcelona/20251023_115722.jpg)
+
+*Photo* The winds in the area were really strong. (Even few days later when I
+was returning by bus further from the coast, it was rocked by the winds.)
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251023_133732.jpg)](/resources/2025-barcelona/20251023_133732.jpg)
+
+*Photo* Notice the horizontal piece of cloth on lower left, it's hard to capture wind in a photo
+
+{:.thumbnail}
+[![](/resources/2025-barcelona/leucate-garmin.png)](/resources/2025-barcelona/leucate-garmin.png)
+
+*Map* Red is faster, blue is slower. The wind direction was parallel with the road to the coast.
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251023_175824.jpg)](/resources/2025-barcelona/20251023_175824.jpg)
+
+*Photo* Evening climb to Perthus
 
 
 ### Day 12 (2025-10-24)
@@ -443,6 +588,16 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** lonely hotel in Sant Celoni
 
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251024_133031.jpg)](/resources/2025-barcelona/20251024_133031.jpg)
+
+*Photo* Catalonian patriotism in Girona
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251024_171729.jpg)](/resources/2025-barcelona/20251024_171729.jpg)
+
+*Photo* Castle/fortress in Hostalric
+
 ### Day 13 (2025-10-25)
 
   * the last stage is meant to be shorter with the long-awaited reward at the
@@ -463,6 +618,16 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** hotel in Barcelona (near Parc Güell)
 
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251025_103029.jpg)](/resources/2025-barcelona/20251025_103029.jpg)
+
+*Photo* Descent to Arenys de Mar
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251025_185656.jpg)](/resources/2025-barcelona/20251025_185656.jpg)
+
+*Photo* Escalators near Parc Güell
+
 ### Day 14 (2025-10-26)
 
   * sightseeing day where I tried to pack most sites on a travelling salesman
@@ -480,6 +645,11 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** hotel in Barcelona (near Parc Güell)
 
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251026_121802.jpg)](/resources/2025-barcelona/20251026_121802.jpg)
+
+*Photo* In our longituted it'd look Ukranian but this one is Barceloneta flag
+
 ### Day 15 (2025-10-27)
 
   * early mornign to catch bus (I had to do without my (pre-paid) breakfast)
@@ -491,7 +661,17 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** bus over Europe
 
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251027_070905.jpg)](/resources/2025-barcelona/20251027_070905.jpg)
+
+*Photo* Loaded unloaded bike
+
 ## People and culture
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251014_100734.jpg)](/resources/2025-barcelona/20251014_100734.jpg)
+
+*Photo* Demography in Treviso
 
   * co-travelling road (female) cyclist in slippers(!) on the train
   * lightpackers -- road cyclists who have a saddle roll-bag but only with slippers
@@ -523,6 +703,11 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
   * Zollbeamter on Swiss/German border -- almost felt like home when I could
     hear and speak a known language
 
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251021_123528.jpg)](/resources/2025-barcelona/20251021_123528.jpg)
+
+*Photo* Octobre Rose in Saint-Martin-de-Crau (it was also big in Italy/Liguria)
+
 ### Food
 
   * boccio mantuana
@@ -545,6 +730,22 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
      * Oglio: I noticed because of the closed bridge
      * Po: major river, go up to cross it (as usual)
 
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251013_125638.jpg)](/resources/2025-barcelona/20251013_125638.jpg)
+
+*Photo* Tagliomento crossing
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251015_164717.jpg)](/resources/2025-barcelona/20251015_164717.jpg)
+
+*Photo* Po crossing
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251021_143022.jpg)](/resources/2025-barcelona/20251021_143022.jpg)
+
+*Photo* Rhône crossing
+
+
   * passes
     * Tarvisio ("the Alps")
     * Passo dela Bocchetta (Apenines)
@@ -552,12 +753,23 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
     * Col du Perthus (Pyrenees)
     * Collsacreau
 
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251017_125312.jpg)](/resources/2025-barcelona/20251017_125312.jpg)
+
+*Photo* Passo dela Bocchetta (Apenines)
+
   * huge flocks of birds in the vast fields of the Po plain
   * highlands of Provence interior, tabletop mountains, La Croix de Provence
   * seagulls are like kites that fly autonomously
   * Rhoneland is similar agricultural scenery like around Po, drier, coarser,
     less sandy (I closely missed the bifurcation of Le Petit Rhône in Arles)
   * flamingos in coastal étangs
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251021_174602.jpg)](/resources/2025-barcelona/20251021_174602.jpg)
+
+*Photo* Flamingos in Étang du Médard
+
   * tempête Benjamin (windstorm that passed over France when I was among
     étangs), [Leucate station](https://meteostat.net/en/station/07666?t=2025-10-22/2025-10-24)
     has recorded winds of 70 km/h (not gusts)
@@ -582,6 +794,12 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
     areas with long internode distances.
   * Barcelona: pedestrian red light is more like a recommendation than a stop,
     likely caused by not turning the lights off during low traffic times.
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251015_151758.jpg)](/resources/2025-barcelona/20251015_151758.jpg)
+
+*Photo* Agriculture near Cremona in Po valley
+
 
 ## Lessons learnt
 
@@ -629,6 +847,17 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
   * Garmin showed non-sensical HR (bad contact), increased average BPM
   * It may be good to remember to take also an _un_-packing photo to have a
     validated list.
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251016_160935(1).jpg){:loading=lazy}](/resources/2025-barcelona/20251016_160935(1).jpg)
+
+*Photo* First puncture near Tortona (thorn)
+
+{:.thumbnail .photo}
+[![](/resources/2025-barcelona/20251022_135026(1).jpg)](/resources/2025-barcelona/20251022_135026(1).jpg)
+
+*Photo* Second (and third) puncture near Pignan (shard)
+
 
 ### Close misses
 
