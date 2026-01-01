@@ -31,7 +31,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
 ## Diary
 
-### Day 00 (2025-10-12)
+### Day 00 (2025-10-12) Train through Austria
 
   * the trip starts by two-leg ride from Prague to Villach via Vienna, the
     morning is rainy and cold both in Prague and Vienna, the weather suddenly
@@ -51,7 +51,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
 *Photo* Night climb to Tarvis
 
-### Day 01 (2025-10-13)
+### Day 01 (2025-10-13) Hit it from the start
 
   * the plan is to start the day early for the longest stage of the trip,
     hotel's dining room shared with other guests and also local workers
@@ -95,7 +95,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
 *Photo* Descent from Tarvisio
 
-### Day 02 (2025-10-14)
+### Day 02 (2025-10-14) Boring straights
 
   * I wake up tired and unsettled stomach, slow morning
   * few kilometers and half-broken bottle holder comes lose, another zip tie fixes it
@@ -129,7 +129,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
 *Photo* Stretches of former Treviso-Ostigila railway, Chiesa di S.Sebastiano Martire ahead
 
-### Day 03 (2025-10-15)
+### Day 03 (2025-10-15) Over Po
 
   * happy morning as I managed to avoid dew (the bench seems to be ideal
     height, band with no dew), the villagers commute back to work
@@ -167,7 +167,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 *Photo* Bicycles in Cremona
 
 
-### Day 04 (2025-10-16)
+### Day 04 (2025-10-16) Apenines on the horizon
 
   * I continue along the Po river, greeting black workers who pick cucumbers in the fields
   * Piacenza -- it should be similar to Cremona (sister city on the other side
@@ -207,7 +207,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
 *Photo* A church in Tortona
 
-### Day 05 (2025-10-17)
+### Day 05 (2025-10-17) Adventure Genovese
 
 
 {:.thumbnail .photo}
@@ -261,7 +261,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 *Photo* Riding into/until sunset
 
 
-### Day 06 (2025-10-18)
+### Day 06 (2025-10-18) Ligurian riviera
 
   * the nice weather so far was about to cease on Monday per the weather
     forecast, so I scheduled a longer stages for the weekend
@@ -317,7 +317,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 *Photo* Passing "the Alps" second time
 
 
-### Day 07 (2025-10-19)
+### Day 07 (2025-10-19) Failure day
 
   * the day starts early (8:30) because I have to stop at the beach for
     breakfast (which wasn't possible in the hostel)
@@ -375,7 +375,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
 *Photo* Closed Decathlon in Frejus
 
-### Day 08 (2025-10-20)
+### Day 08 (2025-10-20) Rainy day
 
   * the hopes of avoiding the rainy day and worries about the mechanical woke
     me up already at 6:30
@@ -428,7 +428,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 *Photo* Waiting for repair of the bike
 
 
-### Day 09 (2025-10-21)
+### Day 09 (2025-10-21) Provence/Rhône delta
 
   * chilly morning, tendon was good 1 km, first climb and it started to ache
     then it got better midday as it warmed up, then it was worse in the evening
@@ -458,7 +458,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 *Photo* Look down from an arena in Arles
 
 
-### Day 10 (2025-10-22)
+### Day 10 (2025-10-22) Day of punctures
 
   * first day when I use the second jersey because primary one didn't dry out
     overnight in the sea climate (it also rained)
@@ -497,7 +497,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 *Photo* Ultimate repair of the day's punctures
 
 
-### Day 11 (2025-10-23)
+### Day 11 (2025-10-23) Windy day
 
   * the weather forecast had shown warnings of strong winds for the day, I
     decided to continue without modifications of the route because: a) no time,
@@ -561,7 +561,7 @@ was returning by bus further from the coast, it was rocked by the winds.)
 *Photo* Evening climb to Perthus
 
 
-### Day 12 (2025-10-24)
+### Day 12 (2025-10-24) Relaxed day
 
   * despite I woke up autonomously at 7:18, it was a slow morning and felt like
     the last guest in the hotel
@@ -598,7 +598,7 @@ was returning by bus further from the coast, it was rocked by the winds.)
 
 *Photo* Castle/fortress in Hostalric
 
-### Day 13 (2025-10-25)
+### Day 13 (2025-10-25) Final stage
 
   * the last stage is meant to be shorter with the long-awaited reward at the
     end, therefore I don't hurry up into rain in the morning
@@ -628,7 +628,7 @@ was returning by bus further from the coast, it was rocked by the winds.)
 
 *Photo* Escalators near Parc Güell
 
-### Day 14 (2025-10-26)
+### Day 14 (2025-10-26) Barcelona
 
   * sightseeing day where I tried to pack most sites on a travelling salesman
     route (through places most recommended by friends)
@@ -650,7 +650,7 @@ was returning by bus further from the coast, it was rocked by the winds.)
 
 *Photo* In our longituted it'd look Ukranian but this one is Barceloneta flag
 
-### Day 15 (2025-10-27)
+### Day 15 (2025-10-27) Return day
 
   * early mornign to catch bus (I had to do without my (pre-paid) breakfast)
   * 26h rollback by bus
