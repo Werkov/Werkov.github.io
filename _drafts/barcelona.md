@@ -6,6 +6,8 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
 ## Selection
 
+  * todo
+
   * [summer trip]({% post_url 2024-07-22-cyklo %}) amazed me and I wanted to
     pass Brenner once again
 
@@ -173,7 +175,7 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
   * I cannot wait for the morning -- I'm woken by cold, I don't understand it,
     the sleeping bag should be comfortable down to 1°C and the forecast
     predicted ~9°C, it's explained when I check the thermometer on Garmin that
-    spent the dight ~20 cm above the ground -- 4°C, however, when I stood the
+    spent the night ~20 cm above the ground -- 4°C, however, when I stood the
     bike upright, the Garmin on the handlebar showed 8°C already
   * it's still quite a moist morning, the dew is everywhere and despite it's
     sunny, I cannot dry my equipment (mat, sleepng bag, tarp), the sun is too
@@ -246,6 +248,248 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** Nice, hostel, 4 bed bedroom
 
+### Day 07 (2025-10-19)
+
+  * the day starts early (8:30) because I have to stop at the beach for
+    breakfast (which wasn't possible in the hostel)
+  * I continue along the coast, it's Sunday morning and I meet thousands of
+    runners and hundreds of cyclists (it was a regular weekend, [no
+    race](https://www.marathon06.com/2026/)
+  * I passed the riviera in Cannes with porters greeting me with: "Bonjour
+    monsier!" (not actually me but it felt like that)
+  * Cannes is where I turn into the inland and start climbing, the area is
+    popular among cyclists
+  * the day was very nice (Nice) so far but it suddenly collapses when I
+    routinely attempt to change rear gear -- snap, the rear cable is gone!
+  * I still have several kilometers to the main pass of the day (plus some
+    hundred kilometers to the planned end) and at first, the pedals seem stuck,
+    I'm worried about finishing the day as planned so I push the bike forward
+    instead of coasting back to Cannes; I don't usually ask for help from
+    passer-by but when a French (woman) cyclist offered advice, I happily
+    accepted it -- first, guided me to adjust the L screw (this way I unblocked
+    the chain and reached gear n-2), second, she assured me about closed shops
+    on Sundays ("Decathlong are very French"). I confirmed the latter
+    personally in Frejus and the former gave me two working gears to which she
+    encouraged the rest of my climb by: "It'll be tough ride".
+  * OK, so I had 36x15 and 52x15 (which I'd use for 24.8 and 35.8 km/h
+    normally), one for climbs the latter for everything else... The cable
+    problem brought me some luck too, first, the modified route was actually
+    shorter and less ascending than my original plan, second, the delay saved
+    from going through rain that I could easily witness from wet roads and
+    humid air in Savernes)
+  * eventually, I reached Barjols which would be enjoyable place in the middle
+    of French/Provensal countryside but at this time I felt trapped: compromised
+    bike, injured leg (heavy gears made my right tendon of Achilles hurt) and
+    imminent weather deterioration, hardly anyone could speak English in this
+    corner of the world and most of the services were closed on Sunday evening
+    (vivat to local petrol station and Asian restaurant)
+  * it was warm and dry in the old-ish hotel and I prepared an ambitious plan
+    for a sortie to Aix-en-Provance and Decathlon there all that in heavy rains
+    the next day
+  * sometimes it feels like too many experiences in one day
+
+  * **sleeping:** Barjols, countryside hotel run by senior couple
+
+### Day 08 (2025-10-20)
+
+  * the hopes of avoiding the rainy day and worries about the mechanical woke
+    me up already at 6:30
+  * the shorter stage (because of weather) conveniently composed with the need
+    to find a repair shop and have my bike fixed (internal cable routing FTL)
+  * I managed to climb the "pass of the day" (400 m near Pourcieux) only with
+    water on the road, however, as it goes with passes the weather changed and
+    the forecast earned its wings
+  * the final part is mostly downhill/flat so the hard gears aren't such a big
+    issue as I dash towards Aix-en-Provence I can observe La Croix de Provence
+    when the low clouds allow that
+  * I reach the hotel around noon where I only unload my bags (oh, where are my
+    mudguards?) and I continue to Decathlon in the same suburb
+  * it's difficult to explain my problem (change internally routed cable) and
+    constraints (I need the bike the same day) because I can't speak French and
+    no one speaks Czech, English nor German -- Google Translate be praised, the
+    pipeline is: mechanic, speech-to-text, French-German translation on her
+    phone, German text (my "Sprechen Sie Deutsch" made a lasting impression),
+    me reading, typed English, English-French translation and showing on my
+    phone; finally the bike is accepted and ETA is 2 hours, I'm invited to leave
+  * the bags remained in the hotel, the bike with the rest in the shop, so I
+    end up with soaking wet cycling clothes, a plastic bag with money, a
+    cellphone and nowhere to go. I'm kidding I can go to the nearest restaurant
+  * the restaurant is in Italian style (I didn't have an opportuntiy to visit a
+    restaurant in Italy but now I do it in France) and after lunch I order
+    desserts, coffee and I sit inside alost until (afternoon) closing hour to
+    fill up the repair's two hours
+  * when I return for the bike (3 PM), it's still disassembled on the stand and
+    I get a new promise -- end of the day (7 PM); it's still raining outside so
+    I find a place in shopping mall's café ~kilometer far away; despite I'm
+    bored and with a phone, I'm reluctant to book the next day's stage until I
+    know the state of the bike
+  * I get a call at 5 PM the the bike is ready, I'm immeasurably grateful and
+    35€ in total is very fair, so I go finally to the hotel
+  * fortunately, they let me to park the bike in the room and they have
+    electric heater so I can dry out all my equipment
+  * I'm more than a week en route and noone is actively interested in the
+    stages that I share
+
+  * **sleeping:** Aix-en-Provence, suburban hotel supporting handicapped employees
+
+### Day 09 (2025-10-21)
+
+  * chilly morning, tendon was good 1 km, first climb and it started to ache
+    then it got better midday as it warmed up, then it was worse in the evening
+    due to tiredness 
+  * occassional very light rain, observing the life in Salon-en-Provence
+  * Avignon had been a stretch-goal of the trip but the detuour through
+    Aix-en-Provence forced me to select a backup target, it also starts with A,
+    it's on Rhone and it's historical -- Arles
+  * Arles: 20th biggest arena in the (Roman) empire, restoration started in
+    1821 and still continues, UNESCO, also Chinese tourists
+  * in the evening I was returning back to the sea, i.e. perpedicular to the
+    coast with some headwind
+  * last minute sunset on the coast, AccuWeather time was precise
+  * the room in condo is like a cottage, shop too far, kitchen too small
+    without dishwasher, it doesn't save much time (cf camping)
+  
+  * **sleeping:** studio appartment in Le Grau-du Roi
+
+### Day 10 (2025-10-22)
+
+  * first day when I use the second jersey because primary one didn't dry out
+    overnight in the sea climate (it also rained)
+  * I enjoyed morning coastal ride through promenade of Jacques Chirac towards
+    Montpellier (much better _paneláks_ than the estate I slept in)
+  * Montpellier has nice modern (sometimes brutal) architecture in suburbs and
+    decent historical center
+  * the suburbs are difficult to navigate, on top of that lots of construction
+    works so I feel like half a day is over and I only managed to cover only
+    30km of the stage
+  * the afternoon is cloudy and windy with showers, fortunately warm
+  * I fulfilled my "dream" or fixing a flat tyre in rain -- the result is I
+    didn't do it properly and I had to correct it one more time (this time with
+    a patch) and rear wheel is still leaking air every ~20 km
+  * together with cross/head winds and some hills it made quite a tiring
+    afternoon, I had little time and no mood to stop in Béziers for sightseeing
+    (I only noticed the magnificent cathedral in the "rearview" when leaving)
+    and I only slowed down when passing through the center of Narbonne in the
+    evening, fortunately, the injured tendon didn't bother me much in climbs
+
+  * **sleeping:** box hotel (former F1?) near Narbonne
+  // todo photo with tires
+
+### Day 11 (2025-10-23)
+
+  * the weather forecast had shown warnings of strong winds for the day, I
+    decided to continue without modifications of the route because: a) no time,
+    b) direction was almost perpendicular to my route (with small tail
+    component)
+  * the wind among etangs is quite strong, smells with gas, cannot make photos
+    one handed, I hope everything is fixed on the bike
+  * rainbows, little (salty) droplets in the air
+  * the wind was worst in Leucate-Plage, easy 40 km/h ride with tailwind but
+    when I wanted to make a U-turn, the bike was undercut (I stopped already),
+    bicycle felt like flying away (I only held the saddle of the horizontal
+    bike) and my sunglasses were actually blown off (fortunately caught in
+    roadside bushes)
+  * as I was passing a footway bridge (there were other four cyclists too), I
+    managed to ride the whole length of it, however, there were some
+    pedestrians at the end and I had to slow down, then I was simply blown down
+    to the side, falling of a small hill (~1m), Garmin incident detection
+    triggered, handlebar (left brake) bent
+  * a group of French tourists(?) helped me to stand up (I felt much safer on
+    the ground, not exposed to the winds), we only screamed at each other,
+    woman: "No bike day today!" me: "Merci but I must bike!"
+  * observation: palm seeds are poppy when you ride over them
+  * bicycle geometry is made for headwinds (cross winds can easily tumble you,
+    tailwinds pull the clothing off) so it was actually a relief when when I
+    turned into the interior and could cycle against the wind, also the wind
+    was weaker between (sugar?) cane trunks
+  * Perpignan, I'm starting to see the light at the end of the tunnel (as I
+    made this notice during a break, the bike fell down in the wind despite it
+    was ~70° leaning)
+  * it already feels little Spanish (Rousillion region is former north
+    Catalonia)
+  * excellent evening light (clean air after wind) during the climb to Le
+    Perthus/el Portús in the Pyrenees, it was of the easiest passes
+
+  * **sleeping:** highway hotel in La Jonquera
+
+// todo pic
+// The winds in the area were really strong. Even few days later when I was returning by bus, it was rocked by the winds.
+
+
+### Day 12 (2025-10-24)
+
+  * despite I woke up autonomously at 7:18, it was a slow morning and felt like
+    the last guest in the hotel
+  * descent from Pyrenees along roads (and parking lots) of truck drivers, felt
+    close to them (cf Angles Morts)
+  * agriculture formed the first impression: I expected oranges and got manure and slurry instead
+  * Figueres, birthplace and museum of Salvador Dalí
+  * I get a pull from a pair of cyclists on long stretches towards Girona
+  * Girona
+    * rehearsal for entering a big and tourist city
+    * soaring cathedral and center with historical narrow streets
+    * despite sufficient time I didn't dare to eat a lunch in a restaurant,
+      instead spent equal sum on multiple takeaways (empanadas were good) and I
+      was still carrying sausages and cheese, loss of rationality 
+    * but thanks to time availability I opted for slightly longer route in the
+      afternoon instead of closely copying A-2
+  * Riudarenes, it's apparently abandoned area with no signal (and closed
+    càmping) and weird [forest colonies](http://www.canfornaca.es/)
+  * the day turns into really nice and relaxed afternoon, even enjoying an ice
+    cream in Hostalric (Catalonian fortress town)
+  * furthermore, I've got even time for evening sightseeing in Sant Celoni
+    (almost regret that I bought food in a local grocery store instead of
+    eating out)
+
+  * **sleeping:** lonely hotel in Sant Celoni
+
+### Day 13 (2025-10-25)
+
+  * the last stage is meant to be shorter with the long-awaited reward at the
+    end, therefore I don't hurry up into rain in the morning
+  * it's again a neat Saturday made for cycling so I route over Collsacreau and
+    meet lots of cyclists
+  * I end up crammed between rock-road-rail-cycling path-coast, I rode
+    surprisingly many kilometers in urban area until I finally reached
+    Barcelona proper
+  * Barcelona is a cyclist-welcoming city, the infra is well-thought and
+    omnipresent, although I was one of few competent cyclists (tourist rentals)
+    and single one without an engine (delivery guys)
+    * I "burn" bit of time by cycling to Barcelona Supercomputing Center (which
+      is closed on weekends)
+  * had myself photographed in front (back?) of Sagrada Família and officially
+    concluded the bicycle travel
+  * finally a free evening when I can just chill and Wikipedia 
+
+  * **sleeping:** hotel in Barcelona (near Parc Güell)
+
+### Day 14 (2025-10-26)
+
+  * sightseeing day where I tried to pack most sites on a travelling salesman
+    route (through places most recommended by friends)
+  * morning was rainy and my rain resilience was weak (shorts and cycling
+    coat), so I had to wait in a café
+  * hotel, la Sagrada Família, Cas Milà, Casa Batlló, Arc de Triomf, Palau de
+    la Música Catalana, Pla de la Seu, la Barceloneta, Palau Güell, Torres
+    Venecianes, Castell de Montjuïc, (metro), hotel
+  * the last supper in El Glop with many courses (what a contrast to sleeping
+    on a bench near Correzzo)
+  * the experience is so much stronger when I had to endure the two weeks trip,
+    cannot compare it with just an "Euro weekend", my notes said that I felt
+    Barcelona-sick before departure
+
+  * **sleeping:** hotel in Barcelona (near Parc Güell)
+
+### Day 15 (2025-10-27)
+
+  * early mornign to catch bus (I had to do without my (pre-paid) breakfast)
+  * 26h rollback by bus
+    * less comfortable than train but so much cheaper (and direct/quicker)
+    * less hassle with bike than airplane
+    * I can admire some of the missed sites during day time: landscape from A9
+      near Avignon, Mont Ventoux, Fortresse Mornas
+
+  * **sleeping:** bus over Europe
 
 ## People and culture
 
@@ -262,33 +506,85 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
     * my trip was dwarfed by their tracks, OTOH, I did more kilometers per day
       (therefore I didn't join them the next day even though we were going in
       the same direction)
+  * bicycle mechanic in atelier (Aix-en-Provence): I was not sure if she could
+    understand my explanation of the internal routing challenge but she
+    confidently accepted the bike (eventual repair was more complicated) and
+    pulled the fix off
+  * service workers in France: they usually don't get bothered with a queue,
+    they keep processing orders at leisure pace
+  * *hôtel de ville* is not a city hotel but city hall
+  * French woman in Perpignan -- stopped by as I was having a lunch break on a
+    bench, curious from where and to where I ride
+  * father and son cyclists from Medinyá -- they did a morning ride and were
+    quite fast, had a short chat with them, they recommended (didn't
+    discouraged) pista nationale and were partially interested in my route
+  * a young man who boarded the bus the very last (I'm not even sure he got a
+    ticket) and later was detained at border control between Spain and France
+  * Zollbeamter on Swiss/German border -- almost felt like home when I could
+    hear and speak a known language
 
 ### Food
 
   * boccio mantuana
   * I started eating more proteins on the third day as my nutrion would be
     mostly carbs (parmesan cheese turned out to be the ideal packing)
+  * superb sandwich in boulangerie in Saint Martin de Crau (butter + hunger)
+    and sweetish pastry (fixme name)
+  * empanadas (not Mallorquinas), various levels from hand-made through
+    franchises to industrial (in grocery stores))
+  * home madeable: empanadas, patata omelette, pastís de queso, pesto Genovese,
+    salmorejo, croissant
+  * sweet bars: I didn't need them for energy but they were crucial for mental
+    fatigue (tyre repairs, snapped cable, Barjols evening)
 
-## Nature and
+## Nature
 
   * rivers
      * Tagliomento, Piave: unregulated, wide, creeks
      * Adige: I didn't even notice
      * Oglio: I noticed because of the closed bridge
      * Po: major river, go up to cross it (as usual)
+
+  * passes
+    * Tarvisio ("the Alps")
+    * Passo dela Bocchetta (Apenines)
+    * Col du Logis de Paris (French interior)
+    * Col du Perthus (Pyrenees)
+    * Collsacreau
+
   * huge flocks of birds in the vast fields of the Po plain
+  * highlands of Provence interior, tabletop mountains, La Croix de Provence
+  * seagulls are like kites that fly autonomously
+  * Rhoneland is similar agricultural scenery like around Po, drier, coarser,
+    less sandy (I closely missed the bifurcation of Le Petit Rhône in Arles)
+  * flamingos in coastal étangs
+  * tempête Benjamin (windstorm that passed over France when I was among
+    étangs), [Leucate station](https://meteostat.net/en/station/07666?t=2025-10-22/2025-10-24)
+    has recorded winds of 70 km/h (not gusts)
+
   * I did ~1° in day, that's time shift 4 min/day, daylenght in Nice
     (~centerpoint of the trip) changed from 11:10:42 on Oct 12 to 10:28:03 on
     Oct 27, i.e. 2m50s per day, so I outpaced the sun (at least the sunsets)
 
-## Technologies
+## Technologies and man-made sites
 
   * Austria: blocking poles in middle of escalator to force transporting bikes in the lift
   * Cremona circuit: very hard to see anything from behind the fence, it's noisy though
+  * TGV train on a bridge between Éguilles and Salon-en-Provence
+  * The bigger road, the more energy efficient routing. Read: the least effort
+    passes and paths to them are typically "occupied" by highways with no space
+    for cyclable road. In contrast, the biggest roads route through tunnels or
+        bridges and natural paths remain for cyclists.
+  * [EV8](https://en.wikipedia.org/wiki/EV8_The_Mediterranean_Route) the
+    international cycling path that I (unwittingly) copied in certain segments.
+  * Array of trees planted in rectagular patterns (Italy, France (seen from bus))
+  * Tollbooths (France) are huge vasts of asphalt, maybe it's worth it in those
+    areas with long internode distances.
+  * Barcelona: pedestrian red light is more like a recommendation than a stop,
+    likely caused by not turning the lights off during low traffic times.
 
 ## Lessons learnt
 
-  * don't type and drive (the driver in opposite direction)
   * mornings are hard, daytime always improves and evenings are opportunities for repairs
   * I still don't know how dew works, it's better to sleep to avoid it (higher
     place, under tree, not in the open)
@@ -298,6 +594,19 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
   * Don't freak out when it's not dry in the morning -- as it's functional, you
     can dry it on the body (in given latitude/time of year).
   * Long trousers were deadweight for this time of year and locations.
+  * Mediterranean (Provence) rain: radar cannot be trusted because rain spawns
+    from nothing.
+  * Effects of high gear pedaling: slight lower backpain, sligt arm muscles
+    overload, big problems with tendon of Achilles (might be from previous
+    bruises by pedal on right calf).
+  * 400g of raw torsades is much more than 400g of raw rigatoni (after cooking).
+  * Hotel is better than private hosting in this time of year due to heating
+    and drying options.
+  * Do not install new tube until you identify the cause (a thorn/shard/metal in the tyre).
+  * Mental energy and will are also a resource that can get depleted (trial by punctures).
+  * Riding along the coast with beaches (beach := coast in an urban area) is
+    convenient and often picturesque but the problem is toilet (no natural
+    spots to pee and lots of people everywhere).
 
 
 ### Driving
@@ -305,11 +614,25 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
   * how to roundabout: if you take the 1st exit, keep right, otherwise push to
     the left and then cross back right to your exit (carefuly, looking back). I
     still haven't decyphered turn signals in none of the passed countries.
+  * don't type and drive (the driver in opposite direction)
   * hot to efficiency in dense city traffic: when there's space in front of you, go (I
     picked this up by watch scooter riders (mainly) in Genova)
+  * OpenStreetMaps and road cycling routing -- the convention in Spain was
+    obviously different than in Italy and France, roads marked as suitable for
+    road bikes (mapy.com) were often unpaved with roots or stones.
+  * Expect/account for rush hours: Fridays outwards from big centers.
+  * todo - 2D diagram: speed x distance when cars are passing, Italy is close but slow,  Spain is faster and much further
 
 
 ### Equipment
 
   * Garmin showed non-sensical HR (bad contact), increased average BPM
+  * It may be good to remember to take also an _un_-packing photo to have a
+    validated list.
+
+### Close misses
+
+  * Avignon
+  * Le Petit Rhône bifurcation
+  * Fort de Bellegarde
 
