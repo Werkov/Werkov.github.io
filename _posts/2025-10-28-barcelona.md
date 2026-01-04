@@ -4,26 +4,32 @@ title: Giro, Tour, Vuelta (and Barcelona)
 tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence bikepacking
 ---
 
-## Selection
+## Selection and preparations
 
-  * todo
+  * the target selection was not so involved like [previous year's trip]({%
+    post_url 2024-10-25-firenze %}), Barcelona was one of the cities I wished
+    to visit and it'd also make me [finally]({% post_url 2018-04-04-mallorca %})
+    [visit]({% post_url 2018-12-05-tenerife %})
+    [continental]({% post_url 2019-03-31-mallorca %}) Spain so I only waited
+    for an opportunity when I can take long vacation and when I am physically
+    able to perform >100 km/day trip
 
-  * [summer trip]({% post_url 2024-07-22-cyklo %}) amazed me and I wanted to
-    pass Brenner once again
+  * the shortest path from Prague to Barcelona goes north of the Alps which I
+    refused because of a) worse weather at the time of year, b) missing the
+    seaside, c) higher costs in Switzerland
+  * the shortest path through Monaco (bypassing the Alps) leads over
+    Brennerpass and Bolzano, I didn't want to ride the same route every year
+    (and also the train connections to Salzburg were restricted in the autumn)
+  * thus the chosen path was inspired by train connections reachability from
+    Prague via Vienna -- the route planning was very rough (e.g. forgot to
+    download offline maps for Lombardia), intentionally, I didn't know how far
+    and how fast would I cycle
+  * I only booked a bus ticket, conveniently direct connection from Barcelona
+    to Prague
+  * the trip was jeopardized by a stripped thread in the frame for rear wheel's
+    thru-axle (official repair had due only in Apr 2026, fortunately, a bootleg
+    axis with nut proved well)
 
-  * time constraints only allowed me to travel in the autumn, further constraints:
-    * travel south (warmer weather in autumn)
-    * travel west (more and better cycling infrastructure)
-    * easy train return connection
-    * radius of 7 days
-  * solution is the trip to Firenze, satisfies all of the above
-
-## Preparations
-
-  
-  * stripped thread
-  * no real path preparations
-    * e.g. forgot to download offline maps for Lombardia
 
 {:.thumbnail}
 [![Recorded path](/resources/2025-barcelona/overlayed-tracks.png)](/resources/2025-barcelona/overlayed-tracks.png)
