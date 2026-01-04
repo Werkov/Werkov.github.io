@@ -4,6 +4,8 @@ title: Giro, Tour, Vuelta (and Barcelona)
 tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence bikepacking
 ---
 
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script>
+
 ## Selection and preparations
 
   * the target selection was not so involved like [previous year's trip]({%
@@ -845,8 +847,84 @@ was returning by bus further from the coast, it was rocked by the winds.)
     obviously different than in Italy and France, roads marked as suitable for
     road bikes (mapy.com) were often unpaved with roots or stones.
   * Expect/account for rush hours: Fridays outwards from big centers.
-  * todo - 2D diagram: speed x distance when cars are passing, Italy is close but slow,  Spain is faster and much further
 
+<svg id="plot-1" style="width:500px; height:500px"></svg>
+<script>
+const xSize = 500;
+const ySize = 500;
+const xRange = 5.0;
+const yRange = 60;
+const margin = 40;
+const xMax = xSize - margin*2;
+const yMax = ySize - margin*2;
+
+const svg = d3.select("#plot-1")
+  .append("g")
+  .attr("transform","translate(" + margin + "," + margin + ")");
+
+// X Axis
+const x = d3.scaleLinear()
+  .domain([0, xRange])
+  .range([0, xMax]);
+
+svg.append("g")
+  .attr("transform", "translate(0," + yMax + ")")
+  .call(d3.axisBottom(x));
+
+svg.append("text")
+  .attr("text-anchor", "end")
+  .attr("x", xMax)
+  .attr("y", yMax - 6)
+  .text("passing distance (meters)");
+
+// Y Axis
+const y = d3.scaleLinear()
+  .domain([0, yRange])
+  .range([ yMax, 0]);
+
+svg.append("g")
+  .call(d3.axisLeft(y));
+
+svg.append("text")
+  .attr("text-anchor", "end")
+  .attr("y", 6)
+  .attr("dy", ".75em")
+  .attr("transform", "rotate(-90)")
+  .text("relative speed (km/h)");
+
+// Data
+const data = [
+    [0.5,   5, "Italy"],
+    [1.5,   40, "France"],
+    [3,     30, "Spain"],
+    [1.5,   50, "Czechia"],
+];
+
+function coordX(d) { return d[0]/xRange*xMax}
+function coordY(d) { return yMax - d[1]/yRange*yMax}
+
+svg.append('g')
+  .selectAll("dot")
+  .data(data).enter()
+  .append("circle")
+  .attr("cx", coordX)
+  .attr("cy", coordY)
+  .attr("r", 3)
+  .style("fill", "Red");
+
+svg.append('g')
+  .selectAll("dot")
+  .data(data).enter()
+  .append("text")
+  .attr("class", "x label")
+  .attr("text-anchor", "middle")
+  .attr("x", coordX)
+  .attr("y", coordY)
+  .text(function(d) { return d[2] })
+
+</script>
+
+*Plot* Subjective perception of cars passing in different countries
 
 ### Equipment
 
