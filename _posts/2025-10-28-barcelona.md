@@ -714,6 +714,7 @@ was returning by bus further from the coast, it was rocked by the winds.)
     ticket) and later was detained at border control between Spain and France
   * Zollbeamter on Swiss/German border -- almost felt like home when I could
     hear and speak a known language
+  * automaton for cash (cash is legacy next to cards/NFCs) in Aix-en-Provence
 
 {:.thumbnail .photo}
 [![](/resources/2025-barcelona/20251021_123528.jpg)](/resources/2025-barcelona/20251021_123528.jpg)
@@ -837,6 +838,11 @@ was returning by bus further from the coast, it was rocked by the winds.)
   * Riding along the coast with beaches (beach := coast in an urban area) is
     convenient and often picturesque but the problem is toilet (no natural
     spots to pee and lots of people everywhere).
+  * It was quite long, even processing notes for the blog was too long
+    * as I'm getting fatigued: I don't mind paying breakfasts, paying for
+      single room, taking route without hills, copying main roads, how is it
+      different from traveling by train/car?
+    * "Italy is too long" -- [Napoleon](https://branchcollective.org/?ps_articles=alison-chapman-on-il-risorgimento)
 
 
 ### Driving
@@ -952,6 +958,25 @@ svg.append('g')
   * Avignon
   * Le Petit Rhône bifurcation
   * Fort de Bellegarde
+  * Marseille (intentionaly), Saint Tropez
+
+## Misc
+
+  * three pillars: bike, health, smartphone
+    * two of them temporarily failed (only the phone survived)
+  * it's the best when the hotel allows taking the bike into room
+  * there's alway a room for the bike in a hotel
+  * daily routine
+    * evening
+      * booking an accomodation
+      * route planning
+        * planning only the immediately next step, sense of day-to-day urgency
+          for focus
+      * cleaning photos, cropping and rotating
+  * big city guides/constraints you, the path, also the grocery and dishes you
+    can get (as a traveller without restaurants)
+  * Booking.com actively requested my reviews except for the hotel in Barcelona
+  * camping places driven by in Spain were mostly closed for the season in October
 
 
 ## Statistics
