@@ -948,6 +948,7 @@ svg.append('g')
   * Garmin showed non-sensical HR (bad contact), increased average BPM
   * It may be good to remember to take also an _un_-packing photo to have a
     validated list.
+  * Saddle caused some irritation but it was not prohibitive.
 
 {:.thumbnail .photo}
 [![](/resources/2025-barcelona/20251016_160935(1).jpg){:loading=lazy}](/resources/2025-barcelona/20251016_160935(1).jpg)
