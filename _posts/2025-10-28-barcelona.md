@@ -36,8 +36,8 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
     axis with a nut proved well)
 
 
-{:.thumbnail}
-[![Recorded path](/resources/2025-barcelona/overlayed-tracks.png)](/resources/2025-barcelona/overlayed-tracks.png)
+{:.thumbnail2}
+[![Recorded path](/resources/2025-barcelona/overlayed-tracks.thumb.png)](/resources/2025-barcelona/overlayed-tracks.png)
 
 
 ## Diary
@@ -57,8 +57,8 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** Tarvisio, hotel Tarvis
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251012_193459.jpg)](/resources/2025-barcelona/20251012_193459.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251012_193459.thumb.jpg)](/resources/2025-barcelona/20251012_193459.jpg)
 
 *Photo* Night climb to Tarvis with moonlight
 
@@ -101,8 +101,8 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** Treviso, friend of mine
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251013_091224.jpg)](/resources/2025-barcelona/20251013_091224.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251013_091224.thumb.jpg)](/resources/2025-barcelona/20251013_091224.jpg)
 
 *Photo* Descent from Tarvisio
 
@@ -136,8 +136,8 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** a playground near Correzzo (with all-night lamp next to head)
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251014_155318.jpg)](/resources/2025-barcelona/20251014_155318.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251014_155318.thumb.jpg)](/resources/2025-barcelona/20251014_155318.jpg)
 
 *Photo* Stretches of former Treviso-Ostigila railway, Chiesa di S.Sebastiano Martire ahead
 
@@ -168,13 +168,13 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** family B&B in Caorso
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251015_103741.jpg)](/resources/2025-barcelona/20251015_103741.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251015_103741.thumb.jpg)](/resources/2025-barcelona/20251015_103741.jpg)
 
 *Photo* Entering Mantova, this time from the east
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251015_162710.jpg)](/resources/2025-barcelona/20251015_162710.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251015_162710.thumb.jpg)](/resources/2025-barcelona/20251015_162710.jpg)
 
 *Photo* Bicycles in Cremona
 
@@ -204,26 +204,26 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** border of a field near Villalvernia
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251016_110954.jpg)](/resources/2025-barcelona/20251016_110954.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251016_110954.thumb.jpg)](/resources/2025-barcelona/20251016_110954.jpg)
 
 *Photo* Special serving of ??? in Piacenza
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251016_145210.jpg)](/resources/2025-barcelona/20251016_145210.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251016_145210.thumb.jpg)](/resources/2025-barcelona/20251016_145210.jpg)
 
 *Photo* First hills before Tortona
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251016_172635.jpg)](/resources/2025-barcelona/20251016_172635.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251016_172635.thumb.jpg)](/resources/2025-barcelona/20251016_172635.jpg)
 
 *Photo* A church in Tortona
 
 ### Day 05 (2025-10-17) Adventure Genovese
 
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251017_081407.jpg)](/resources/2025-barcelona/20251017_081407.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251017_081407.thumb.jpg)](/resources/2025-barcelona/20251017_081407.jpg)
 
 
   * I cannot wait for the morning -- I'm woken by cold, I don't understand it,
@@ -263,13 +263,13 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** rented apartment in Vado Ligure
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251017_161254.jpg)](/resources/2025-barcelona/20251017_161254.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251017_161254.thumb.jpg)](/resources/2025-barcelona/20251017_161254.jpg)
 
 *Photo* Abandoned cycling path along a road in Genova
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251017_173453.jpg)](/resources/2025-barcelona/20251017_173453.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251017_173453.thumb.jpg)](/resources/2025-barcelona/20251017_173453.jpg)
 
 *Photo* Riding until and into sunset
 
@@ -315,18 +315,18 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** Nice, hostel, 4 bed bedroom
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251018_100452.jpg)](/resources/2025-barcelona/20251018_100452.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251018_100452.thumb.jpg)](/resources/2025-barcelona/20251018_100452.jpg)
 
 *Photo* Cycling riviera Liguria
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251018_171414.jpg)](/resources/2025-barcelona/20251018_171414.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251018_171414.thumb.jpg)](/resources/2025-barcelona/20251018_171414.jpg)
 
 *Photo* Skyscraper in Monaco
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251018_181145.jpg)](/resources/2025-barcelona/20251018_181145.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251018_181145.thumb.jpg)](/resources/2025-barcelona/20251018_181145.jpg)
 
 *Photo* Passing "the Alps" second time
 
@@ -374,18 +374,18 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
   * **sleeping:** Barjols, countryside hotel run by senior couple
 
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251019_090204.jpg)](/resources/2025-barcelona/20251019_090204.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251019_090204.thumb.jpg)](/resources/2025-barcelona/20251019_090204.jpg)
 
 *Photo* Saturday morning on Promenade des Anglais
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251019_124601.jpg)](/resources/2025-barcelona/20251019_124601.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251019_124601.thumb.jpg)](/resources/2025-barcelona/20251019_124601.jpg)
 
 *Photo* Descent from Col du Logis de Paris
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251019_130834.jpg)](/resources/2025-barcelona/20251019_130834.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251019_130834.thumb.jpg)](/resources/2025-barcelona/20251019_130834.jpg)
 
 *Photo* Closed Decathlon in Frejus
 
@@ -431,13 +431,13 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** Aix-en-Provence, suburban hotel supporting handicapped employees
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251020_111609(1).jpg)](/resources/2025-barcelona/20251020_111609(1).jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251020_111609(1).thumb.jpg)](/resources/2025-barcelona/20251020_111609(1).jpg)
 
 *Photo* La Croix de Provence
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251020_140707.jpg)](/resources/2025-barcelona/20251020_140707.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251020_140707.thumb.jpg)](/resources/2025-barcelona/20251020_140707.jpg)
 
 *Photo* Waiting for repair of the bike (raining outside)
 
@@ -461,13 +461,13 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
  
   * **sleeping:** studio apartment in Le Grau-du Roi
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251021_110629.jpg)](/resources/2025-barcelona/20251021_110629.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251021_110629.thumb.jpg)](/resources/2025-barcelona/20251021_110629.jpg)
 
 *Photo* Busy street in Salon-en-Provence
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251021_135932.jpg)](/resources/2025-barcelona/20251021_135932.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251021_135932.thumb.jpg)](/resources/2025-barcelona/20251021_135932.jpg)
 
 *Photo* Look down from an arena in Arles
 
@@ -495,18 +495,18 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** box hotel (former F1?) near Narbonne
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251022_112344.jpg)](/resources/2025-barcelona/20251022_112344.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251022_112344.thumb.jpg)](/resources/2025-barcelona/20251022_112344.jpg)
 
 *Photo* Brutalism in Montpellier
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251022_172941.jpg)](/resources/2025-barcelona/20251022_172941.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251022_172941.thumb.jpg)](/resources/2025-barcelona/20251022_172941.jpg)
 
 *Photo* Drive by backwards photo of Cathedral in Béziers
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251022_213204.jpg)](/resources/2025-barcelona/20251022_213204.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251022_213204.thumb.jpg)](/resources/2025-barcelona/20251022_213204.jpg)
 
 *Photo* Ultimate repair of the day's punctures (and violation of [Velominati rule #49](https://www.velominati.com/))
 
@@ -549,30 +549,30 @@ tags: Austria Italy France Spain Catalonia plain Alps Apenines Pyrenees Provence
 
   * **sleeping:** highway hotel in La Jonquera
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251023_093458.jpg)](/resources/2025-barcelona/20251023_093458.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251023_093458.thumb.jpg)](/resources/2025-barcelona/20251023_093458.jpg)
 
 *Photo* Coastal rainbow
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251023_115722.jpg)](/resources/2025-barcelona/20251023_115722.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251023_115722.thumb.jpg)](/resources/2025-barcelona/20251023_115722.jpg)
 
 *Photo* The winds in the area were really strong. (Even a few days later when I
 was returning by bus further from the coast, our vehicle was rocked by the
 winds.)
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251023_133732.jpg)](/resources/2025-barcelona/20251023_133732.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251023_133732.thumb.jpg)](/resources/2025-barcelona/20251023_133732.jpg)
 
 *Photo* Notice the horizontal piece of cloth on lower left, it's hard to capture wind in a photo
 
-{:.thumbnail}
-[![](/resources/2025-barcelona/leucate-garmin.png)](/resources/2025-barcelona/leucate-garmin.png)
+{:.thumbnail2}
+[![](/resources/2025-barcelona/leucate-garmin.thumb.png)](/resources/2025-barcelona/leucate-garmin.png)
 
 *Map* Red is faster, blue is slower. The wind direction was parallel with the road to the coast.
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251023_175824.jpg)](/resources/2025-barcelona/20251023_175824.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251023_175824.thumb.jpg)](/resources/2025-barcelona/20251023_175824.jpg)
 
 *Photo* Evening climb to Perthus
 
@@ -604,13 +604,13 @@ winds.)
 
   * **sleeping:** lonely hotel in Sant Celoni
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251024_133031.jpg)](/resources/2025-barcelona/20251024_133031.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251024_133031.thumb.jpg)](/resources/2025-barcelona/20251024_133031.jpg)
 
 *Photo* Catalonian patriotism in Girona
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251024_171729.jpg)](/resources/2025-barcelona/20251024_171729.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251024_171729.thumb.jpg)](/resources/2025-barcelona/20251024_171729.jpg)
 
 *Photo* Castle/fortress in Hostalric
 
@@ -635,13 +635,13 @@ winds.)
 
   * **sleeping:** hotel in Barcelona (near Parc Güell)
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251025_103029.jpg)](/resources/2025-barcelona/20251025_103029.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251025_103029.thumb.jpg)](/resources/2025-barcelona/20251025_103029.jpg)
 
 *Photo* Descent to Arenys de Mar
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251025_185656.jpg)](/resources/2025-barcelona/20251025_185656.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251025_185656.thumb.jpg)](/resources/2025-barcelona/20251025_185656.jpg)
 
 *Photo* Escalators near Parc Güell
 
@@ -662,8 +662,8 @@ winds.)
 
   * **sleeping:** hotel in Barcelona (near Parc Güell)
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251026_121802.jpg)](/resources/2025-barcelona/20251026_121802.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251026_121802.thumb.jpg)](/resources/2025-barcelona/20251026_121802.jpg)
 
 *Photo* In our longitude it'd look Ukranian but this one is Barceloneta flag
 
@@ -678,15 +678,15 @@ winds.)
 
   * **sleeping:** bus over Europe
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251027_070905.jpg)](/resources/2025-barcelona/20251027_070905.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251027_070905.thumb.jpg)](/resources/2025-barcelona/20251027_070905.jpg)
 
 *Photo* Loaded unloaded bike
 
 ## People and culture
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251014_100734.jpg)](/resources/2025-barcelona/20251014_100734.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251014_100734.thumb.jpg)](/resources/2025-barcelona/20251014_100734.jpg)
 
 *Photo* Demography in Treviso
 
@@ -723,8 +723,8 @@ winds.)
     hear and speak a known language
   * automaton for cash (cash is legacy next to cards/NFCs) in Aix-en-Provence
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251021_123528.jpg)](/resources/2025-barcelona/20251021_123528.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251021_123528.thumb.jpg)](/resources/2025-barcelona/20251021_123528.jpg)
 
 *Photo* Octobre Rose in Saint-Martin-de-Crau (it was also big in Italy/Liguria)
 
@@ -750,18 +750,18 @@ winds.)
      * Oglio: I noticed because of the closed bridge
      * Po: major river, go up to cross it (as usual)
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251013_125638.jpg)](/resources/2025-barcelona/20251013_125638.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251013_125638.thumb.jpg)](/resources/2025-barcelona/20251013_125638.jpg)
 
 *Photo* Tagliomento crossing
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251015_164717.jpg)](/resources/2025-barcelona/20251015_164717.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251015_164717.thumb.jpg)](/resources/2025-barcelona/20251015_164717.jpg)
 
 *Photo* Po crossing
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251021_143022.jpg)](/resources/2025-barcelona/20251021_143022.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251021_143022.thumb.jpg)](/resources/2025-barcelona/20251021_143022.jpg)
 
 *Photo* Rhône crossing
 
@@ -773,8 +773,8 @@ winds.)
     * Col du Perthus (Pyrenees)
     * Collsacreau
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251017_125312.jpg)](/resources/2025-barcelona/20251017_125312.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251017_125312.thumb.jpg)](/resources/2025-barcelona/20251017_125312.jpg)
 
 *Photo* Passo dela Bocchetta (Apenines)
 
@@ -785,8 +785,8 @@ winds.)
     less sandy (I closely missed the bifurcation of Le Petit Rhône in Arles)
   * flamingos in coastal étangs
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251021_174602.jpg)](/resources/2025-barcelona/20251021_174602.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251021_174602.thumb.jpg)](/resources/2025-barcelona/20251021_174602.jpg)
 
 *Photo* Flamingos in Étang du Médard
 
@@ -815,8 +815,8 @@ winds.)
   * Barcelona: pedestrian red light is more like a recommendation than a stop,
     likely caused by not turning the lights off during low traffic times.
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251015_151758.jpg)](/resources/2025-barcelona/20251015_151758.jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251015_151758.thumb.jpg)](/resources/2025-barcelona/20251015_151758.jpg)
 
 *Photo* Agriculture near Cremona in Po valley
 
@@ -950,13 +950,13 @@ svg.append('g')
     validated list.
   * Saddle caused some irritation but it was not prohibitive.
 
-{:.thumbnail .photo}
+{:.thumbnail2 .photo}
 [![](/resources/2025-barcelona/20251016_160935(1).jpg){:loading=lazy}](/resources/2025-barcelona/20251016_160935(1).jpg)
 
 *Photo* First puncture near Tortona (thorn)
 
-{:.thumbnail .photo}
-[![](/resources/2025-barcelona/20251022_135026(1).jpg)](/resources/2025-barcelona/20251022_135026(1).jpg)
+{:.thumbnail2 .photo}
+[![](/resources/2025-barcelona/20251022_135026(1).thumb.jpg)](/resources/2025-barcelona/20251022_135026(1).jpg)
 
 *Photo* Second (and third) puncture near Pignan (shard)
 
